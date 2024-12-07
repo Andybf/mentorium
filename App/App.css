@@ -63,6 +63,20 @@ div.control-buttons {
     right: 1.5rem;
 }
 
+div#question-icons {
+    height: inherit;
+    width: 256px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1px;
+    column-gap: 1px;
+
+}
+div#question-icons > div {
+    width: 8px;
+    height: 8px;
+}
+
 button {
     background-color: #555555;
     color: white;

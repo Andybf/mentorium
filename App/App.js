@@ -4,12 +4,13 @@ import BrowserSave from "/simulado/modules/BrowserSave.js";
 export default class App extends AVElement {
 
     database;
-    exams;
-    examQuestions = 46;
-    examMaxTime = 45;
-    pointsPerQuestion = 1000/this.examQuestions;
+    examMode = '';
+    examQuestions = 0;
+    examMaxTime = 0;
+    pointsPerQuestion = 0;
     currentExam;
     intervalTime;
+    dashboardData;
     
     renderedCallback() {
         this.body.querySelector("button#next").addEventListener("click", (event) => {
@@ -25,7 +26,8 @@ export default class App extends AVElement {
             this.database = JSON.parse(resp)['questions'];
             let main = this.body.querySelector("main");
             let newCard = document.importNode(this.body.querySelector("template#start-exam-template").content,true);
-            newCard.querySelector("button").onclick = () => {this.startExam()};
+            newCard.querySelector("button#simulated-mode").onclick = () => {this.configureSimulatedMode();this.startExam();};
+            newCard.querySelector("button#infinite-mode").onclick = () => {this.configureInfiniteMode();this.startExam();};
             main.appendChild(newCard);
             this.body.querySelector("#qty-questions").innerText = this.database.length;
         }).catch( (error) => {
@@ -86,10 +88,41 @@ export default class App extends AVElement {
         this.body.querySelector("#reveal").disabled = false;
         this.body.querySelector("#next").disabled = false;
         this.prepareNextQuestion();
+    }
+
+    configureSimulatedMode() {
+        this.examMode = 'simulated';
+        this.examQuestions = 46;
+        this.examMaxTime = 45;
+        this.pointsPerQuestion = 1000/this.examQuestions;
         this.currentExam.finalTime = new Date().getTime()+ (this.examMaxTime * 60 * 1000);
         this.intervalTime = setInterval( () => {
             this.tickCountdownClock();
         }, 1000);
+    }
+
+    configureInfiniteMode() {
+        this.examMode = 'infinite';
+        this.examQuestions = this.database.length;
+        this.examMaxTime = 0;
+        this.pointsPerQuestion = 1000/this.examQuestions;
+        let div = this.body.querySelector("#question-icons");
+        this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage();
+        if (this.dashboardData) {
+            for (let i=0; i<this.database.length; i++) {
+                let icon = document.createElement("div");
+                icon.style.background = this.dashboardData[i];
+                div.appendChild(icon);
+            }
+        } else {
+            this.dashboardData = new Array();
+            for (let i=0; i<this.database.length; i++) {
+                let icon = document.createElement("div");
+                this.dashboardData[i] = 'darkgrey'
+                icon.style.background = this.dashboardData[i];
+                div.appendChild(icon);
+            }
+        }
     }
 
     prepareNextQuestion() {
@@ -143,6 +176,9 @@ export default class App extends AVElement {
         if (questionType === 'select') {
             if (this.body.querySelector("select").value == 'true') {
                 this.currentExam.points += this.pointsPerQuestion;
+                this.updateDashboard(questionId, 'pass');
+            } else {
+                this.updateDashboard(questionId, 'failed');
             }
         } else
         if (questionType === 'choose') {
@@ -153,28 +189,59 @@ export default class App extends AVElement {
                 }
             }
             let pointPerStatement = this.pointsPerQuestion/trueStatementsCount;
+            let points = 0;
             for (let input of Array.from(this.body.querySelectorAll('input'))) {
                 if (input.value == 'true' && input.checked == true) {
                     this.currentExam.points += pointPerStatement;
+                    points++;
                 }
+            }
+
+            if (points >= trueStatementsCount) {
+                this.updateDashboard(questionId, 'pass');
+            } else
+            if (points > 0) {
+                this.updateDashboard(questionId, 'warning');
+            } else {
+                this.updateDashboard(questionId, 'failed');
             }
         } else
         if (questionType === 'multiple-YesNo') {
             let pointPerStatement = this.pointsPerQuestion/3;
+            let points = 0;
             for (let input of Array.from(this.body.querySelectorAll('input'))) {
                 if (input.value == 'true' && input.checked == true) {
                     this.currentExam.points += pointPerStatement;
+                    points++;
                 }
+            }
+            if (points >= 3) {
+                this.updateDashboard(questionId, 'pass');
+            } else
+            if (points > 0) {
+                this.updateDashboard(questionId, 'warning');
+            } else {
+                this.updateDashboard(questionId, 'failed');
             }
         } else
         if (questionType === 'multiple-select') {
             const selectList = Array.from(this.body.querySelectorAll("select"));
             let pointPerStatement = this.pointsPerQuestion/selectList.length;
+            let points = 0;
             for (let select of selectList) {
                 if (select.value == select.answer) {
                     this.currentExam.points += pointPerStatement;
+                    points++;
                 }
-            }    
+            }
+            if (points >= selectList.length) {
+                this.updateDashboard(questionId, 'pass');
+            } else
+            if (points > 0) {
+                this.updateDashboard(questionId, 'warning');
+            } else {
+                this.updateDashboard(questionId, 'failed');
+            }
         }
         let points = Math.round(this.currentExam.points);
         if (points < 100) {
@@ -187,6 +254,27 @@ export default class App extends AVElement {
             points = "0"+points;
         }
         this.body.querySelector("#points").innerText = points;
+
+        
+    }
+
+    updateDashboard(questionId, status) {
+        if (this.examMode = 'infinite') {
+            let div = Array.from(this.body.querySelector("#question-icons").children);
+            if (status == 'pass') {
+                this.dashboardData[questionId] = 'green'
+                div[questionId].style.background = this.dashboardData[questionId];
+            } else 
+            if (status == 'warning') {
+                this.dashboardData[questionId] = 'yellow'
+                div[questionId].style.background = this.dashboardData[questionId];
+            } else
+            if (status == 'failed') {
+                this.dashboardData[questionId] = 'red'
+                div[questionId].style.background = this.dashboardData[questionId];
+            }
+            BrowserSave.saveOnBrowserStorage(this.dashboardData);
+        }
     }
 
     revealQuestion() {
