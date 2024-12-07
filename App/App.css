@@ -38,6 +38,7 @@ progress {
 
 article {
     padding: 1rem 2rem;
+    overflow-y: scroll;
 }
 
 main {
@@ -58,9 +59,9 @@ ul {
 div.control-buttons {
     display: flex;
     column-gap: 1.25rem;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
+    justify-content: flex-end;
+    padding: 1rem;
+    padding-bottom: 2rem;
 }
 
 div#question-icons {
