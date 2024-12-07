@@ -3457,6 +3457,652 @@
                 }
             ],
             "explanation": "NO - https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide#information-barriers-and-exchange-online\nOnly Exchange Online deployments are currently supported for IB policies. If your organization needs to define and control email communications, consider using Exchange mail flow rules.\nMicrosoft Purview Information Barriers (IB) is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive.\nYES - https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide\nYES - https://learn.microsoft.com/en-us/microsoft-365/compliance/information-barriers?view=o365-worldwide"
-        }        
+        },
+        {
+            "type": "select",
+            "question": "Insider risk management is configured from the...",
+            "statements": [
+                {
+                    "title": "Microsoft 365 admin center",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft 365 compliance center",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Microsoft 365 Defender portal",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft Defender for Cloud Apps portal",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Its renamed so I assume the exam is still labelling it as M365 Compliance Center. Just remember its now Microsoft Purview."
+        },
+        {
+            "type": "choose",
+            "question": "You need to ensure repeatability when creating new resources in an Azure subscription. What should you use?",
+            "statements": [
+                {
+                    "title": "Microsoft Sentinel",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure Policy",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure Batch",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure Blueprints",
+                    "isCorrect": true
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "type": "choose",
+            "question": "What is a characteristic of a sensitivity label in Microsoft 365?",
+            "statements": [
+                {
+                    "title": "encrypted",
+                    "isCorrect": false
+                },
+                {
+                    "title": "restricted to predefined categories",
+                    "isCorrect": false
+                },
+                {
+                    "title": "persistent",
+                    "isCorrect": true
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "statements": [
+                {
+                    "title": "Microsoft Purview provides sensitive data classification.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Microsoft Sentinel is a data lifecycle management solution.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft Purview can only discover data that is stored in Azure.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Microsoft Purview Data Lifecycle Management was formerly named Microsoft Information Governance. It helps organizations manage their risk through discovering, classifying, labeling, and governing their data. NOT Sentinel."
+        },
+        {
+            "type": "select",
+            "question": "...measures a company's progress in completing actions that help reduce risks around data protection and regulatory standards.",
+            "statements": [
+                {
+                    "title": "Compliance score",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Microsoft 365 compliance center reports",
+                    "isCorrect": false
+                },
+                {
+                    "title": "The Trust Center",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Trust Documents",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "statements": [
+                {
+                    "title": "Asymmetric encryption uses a public key and private key pair.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Symmetric encryption uses a public key and private key pair.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "You can use decryption to retrieve original content from a content hash.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Hashing is different from encryption in that it doesn't use keys, and the hashed value isn't subsequently decrypted back to the original. Source: https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/5-describe-encryption-hashing"
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "statements": [
+                {
+                    "title": "Asymmetric encryption uses a public key and private key pair.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Symmetric encryption uses a public key and private key pair.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "You can use decryption to retrieve original content from a content hash.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "type": "select",
+            "question": "Ensuring that the data you retrieve is the same as the data you stored is an example of maintaining...",
+            "statements": [
+                {
+                    "title": "availability",
+                    "isCorrect": false
+                },
+                {
+                    "title": "confidentiality",
+                    "isCorrect": false
+                },
+                {
+                    "title": "integrity",
+                    "isCorrect": true
+                },
+                {
+                    "title": "transparency",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Ensuring that data is not altered is an example of maintaining integrity."
+        },
+        {
+            "type": "select",
+            "question": "...track compliance with groupings of controls from a specific regulation or requirement.",
+            "statements": [
+                {
+                    "title": "Assessments",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Improvement actions",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Solutions",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Templates",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": ""
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Understanding responsibilities in different cloud service models is crucial for effective security management. In SaaS, the cloud provider manages updates, while in IaaS, the provider handles the physical network. Organizations are always responsible for their data security.",
+            "statements": [
+                {
+                    "title": "In software as a service (SaaS), applying application updates is the responsibility of the organization.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "In infrastructure as a service (IaaS), managing the physical network is the responsibility of the cloud provider.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "In all Azure cloud deployment types, managing the security of information and data is the responsibility of the organization.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "What should you use to associate the same identity to more than one Azure virtual machine?",
+            "explanation": "Using the appropriate identity assignment method is essential for managing access and security across multiple Azure virtual machines.",
+            "statements": [
+                {
+                    "title": "an Azure AD user account",
+                    "isCorrect": false
+                },
+                {
+                    "title": "a user-assigned managed identity",
+                    "isCorrect": true
+                },
+                {
+                    "title": "a system-assigned managed identity",
+                    "isCorrect": false
+                },
+                {
+                    "title": "an Azure AD security group",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Security defaults in Azure AD are designed to ensure enhanced security measures like MFA are applied broadly and consistently.",
+            "statements": [
+                {
+                    "title": "Security defaults require an Azure AD Premium license.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Security defaults can be enabled for a single Azure AD user.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "When Security defaults are enabled, all administrators must use multi-factor authentication (MFA).",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Which three forms of verification can be used with Azure AD Multi-Factor Authentication (MA)? Each correct answer presents a complete solution. NOTE: Each correct answer is worth one point.",
+            "explanation": "Azure AD Multi-Factor Authentication (MA) supports multiple verification methods to enhance security. These include the Microsoft Authenticator app, SMS messages, and Windows Hello for Business.",
+            "statements": [
+                {
+                    "title": "security questions",
+                    "isCorrect": false
+                },
+                {
+                    "title": "the Microsoft Authenticator app",
+                    "isCorrect": true
+                },
+                {
+                    "title": "SMS messages",
+                    "isCorrect": true
+                },
+                {
+                    "title": "a smart card",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Windows Hello for Business",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Self-service password reset (SSPR) allows users to reset their passwords using various verification methods. These include notifications to the Microsoft Authenticator app, but not external email addresses for authentication.",
+            "statements": [
+                {
+                    "title": "An external email address can be used to authenticate self-service password reset (SSPR).",
+                    "isCorrect": false
+                },
+                {
+                    "title": "A notification to the Microsoft Authenticator app can be used to authenticate self-service password reset (SSPR).",
+                    "isCorrect": true
+                },
+                {
+                    "title": "To perform self-service password reset (SSPR), a user must already be signed in and authenticated to Azure AD.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Microsoft 365 Endpoint data loss prevention (Endpoint DLP) can be used on which operating systems?",
+            "explanation": "Endpoint DLP is available for Windows 10 and newer, Android, and macOS.",
+            "statements": [
+                {
+                    "title": "Windows 10 and newer only",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Windows 10 and newer and Android only",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Windows 10 and newer and macOS only",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Windows 10 and newer, Android, and macOS",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "You have an Azure subscription that contains a Log Analytics workspace. You need to onboard Microsoft Sentinel. What should you do first?",
+            "explanation": "Connect to your security sources to ensure that Microsoft Sentinel can start ingesting security data. Source: https://learn.microsoft.com/en-us/azure/sentinel/best-practices-workspace-architecture",
+            "statements": [
+                {
+                    "title": "Create a hunting query.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Correlate alerts into incidents.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Connect to your security sources.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Create a custom detection rule.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Azure DDoS Protection Standard provides enhanced DDoS mitigation features to protect against various types of attacks, including protocol attacks. It is not enabled by default in an Azure subscription. Source: https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview",
+            "statements": [
+                {
+                    "title": "Azure DDoS Protection Standard protects against man-in-the-middle (MITM) attacks.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure DDoS Protection Standard is enabled by default in an Azure subscription.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure DDoS Protection Standard protects against protocol attacks.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "The ... features of Microsoft Defender for Cloud block malware and other unwanted applications, while reducing the network attack surface on Azure virtual machines.",
+            "explanation": "Access and application control features of Microsoft Defender for Cloud block malware and other unwanted applications, while reducing the network attack surface on Azure virtual machines. Source: https://learn.microsoft.com/en-us/azure/defender-for-cloud/adaptive-application-controls",
+            "statements": [
+                {
+                    "title": "Access and application control",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Cloud Security Posture Management (CSPM)",
+                    "isCorrect": false
+                },
+                {
+                    "title": "container security",
+                    "isCorrect": false
+                },
+                {
+                    "title": "vulnerability assessment",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Microsoft Purview Information Barriers permite a separação de usuários e grupos para evitar comunicação ou colaboração inadequadas. Já o Microsoft Purview Communication Compliance permite escanear arquivos e emails internos e externos para detectar violações de conformidade. Fonte: https://learn.microsoft.com/en-us/microsoft-365/compliance/communication-compliance-policies?view=o365-worldwide",
+            "statements": [
+                {
+                    "title": "You can use Microsoft Purview Information Barriers to detect messages that contain inappropriate language.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "You can use Microsoft Purview Communication Compliance to scan files stored in Microsoft SharePoint Online.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "You can use Microsoft Purview Communication Compliance to scan internal and external emails in Microsoft Exchange Online.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Single sign-on (SSO) configured between multiple identity providers is an example of...",
+            "explanation": "A federação permite que múltiplos provedores de identidade trabalhem juntos para fornecer uma experiência de Single Sign-On (SSO). Fonte: https://learn.microsoft.com/en-us/azure/active-directory/hybrid/connect/whatis-fed",
+            "statements": [
+                {
+                    "title": "federation",
+                    "isCorrect": true
+                },
+                {
+                    "title": "integration",
+                    "isCorrect": false
+                },
+                {
+                    "title": "password hash synchronization",
+                    "isCorrect": false
+                },
+                {
+                    "title": "pass-through authentication",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "You plan to move resources to the cloud. You are evaluating the use of Infrastructure as a service (IaaS), Platform as a service (PaaS), and Software as a service (SaaS) cloud models. You plan to manage only the data, user accounts, and user devices for a cloud-based app. Which cloud model will you use?",
+            "explanation": "O modelo de Software as a Service (SaaS) permite que você gerencie apenas dados, contas de usuário e dispositivos de usuário, enquanto o provedor de serviços gerencia o restante. Fonte: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility",
+            "statements": [
+                {
+                    "title": "SaaS",
+                    "isCorrect": true
+                },
+                {
+                    "title": "PaaS",
+                    "isCorrect": false
+                },
+                {
+                    "title": "IaaS",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Enabling a system-assigned managed identity creates a service principal that...",
+            "explanation": "",
+            "statements": [
+                {
+                    "title": "can be shared with multiple Azure resources.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "is managed separately from the resource that uses it.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "is tied to the lifecycle of the resource that uses it.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "must be registered manually with Azure AD.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Device identity can be stored in Azure AD. A single system-assigned managed identity cannot be used by multiple Azure resources. If you delete an Azure resource that has a user-assigned managed identity, the managed identity is not deleted automatically. Fonte: https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview",
+            "statements": [
+                {
+                    "title": "Device identity can be stored in Azure AD.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A single system-assigned managed identity can be used by multiple Azure resources.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "If you delete an Azure resource that has a user-assigned managed identity, the managed identity is deleted automatically.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Which score measures an organization's progress in completing actions that help reduce risks associated with data protection and regulatory standards?",
+            "explanation": "O Compliance score mede o progresso de uma organização em concluir ações que ajudam a reduzir os riscos associados à proteção de dados e padrões regulatórios. Fonte: https://learn.microsoft.com/en-us/purview/compliance-score-calculation",
+            "statements": [
+                {
+                    "title": "Adoption Score",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft Secure Score",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Secure score in Microsoft Defender for Cloud",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Compliance score",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "GitHub pode ser usado como um provedor de identidade baseado na nuvem. A federação fornece Single Sign-On (SSO) com múltiplos provedores de serviço. Um provedor de identidade central gerencia todos os serviços de autenticação modernos, como autenticação, autorização e auditoria.",
+            "statements": [
+                {
+                    "title": "GitHub is a cloud-based identity provider.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Federation provides single sign-on (SSO) with multiple service providers.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A central identity provider manages all modern authentication services, such as authentication, authorization, and auditing.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Review and filter alerts....Create cases in the Case dashboard....Send a reminder of corporate policies to users.",
+            "explanation": "",
+            "statements": [
+                {
+                    "title": "Action",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Investigate",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Triage",
+                    "isCorrect": true
+                }
+            ],
+            "answers": [
+                "Triage",
+                "Investigate",
+                "Action"
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Review and filter alerts....Create cases in the Case dashboard....Send a reminder of corporate policies to users.",
+            "explanation": "",
+            "statements": [
+                {
+                    "title": "Action",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Investigate",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Triage",
+                    "isCorrect": true
+                }
+            ],
+            "answers": [
+                "Triage",
+                "Investigate",
+                "Action"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "What should you use in the Microsoft 365 Defender portal to view security trends and track the protection status of identities?",
+            "explanation": "",
+            "statements": [
+                {
+                    "title": "Reports",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Incidents",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Hunting",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Secure score",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "You have an Azure subscription. You need to implement approval-based, time-bound role activation. What should you use?",
+            "explanation": "Azure AD Privileged Identity Management (PIM) permite a ativação baseada em aprovação e com limite de tempo para funções de administração no Azure AD, além de fornecer relatórios e alertas para monitorar o acesso privilegiado. Essa funcionalidade é essencial para ajudar a minimizar os riscos associados ao acesso privilegiado concedido por longos períodos.",
+            "statements": [
+                {
+                    "title": "access reviews in Azure AD",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Azure AD Privileged Identity Management (PIM)",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Azure AD Identity Protection",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Conditional access in Azure AD",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.",
+            "explanation": "Information Barriers (IB) can be used to restrict communication and collaboration in Microsoft 365 services to comply with industry regulations and organizational policies. They are used in Exchange Online, SharePoint Online, and Microsoft Teams for various compliance purposes.",
+            "statements": [
+                {
+                    "title": "You can restrict communication between users in Exchange Online by using Information Barriers.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "You can restrict accessing a SharePoint Online site by using Information Barriers.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "You can prevent sharing a file with another user in Microsoft Teams by using Information Barriers.",
+                    "isCorrect": true
+                }
+            ]
+        }       
+        
+        
     ]
 }

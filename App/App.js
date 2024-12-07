@@ -103,7 +103,6 @@ export default class App extends AVElement {
         this.body.querySelector("#current-question").innerText = index+1;
 
         const questionId = this.currentExam.questionNumbers[index].id;
-        console.log(questionId);
         const questionType = this.database[questionId]['type'];
         if (questionType === 'select') {  
             this.fillQuestionSelect(questionId);
@@ -125,7 +124,11 @@ export default class App extends AVElement {
 
     nextQuestion() {
         this.evaluateQuestion();
-        this.prepareNextQuestion();        
+        if (this.currentExam.currentQuestion >= this.examQuestions) {
+            this.gameover();
+        } else {
+            this.prepareNextQuestion();
+        }         
     }
 
     evaluateQuestion() {
