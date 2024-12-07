@@ -3,7 +3,7 @@
         {
             "type" : "multiple-YesNo",
             "question" : "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
-            "explanation" : "",
+            "explanation" : "As edições de licença do Azure Active Directory (Azure AD) variam em termos de recursos oferecidos; portanto, nem todas incluem os mesmos recursos. Você pode gerenciar um locatário do Azure AD usando o portal do Azure, que fornece uma interface baseada na web para administração. Além disso, não é necessário implantar máquinas virtuais Azure para hospedar um locatário do Azure AD, pois o Azure AD é um serviço de identidade baseado em nuvem.",
             "statements" : [
                 {
                     "title" : "All Azure Active Directory (Azure AD) license editions include the same features",
@@ -22,7 +22,7 @@
         {
             "type" : "select",
             "question" : "Select the answer that correctly completes the sentence: ...provides best practices from Microsoft employees, partners, and customers, including tools and guidance to assist in an Azure deployment.",
-            "explanation" : "",
+            "explanation" : "Azure Policy ensures that resources in your Azure environment comply with rules and standards set by your organization. It provides guidelines from Microsoft employees, partners, and customers, along with tools to assist in deploying and managing your resources effectively.",
             "statements" : [
                 {
                     "title" : "Azure Blueprints",
@@ -44,8 +44,8 @@
         },
         {
             "type": "select",
-            "question": "is used to identify, hold, and export electronic information that might be used in an investigation.",
-            "explanation" : "",
+            "question": "...is used to identify, hold, and export electronic information that might be used in an investigation.",
+            "explanation": "eDiscovery (Electronic Discovery) é usado para identificar, manter e exportar informações eletrônicas que podem ser usadas em uma investigação legal. Ele permite que as organizações encontrem e preservem dados relevantes armazenados em várias fontes, como emails e documentos, para fins de conformidade e litígio.",
             "statements": [
                 {
                     "title": "Customer Lockbox",
@@ -67,8 +67,8 @@
         },
         {
             "type": "select",
-            "question": "You can manage Microsoft Intune by using the",
-            "explanation" : "",
+            "question": "You can manage Microsoft Intune by using the...",
+            "explanation": "Microsoft Endpoint Manager admin center é o portal principal para gerenciar o Microsoft Intune. Ele fornece uma interface centralizada para configurar políticas de dispositivos, aplicativos e muito mais, facilitando a administração e segurança dos dispositivos gerenciados.",
             "statements": [
                 {
                     "title": "Azure Active Directory admin center.",
@@ -91,49 +91,49 @@
         {
             "type": "select",
             "question": "Federation is used to establish ... between organizations.",
-            "explanation" : "",
+            "explanation": "A federação é usada para estabelecer uma relação de confiança entre organizações. Isso permite que usuários em uma organização acessem recursos em outra organização sem a necessidade de múltiplas autenticações, facilitando o acesso seguro e conveniente aos serviços.",
             "statements": [
                 {
-                "title": "multi-factor authentication (MFA)",
-                "isCorrect": false
+                    "title": "multi-factor authentication (MFA)",
+                    "isCorrect": false
                 },
                 {
-                "title": "a trust relationship",
-                "isCorrect": true
+                    "title": "a trust relationship",
+                    "isCorrect": true
                 },
                 {
-                "title": "user account synchronization",
-                "isCorrect": false
+                    "title": "user account synchronization",
+                    "isCorrect": false
                 },
                 {
-                "title": "a VPN connection",
-                "isCorrect": false
+                    "title": "a VPN connection",
+                    "isCorrect": false
                 }
             ]
         },
         {
-            "type" : "multiple-YesNo",
-            "question" : "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
-            "explanation" : "",
-            "statements" : [
+            "type": "multiple-YesNo",
+            "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation": "Aplicar atualizações do sistema, avaliar recursos em várias assinaturas do Azure e habilitar a autenticação multifator (MFA) são ações que aumentam a pontuação de segurança de uma organização no Microsoft Defender for Cloud. Isso porque essas ações ajudam a melhorar a postura de segurança e a proteger os recursos da organização.",
+            "statements": [
                 {
-                    "title" : "Applying system updates increases an organization’s secure score in Microsoft Defender for Cloud.",
-                    "isCorrect" : true
+                    "title": "Applying system updates increases an organization’s secure score in Microsoft Defender for Cloud.",
+                    "isCorrect": true
                 },
                 {
-                    "title" : "The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.",
-                    "isCorrect" : true
+                    "title": "The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.",
+                    "isCorrect": true
                 },
                 {
-                    "title" : "Enabling multi-factor authentication (MFA) increases an organization’s secure score in Microsoft Defender for Cloud.",
-                    "isCorrect" : true
+                    "title": "Enabling multi-factor authentication (MFA) increases an organization’s secure score in Microsoft Defender for Cloud.",
+                    "isCorrect": true
                 }
             ]
-        },
+        },        
         {
             "type": "select",
             "question": "Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards?",
-            "explanation" : "",
+            "explanation": "O Compliance score mede o progresso de uma organização na conclusão de ações que ajudam a reduzir os riscos associados à proteção de dados e aos padrões regulatórios. Ele fornece uma avaliação detalhada de como a organização está aderindo aos requisitos de conformidade.",
             "statements": [
                 {
                     "title": "Microsoft Secure Score",
@@ -152,11 +152,11 @@
                     "isCorrect": false
                 }
             ]
-        },
+        },        
         {
             "type": "select",
             "question": "What do you use to provide real-time integration between Azure Sentinel and another security source?",
-            "explanation" : "",
+            "explanation": "Para fornecer integração em tempo real entre o Azure Sentinel e outra fonte de segurança, você utiliza um 'connector'. Os conectores permitem que o Azure Sentinel se conecte a várias fontes de dados para ingestão de dados de segurança em tempo real, facilitando a monitorização e detecção de ameaças.",
             "statements": [
                 {
                     "title": "Azure AD Connect",
@@ -179,7 +179,7 @@
         {
             "type": "choose",
             "question": "Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standards, such as the International Organization for Standardization (ISO)?",
-            "explanation" : "",
+            "explanation": "O Microsoft Service Trust Portal fornece informações sobre como os serviços de nuvem da Microsoft cumprem com os padrões regulatórios, incluindo os da International Organization for Standardization (ISO).",
             "statements": [
                 {
                     "title": "the Microsoft Endpoint Manager admin center",
@@ -202,7 +202,7 @@
         {
             "type": "select",
             "question": "Which shared responsibility in an Azure deployment is Microsoft solely responsible for managing?",
-            "explanation" : "",
+            "explanation": "Na implantação do Azure, a Microsoft é exclusivamente responsável pelo gerenciamento do hardware físico. Isso inclui a manutenção e operação dos servidores e outros equipamentos de infraestrutura.",
             "statements": [
                 {
                     "title": "the management of mobile devices",
@@ -221,11 +221,11 @@
                     "isCorrect": true
                 }
             ]
-          },
-          {
+        },
+        {
             "type": "multiple-YesNo",
             "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
-            "explanation" : "",
+            "explanation": "Os princípios do modelo de segurança Zero Trust incluem 'Verificar explicitamente' e 'Assumir violação', o que implica que nenhuma rede é inerentemente segura e que todas as identidades, dispositivos e serviços devem ser autenticados e autorizados de forma contínua. O modelo não assume que um firewall assegura a rede interna contra ameaças externas.",
             "statements": [
                 {
                     "title": "Verify explicitly is one of the guiding principles of Zero Trust.",
@@ -244,7 +244,7 @@
         {
             "type": "multiple-YesNo",
             "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
-            "explanation" : "",
+            "explanation": "Os princípios de privacidade da Microsoft incluem controle e transparência. Controle se refere à capacidade dos usuários de gerenciar seus dados pessoais. Transparência envolve a clareza sobre como os dados são coletados e usados. A responsabilidade compartilhada, embora importante, não é considerada um princípio de privacidade principal da Microsoft.",
             "statements": [
                 {
                     "title": "Control is a key privacy principle of Microsoft.",
