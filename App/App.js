@@ -417,7 +417,7 @@ export default class App extends AVElement {
         let newCard = document.importNode(this.body.querySelector("template#multiple-select").content,true);
         let string = this.database[index].question.split("...");
 
-        newCard.querySelector("h3").innerText = "Select the appropriate values:";
+        newCard.querySelector("h3").innerText = "Selecione os valores apropriados:";
         const statementLength = this.database[index].answers.length;
         for (let i=0; i<statementLength; i++ ) {
             let div = document.createElement("div");
