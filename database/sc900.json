@@ -3,271 +3,241 @@
         {
             "type" : "multiple-YesNo",
             "question" : "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation" : "",
             "statements" : [
                 {
                     "title" : "All Azure Active Directory (Azure AD) license editions include the same features",
-                    "isCorrect" : false,
-                    "explanation" : "No - https://azure.microsoft.com/en-us/pricing/details/active-directory/: Azure Active Directory comes in four editions—Free, Office 365 apps, Premium P1, and Premium P2."
+                    "isCorrect" : false
                 },
                 {
                     "title" : "You can manage an Azure Active Directory (Azure AD) tenant by using the Azure portal.",
-                    "isCorrect" : true,
-                    "explanation" : "Yes - https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-access- create-new-tenant You can do all of your administrative tasks using the Azure Active Directory (Azure AD) portal, including creating a new tenant for your organization."
+                    "isCorrect" : true
                 },
                 {
                     "title" : "You must deploy Azure virtual machines to host an Azure Active Directory (Azure AD) tenant.",
-                    "isCorrect" : false,
-                    "explanation" : "No - https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service"
+                    "isCorrect" : false
                 }
             ]
         },
         {
             "type" : "select",
             "question" : "Select the answer that correctly completes the sentence: ...provides best practices from Microsoft employees, partners, and customers, including tools and guidance to assist in an Azure deployment.",
+            "explanation" : "",
             "statements" : [
                 {
                     "title" : "Azure Blueprints",
-                    "isCorrect" : false,
-                    "explanation" : ""
+                    "isCorrect" : false
                 },
                 {
                     "title" : "Azure Policy",
-                    "isCorrect" : true,
-                    "explanation" : ""
+                    "isCorrect" : true
                 },
                 {
                     "title" : "The Microsoft Cloud Adoption Framework for Azure",
-                    "isCorrect" : false,
-                    "explanation" : ""
+                    "isCorrect" : false
                 },
                 {
                     "title" : "A resource lock",
-                    "isCorrect" : false,
-                    "explanation" : ""
+                    "isCorrect" : false
                 }
             ]
         },
         {
             "type": "select",
             "question": "is used to identify, hold, and export electronic information that might be used in an investigation.",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "Customer Lockbox",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Data loss prevention (DLP)",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "eDiscovery",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "A resource lock",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
         {
             "type": "select",
             "question": "You can manage Microsoft Intune by using the",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "Azure Active Directory admin center.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft 365 compliance center.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft 365 Defender portal.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft Endpoint Manager admin center.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ]
         },
         {
             "type": "select",
             "question": "Federation is used to establish ... between organizations.",
+            "explanation" : "",
             "statements": [
                 {
                 "title": "multi-factor authentication (MFA)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
                 },
                 {
                 "title": "a trust relationship",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
                 },
                 {
                 "title": "user account synchronization",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
                 },
                 {
                 "title": "a VPN connection",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
                 }
             ]
         },
         {
             "type" : "multiple-YesNo",
             "question" : "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation" : "",
             "statements" : [
                 {
                     "title" : "Applying system updates increases an organization’s secure score in Microsoft Defender for Cloud.",
-                    "isCorrect" : true,
-                    "explanation" : "Yes - System updates reduces security vulnerabilities, and provide a more stable environment for end users. Not applying updates leaves unpatched vulnerabilities and results in environments that are susceptible to attacks."
+                    "isCorrect" : true
                 },
                 {
                     "title" : "The secure score in Microsoft Defender for Cloud can evaluate resources across multiple Azure subscriptions.",
-                    "isCorrect" : true,
-                    "explanation" : "Yes"
+                    "isCorrect" : true
                 },
                 {
                     "title" : "Enabling multi-factor authentication (MFA) increases an organization’s secure score in Microsoft Defender for Cloud.",
-                    "isCorrect" : true,
-                    "explanation" : "Yes - If you only use a password to authenticate a user, it leaves an attack vector open. With MFA enabled, your accounts are more secure."
+                    "isCorrect" : true
                 }
             ]
         },
         {
             "type": "select",
             "question": "Which score measures an organization's progress in completing actions that help reduce risks associated to data protection and regulatory standards?",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "Microsoft Secure Score",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Compliance score",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Productivity Score",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Secure score in Azure Security Center",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
         {
             "type": "select",
             "question": "What do you use to provide real-time integration between Azure Sentinel and another security source?",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "Azure AD Connect",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "a Log Analytics workspace",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure Information Protection",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "a connector",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ]
         },
         {
             "type": "choose",
             "question": "Which Microsoft portal provides information about how Microsoft cloud services comply with regulatory standards, such as the International Organization for Standardization (ISO)?",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "the Microsoft Endpoint Manager admin center",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure Cost Management + Billing",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft Service Trust Portal",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "the Azure Active Directory admin center",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
         {
             "type": "select",
             "question": "Which shared responsibility in an Azure deployment is Microsoft solely responsible for managing?",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "the management of mobile devices",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "the permissions for the user data stored in Azure",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "the creation and management of user accounts",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "the management of the physical hardware",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ]
           },
           {
             "type": "multiple-YesNo",
             "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+            "explanation" : "",
             "statements": [
                 {
                     "title": "Verify explicitly is one of the guiding principles of Zero Trust.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Assume breach is one of the guiding principles of Zero Trust.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "The Zero Trust security model assumes that a firewall secures the internal network from external threats.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
@@ -278,18 +248,15 @@
             "statements": [
                 {
                     "title": "Control is a key privacy principle of Microsoft.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Transparency is a key privacy principle of Microsoft.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Shared responsibility is a key privacy principle of Microsoft.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
@@ -300,23 +267,19 @@
             "statements": [
                 {
                     "title": "Archiving",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Encrypting",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Compressing",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Deduplicating",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
@@ -327,18 +290,15 @@
             "statements": [
                 {
                     "title": "Digitally signing a document requires a private key.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Verifying the authenticity of a digitally signed document requires the public key of the signer.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Verifying the authenticity of a digitally signed document requires the private key of the signer.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
@@ -349,23 +309,19 @@
             "statements": [
               {
                 "title": "assigned permissions.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "authenticated.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "authorized.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "resolved.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -376,23 +332,19 @@
             "statements": [
               {
                 "title": "Authentication",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Authorization",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Identification",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Verification",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -403,23 +355,19 @@
             "statements": [
               {
                 "title": "Active Directory Domain Services (AD DS)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Azure Active Directory (Azure AD) business-to-business (B2B)",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Active Directory forest trusts",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Azure Active Directory business-to-consumer B2C (Azure AD B2C)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -430,28 +378,23 @@
             "statements": [
               {
                 "title": "Plan",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Manage",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Adopt",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Govern",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Define Strategy",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               }
             ]
           },
@@ -462,18 +405,15 @@
             "statements": [
               {
                 "title": "In software as a service (SaaS), applying service packs to applications is the responsibility of the organization.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "In infrastructure as a service (IaaS), managing the physical network is the responsibility of the cloud provider.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "In all Azure cloud deployment types, managing the security of information and data is the responsibility of the organization.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               }
             ]
           },
@@ -484,18 +424,15 @@
             "statements": [
               {
                 "title": "Azure AD Connect can be used to implement hybrid identity.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Hybrid identity requires the implementation of two Microsoft 365 tenants.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Authentication of hybrid identities requires the synchronization of Active Directory Domain Services (AD DS) and Azure Active Directory (Azure AD).",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               }
             ]
           },
@@ -506,23 +443,19 @@
             "statements": [
               {
                 "title": "Azure Application Insights",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Azure Network Watcher",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Log Analytics workspaces",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Security baselines for Azure",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               }
             ]
           },
@@ -533,23 +466,19 @@
             "statements": [
               {
                 "title": "Encrypting communications by using a site-to-site VPN",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Encrypting a virtual machine disk",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Accessing a website by using an encrypted HTTPS connection",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Sending an encrypted email",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -560,28 +489,23 @@
             "statements": [
               {
                 "title": "Define the perimeter by physical locations.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Use identity as the primary security boundary.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Always verify the permissions of a user explicitly.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Always assume that the user system can be breached.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Use the network as the primary security boundary.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -592,18 +516,15 @@
             "statements": [
               {
                 "title": "Corrective",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Detective",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Preventative",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               }
             ],
             "answers": [
@@ -619,23 +540,19 @@
             "statements": [
               {
                 "title": "Microsoft 365 admin center.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Microsoft 365 Compliance Center",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Microsoft 365 Defender portal.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Microsoft Support portal.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ]
           },
@@ -645,18 +562,15 @@
             "statements": [
               {
                 "title": "Enabling multi-factor authentication (MFA) increases the Microsoft Secure Score.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "A higher Microsoft Secure Score means a lower identified risk level in the Microsoft 365 tenant.",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Microsoft Secure Score measures progress in completing actions based on controls that include key regulations and standards for data protection and governance.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ],
             "explanation": "Box 1: Yes - Microsoft Secure Score has updated improvement actions to support security defaults in Azure Active Directory, which make it easier to help protect your organization with pre-configured security settings for common attacks.\n\nIf you turn on security defaults, you'll be awarded full points for the following improvement actions:\n\nEnsure all users can complete multi-factor authentication for secure access (9 points)\n\nRequire MFA for administrative roles (10 points)\n\nEnable policy to block legacy authentication (7 points)\n\nBox 2: Yes - Each improvement action is worth 10 points or less, and most are scored in a binary fashion. If you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration.\n\nNote: Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.\n\nBox 3: No- Compliance Manager gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union)."
@@ -667,23 +581,19 @@
             "statements": [
               {
                 "title": "Azure Multi-Factor Authentication (MFA)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Azure Active Directory (Azure AD) Privileged Identity Management (PIM)",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Azure Active Directory (Azure AD) Identity Protection",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Conditional access policies",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ],
             "explanation": "https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure\n\nPrivileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Here are some of the key features of Privileged Identity Management:\n\nProvide just-in-time privileged access to Azure AD and Azure resources\n\nAssign time-bound access to resources using start and end dates\n\nRequire approval to activate privileged roles\n\nEnforce multi-factor authentication to activate any role\n\nUse justification to understand why users activate\n\nGet notifications when privileged roles are activated\n\nConduct access reviews to ensure users still need roles\n\nDownload audit history for internal or external audit\n\nPrevents removal of the last active Global Administrator role assignment"
@@ -694,23 +604,19 @@
             "statements": [
               {
                 "title": "Active Directory Federation Services (AD FS)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Microsoft Sentinel",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               },
               {
                 "title": "Azure AD Connect",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Azure AD Privileged Identity Management (PIM)",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ],
             "explanation": "Azure AD Connect Sync Server. Reference: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect"
@@ -721,18 +627,15 @@
             "statements": [
               {
                 "title": "You can create custom roles in Azure Active Directory (Azure AD).",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "Global administrator is a role in Azure Active Directory (Azure AD).",
-                "isCorrect": true,
-                "explanation": ""
+                "isCorrect": true
               },
               {
                 "title": "An Azure Active Directory (Azure AD) user can be assigned only one role.",
-                "isCorrect": false,
-                "explanation": ""
+                "isCorrect": false
               }
             ],
             "explanation": "Box 1: Yes - Azure AD supports custom roles.\nBox 2: Yes - Global Administrator has access to all administrative features in Azure Active Directory.\nBox 3: No - An Azure AD user can be assigned multiple roles."
@@ -743,18 +646,15 @@
             "statements": [
                 {
                     "title": "Azure Active Directory (Azure AD) is deployed to an on-premises environment.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure Active Directory (Azure AD) is provided as part of a Microsoft 365 subscription.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Azure Active Directory (Azure AD) is an identity and access management service.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ],
             "explanation": "Box 1: No - Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service.\nBox 2: Yes - Microsoft 365 uses Azure Active Directory (Azure AD). Azure Active Directory (Azure AD) is included with your Microsoft 365 subscription.\nBox 3: Yes - Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service."
@@ -766,23 +666,19 @@
             "statements": [
                 {
                     "title": "is stored on an external device.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "is stored on a local device only.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "is stored in Azure Active Directory (Azure AD).",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "is replicated to all the devices designated by the user.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ]
         },
@@ -792,23 +688,19 @@
             "statements": [
                 {
                     "title": "to control how often users must change their passwords",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "to identify devices to which users can sign in without using multi-factor authentication (MFA)",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "to encrypt a password by using globally recognized encryption standards",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "to prevent users from using specific words in their passwords",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ],
             "explanation": "Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. With Azure AD Password Protection, default global banned password lists are automatically applied to all users in an Azure AD tenant. To support your own business and security needs, you can define entries in a custom banned password list."
@@ -819,23 +711,19 @@
             "statements": [
                 {
                     "title": "access reviews",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "managed identities",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "conditional access policies",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure AD Identity Protection",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Azure Active Directory (Azure AD) access reviews enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. There is no capability to automatically remove user access rights. The whole point of manual user-driven access reviews is that in some cases automation isn't possible."
@@ -846,18 +734,15 @@
             "statements": [
                 {
                     "title": "Conditional access policies can use the device state as a signal.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Conditional access policies apply before first-factor authentication is complete.",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Conditional access policies can trigger multi-factor authentication (MFA) if a user attempts to access a specific application.",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ],
             "explanation": "Box 1: Yes -\nBox 2: No - Conditional Access policies are enforced after first-factor authentication is completed.\nBox 3: Yes -"
@@ -868,23 +753,19 @@
             "statements": [
                 {
                     "title": "Microsoft Defender for Cloud Apps",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft Defender for Endpoint",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Microsoft Defender for Identity",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Microsoft Defender for Office 365",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
@@ -895,18 +776,15 @@
             "statements": [
                 {
                     "title": "Azure Active Directory (Azure AD)",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure AD Connect",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "on-premises Active Directory Domain Services (AD DS)",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 }
             ],
             "explanation": "Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
@@ -917,23 +795,19 @@
             "statements": [
                 {
                     "title": "Pass-through authentication",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Multi-factor authentication (MFA)",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Password writeback",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Single sign-on (SSO)",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, such as to enter a code on their cellphone or to provide a fingerprint scan."
@@ -944,23 +818,19 @@
             "statements": [
                 {
                     "title": "an extended detection and response (XDR) system",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "an identity provider",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "a management group",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "a security information and event management (SIEM) system",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Azure Active Directory (Azure AD) is a cloud-based user identity and authentication service."
@@ -971,23 +841,19 @@
             "statements": [
                 {
                     "title": "conditional access policies",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure AD Identity Protection",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "Azure AD Privileged Identity Management (PIM)",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "authentication method policies",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Azure AD Privileged Identity Management (PIM) provides just-in-time privileged access to Azure AD and Azure resources"
@@ -998,28 +864,23 @@
             "statements": [
                 {
                     "title": "text message (SMS)",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "Microsoft Authenticator app",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "email verification",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 },
                 {
                     "title": "phone call",
-                    "isCorrect": true,
-                    "explanation": ""
+                    "isCorrect": true
                 },
                 {
                     "title": "security question",
-                    "isCorrect": false,
-                    "explanation": ""
+                    "isCorrect": false
                 }
             ],
             "explanation": "Azure AD Multi-Factor Authentication supports the following verification methods:\n- Microsoft Authenticator app\n- Windows Hello for Business\n- FIDO2 security key\n- OATH hardware token (preview)\n- OATH software token\n- SMS\n- Voice call\n\nFor more information, you can refer to:\nhttps://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks\nhttps://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods"
@@ -1386,7 +1247,7 @@
         },
         {
             "type": "multiple-select",
-            "question": "... Provides Network Address Translation (NAT) services...Provides secure and seamless Remote Desktop connectivity to Azure virtual machines...Provides traffic filtering that can be applied to specific network interfaces on a virtual network",
+            "question": "Provides Network Address Translation (NAT) services...Provides secure and seamless Remote Desktop connectivity to Azure virtual machines...Provides traffic filtering that can be applied to specific network interfaces on a virtual network",
             "explanation": "Box 1: Azure Firewall - Azure Firewall provide Source Network Address Translation and Destination Network Address Translation. Box 2: Azure Bastion - Azure Bastion provides secure and seamless RDP/SSH connectivity to your virtual machines directly from the Azure portal over TLS. Box 3: Network security group (NSG) You can use an Azure network security group to filter network traffic to and from Azure resources in an Azure virtual network.",
             "statements": [
                 {
@@ -3358,8 +3219,8 @@
         },
         {
             "type": "multiple-select",
-            "question": "Use encryption to protect data at rest....Actively monitor systems to identify irregularities that might represent risks.",
-            "explanation": "",
+            "question": "Use encryption to protect data at rest...Actively monitor systems to identify irregularities that might represent risks.",
+            "explanation": "Encryption is used as a preventative measure to protect data at rest, ensuring that unauthorized parties cannot access the data. Actively monitoring systems to identify irregularities is a detective measure, which helps in identifying potential security incidents and taking timely action.",
             "statements": [
                 {
                     "title": "Corrective"
@@ -4014,30 +3875,6 @@
             ]
         },
         {
-            "type": "multiple-select",
-            "question": "Review and filter alerts....Create cases in the Case dashboard....Send a reminder of corporate policies to users.",
-            "explanation": "",
-            "statements": [
-                {
-                    "title": "Action",
-                    "isCorrect": true
-                },
-                {
-                    "title": "Investigate",
-                    "isCorrect": true
-                },
-                {
-                    "title": "Triage",
-                    "isCorrect": true
-                }
-            ],
-            "answers": [
-                "Triage",
-                "Investigate",
-                "Action"
-            ]
-        },
-        {
             "type": "choose",
             "question": "What should you use in the Microsoft 365 Defender portal to view security trends and track the protection status of identities?",
             "explanation": "",
@@ -4101,8 +3938,29 @@
                     "isCorrect": true
                 }
             ]
-        }       
-        
-        
+        },
+        {
+            "type": "select",
+            "question": "In the Microsoft Purview compliance portal, you can use ... to remove features from the navigation pane.",
+            "explanation": "No portal de conformidade Microsoft Purview, a opção 'Customize navigation' permite que você personalize e remova recursos do painel de navegação, ajudando a simplificar a interface de acordo com as necessidades da sua organização.",
+            "statements": [
+                {
+                    "title": "Compliance Manager",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Customize navigation",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Policies",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Settings",
+                    "isCorrect": false
+                }
+            ]
+        }
     ]
 }

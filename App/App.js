@@ -236,6 +236,7 @@ export default class App extends AVElement {
                 select.style.color = 'white';
             }            
         }
+        this.body.querySelector("section#explanation").innerText = this.database[questionId].explanation;
         this.currentExam.questionNumbers[index].isRevealed = true;
     }
 
@@ -248,6 +249,7 @@ export default class App extends AVElement {
     }
 
     cleanQuestionCard() {
+        this.body.querySelector("section#explanation").innerText = "";
         let main = this.body.querySelector("main");
         while (main.childElementCount > 0) {
             main.removeChild(main.firstElementChild);
@@ -325,10 +327,9 @@ export default class App extends AVElement {
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#multiple-select").content,true);
         let string = this.database[index].question.split("...");
-        string.shift();
 
         newCard.querySelector("h3").innerText = "Select the appropriate values:";
-        const statementLength = this.database[index].statements.length;
+        const statementLength = this.database[index].answers.length;
         for (let i=0; i<statementLength; i++ ) {
             let div = document.createElement("div");
             let select = document.createElement("select");
