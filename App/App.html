@@ -1,0 +1,101 @@
+
+<header>
+    <h1>Simulado Microsoft Azure</h1>
+    <nav class="header-node">
+        <section>
+            <span>Pontuação </span><span id="points">0000</span>
+        </section>
+        <section>
+            <div>
+                <span>Questão <span id="current-question">0</span> de <span id="total-questions">0</span></span>
+                
+            </div>
+           <div>
+            <progress id="exam-progress" value="0" max="100"></progress>
+           </div>            
+        </section>
+        <section>
+            <span>Tempo</span>
+            <span id="exam-time">00:00:00</span>
+        </section>
+    </nav>
+</header>
+
+<article>
+    <main>
+    </main>
+    <div class="control-buttons">
+        <button id="reveal">Revelar Resposta</button>
+        <button id="next">Próxima ></button>
+    </div>
+    
+</article>
+
+
+<template id="start-exam-template">
+    <section class="start-exam">
+        <span>database length: </span><span id="qty-questions"></span>
+        <button id="start-exam">Start Exam</button>
+    </section>
+    
+</template>
+
+
+<template id="select">
+    <section class="select">
+        <span>Id: </span><span id="question-id">0</span>
+        <h3></h3>
+        <fieldset>
+            <label></label>
+            <select>
+                
+            </select>
+        </fieldset>
+    </section>
+</template>
+
+<template id="multiple-select">
+    <section class="multiple-select">
+        <span>Id: </span><span id="question-id">0</span>
+        <h3></h3>
+        <fieldset>
+        </fieldset>
+    </section>
+</template>
+
+<template id="choose">
+    <section class="choose">
+        <span>Id: </span><span id="question-id">0</span>
+        <h3></h3>
+        <fieldset>
+            <ul>
+
+            </ul>
+        </fieldset>
+    </section>
+</template>
+
+<template id="multiple-YesNo">
+    <section class="multiple-YesNo">
+        <span>Id: </span><span id="question-id">0</span>
+        <h3></h3>
+        <fieldset>
+            <div>
+                <span>Statements</span>
+                <span>Yes</span>
+                <span>No</span>
+            </div>            
+            <ul>
+                <Li>
+                    <label></label>              
+                </Li>
+                <Li>
+                    <label></label>
+                </Li>
+                <Li>
+                    <label></label> 
+                </Li>
+            </ul>
+        </fieldset>
+    </section>
+</template>

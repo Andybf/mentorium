@@ -1,0 +1,142 @@
+
+header {
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 0.75rem;
+    font-size: 18pt;
+    text-align: center;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+nav > section {
+    width: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+nav > section:last-child {
+    align-items: flex-end;
+}
+nav > section > div {
+    width: 100%;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+}
+
+article {
+    padding: 1rem 2rem;
+}
+
+main {
+    padding: 1rem 0;
+    min-height: 400px;
+}
+
+fieldset {
+    border-radius: 6px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    row-gap: 1.0rem;
+}
+
+div.control-buttons {
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+button {
+    background-color: #555555;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button#reveal {
+    background-color: #5e5ed8;
+}
+button#next {
+    background-color: #52ba6e;
+}
+
+section.start-exam {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+
+
+section.select > fieldset > select {
+    min-width: 256px;
+}
+
+
+section.multiple-select > fieldset {
+    display: grid;
+    justify-items: start;
+    row-gap: 1.5rem;
+}
+section.multiple-select > fieldset > div{
+    display: flex;
+    column-gap: 1rem;
+}
+
+
+
+section.choose > fieldset > ul > li > input {
+    margin-right: 1rem;
+}
+
+
+section.multiple-YesNo > fieldset {
+    padding: 1rem;
+}
+
+section.multiple-YesNo > fieldset > div {
+    display: flex;
+    font-weight: bold;
+}
+
+section.multiple-YesNo > fieldset > ul > li {
+    display: flex;
+}
+
+section.multiple-YesNo > fieldset > ul > li > label, section.multiple-YesNo > fieldset > div > span:first-child{
+    width: 80%;
+    display: block;
+}
+
+section.multiple-YesNo > fieldset > ul > li > div, section.multiple-YesNo > fieldset > div > span{
+    width: 64px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
