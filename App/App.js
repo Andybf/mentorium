@@ -1,5 +1,5 @@
-import AVElement from '/modules/AVElement.js';
-import BrowserSave from "/modules/BrowserSave.js";
+import AVElement from '/simulado/modules/AVElement.js';
+import BrowserSave from "/simulado/modules/BrowserSave.js";
 
 export default class App extends AVElement {
 
