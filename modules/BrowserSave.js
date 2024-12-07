@@ -24,4 +24,14 @@ export default class BrowserSave {
         }
     }
 
+    static clearData() {
+        try {
+            if (window.localStorage.lastSave) {
+                window.localStorage.lastSave = null;
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
 }

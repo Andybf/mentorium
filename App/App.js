@@ -28,6 +28,7 @@ export default class App extends AVElement {
             let newCard = document.importNode(this.body.querySelector("template#start-exam-template").content,true);
             newCard.querySelector("button#simulated-mode").onclick = () => {this.configureSimulatedMode();this.startExam();};
             newCard.querySelector("button#infinite-mode").onclick = () => {this.configureInfiniteMode();this.startExam();};
+            newCard.querySelector("button#clear-data").onclick = () => {BrowserSave.clearData()};
             main.appendChild(newCard);
             this.body.querySelector("#qty-questions").innerText = this.database.length;
         }).catch( (error) => {
