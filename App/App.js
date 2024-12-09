@@ -114,7 +114,7 @@ export default class App extends AVElement {
                 let icon = document.createElement("div");
                 icon.style.background = this.dashboardData[i];
                 div.appendChild(icon);
-                if (icon.style.background != 'darkgrey') {
+                if (icon.style.background == 'green') {
                     this.currentExam.questionNumbers.push({
                         id : i,
                         selected : [],
