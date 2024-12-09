@@ -120,6 +120,7 @@ export default class App extends AVElement {
                         selected : [],
                         isRevealed : false
                     });
+                    this.currentExam.currentQuestion++;
                 }
                 
             }
