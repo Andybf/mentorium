@@ -31,6 +31,12 @@ export default class App extends AVElement {
             newCard.querySelector("button#clear-data").onclick = () => {BrowserSave.clearData()};
             main.appendChild(newCard);
             this.body.querySelector("#qty-questions").innerText = this.database.length;
+            this.currentExam = {
+                questionNumbers : [],
+                currentQuestion : 0,
+                points : 0,
+                finalTime : 0
+            };
         }).catch( (error) => {
             console.error(error);
         });
@@ -77,12 +83,6 @@ export default class App extends AVElement {
     }
 
     startExam() {
-        this.currentExam = {
-            questionNumbers : [],
-            currentQuestion : 0,
-            points : 0,
-            finalTime : 0
-        };
         this.body.querySelector("#current-question").innerText = 0;
         this.body.querySelector("#total-questions").innerText = this.examQuestions;
         this.body.querySelector("#exam-progress").max = this.examQuestions;
@@ -114,6 +114,14 @@ export default class App extends AVElement {
                 let icon = document.createElement("div");
                 icon.style.background = this.dashboardData[i];
                 div.appendChild(icon);
+                if (icon.style.background != 'darkgrey') {
+                    this.currentExam.questionNumbers.push({
+                        id : i,
+                        selected : [],
+                        isRevealed : false
+                    });
+                }
+                
             }
         } else {
             this.dashboardData = new Array();
