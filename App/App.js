@@ -4,9 +4,7 @@ import BrowserSave from "/simulado/modules/BrowserSave.js";
 export default class App extends AVElement {
 
     database;
-    examMode = '';
     examQuestions = 0;
-    examMaxTime = 0;
     pointsPerQuestion = 0;
     currentExam;
     intervalTime;
@@ -14,36 +12,46 @@ export default class App extends AVElement {
     
     renderedCallback() {
         this.body.querySelector("button#next").addEventListener("click", (event) => {
-            this.nextQuestion(event);
+            if (this.currentExam.isCurrentQuestionRevealed) {
+                this.prepareNextQuestion(this.currentExam.currentQuestion+1);
+                event.target.innerText = 'Verificar Questão';
+            } else {
+                this.evaluateQuestion();
+                this.revealQuestion(event);                
+                event.target.innerText = 'Próxima questão';
+            }
         });
-        this.body.querySelector("button#reveal").addEventListener("click", (event) => {
-            this.evaluateQuestion()
-            this.revealQuestion(event);
+        this.body.querySelector("button#question-map").addEventListener("click", (event) => {
+            this.toogleQuestionMap();
         });
-        this.body.querySelector("#reveal").disabled = true;
+        this.body.querySelector("section.background").addEventListener("click", (event) => {
+            this.toogleQuestionMap();
+        });
+        this.toogleQuestionMap();
+        this.body.querySelector("#question-map").disabled = true;
         this.body.querySelector("#next").disabled = true;
-        this.getDatabase().then( (resp) => {
-            this.database = JSON.parse(resp)['questions'];
-            let main = this.body.querySelector("main");
-            let newCard = document.importNode(this.body.querySelector("template#start-exam-template").content,true);
-            newCard.querySelector("button#simulated-mode").onclick = () => {this.configureSimulatedMode();this.startExam();};
-            newCard.querySelector("button#infinite-mode").onclick = () => {this.configureInfiniteMode();this.startExam();};
-            newCard.querySelector("button#clear-data").onclick = () => {BrowserSave.clearData()};
-            main.appendChild(newCard);
-            this.body.querySelector("#qty-questions").innerText = this.database.length;
-            this.currentExam = {
-                questionNumbers : [],
-                currentQuestion : 0,
-                points : 0,
-                finalTime : 0
+        
+        let main = this.body.querySelector("main");
+        let newCard = document.importNode(this.body.querySelector("template#start-exam-template").content,true);
+        for (let button of Array.from(newCard.querySelectorAll("button.start-exam"))) {
+            button.onclick = (event) => {
+                this.configureExam(event.target.value);
             };
-        }).catch( (error) => {
-            console.error(error);
-        });
+        }
+        newCard.querySelector("button#clear-data").onclick = () => {
+            BrowserSave.clearData();
+        };
+        main.appendChild(newCard);
+        this.currentExam = {
+            currentQuestion : 0,
+            isCurrentQuestionRevealed : false,
+            points : 0,
+            startTime : 0
+        };
     }
 
-    async getDatabase() {
-        const response = await fetch(`./database/sc900.json`);
+    async getDatabase(documentName) {
+        const response = await fetch(`./database/${documentName}.json`);
         if (response.status == 200 || response.statusText == 'OK') {
             return await response.text();
         } else {
@@ -51,137 +59,95 @@ export default class App extends AVElement {
         }
     }
 
-    selectNextQuestionFromDatabase() {
-        let n;
-        let repeated = false;
-        if (this.currentExam.questionNumbers.length == this.database.length) {
-            this.currentExam.questionNumbers = new Array();
-        } else {
-            do {
-                repeated = false;
-                n = Math.floor(Math.random()*this.database.length);
-                for (let qn of this.currentExam.questionNumbers) {
-                    if (n == qn) {
-                        repeated = true;
-                    }
-                }
-            } while (repeated == true);
-        }
-        return n;
-    }
-
     tickCountdownClock() {
-        let diff = new Date(this.currentExam.finalTime - new Date());
+        let diff = new Date(new Date() - this.currentExam.startTime);
         let minutes = (diff.getMinutes() < 10 ) ? "0"+diff.getMinutes() : diff.getMinutes();
         let seconds = (diff.getSeconds() < 10 ) ? "0"+diff.getSeconds() : diff.getSeconds();
         let string = `00:${minutes}:${seconds}`;
         this.body.querySelector("#exam-time").innerText = string;
-        if (diff.getMinutes() == 0 && diff.getSeconds() == 0) {
-            clearInterval(this.intervalTime);
-            this.gameover();
-        }
     }
 
-    startExam() {
-        this.body.querySelector("#current-question").innerText = 0;
-        this.body.querySelector("#total-questions").innerText = this.examQuestions;
-        this.body.querySelector("#exam-progress").max = this.examQuestions;
-        this.body.querySelector("#reveal").disabled = false;
-        this.body.querySelector("#next").disabled = false;
-        this.prepareNextQuestion();
+    createQuestionMapQuestionButton(index) {
+        let button = document.createElement("button");
+        button.innerText = index+1;
+        button.style.background = this.dashboardData[index];
+        button.value = index;
+        button.addEventListener("click", (event) => {
+            this.goToQuestion(Number(event.target.value));
+        });
+        return button;
     }
 
-    configureSimulatedMode() {
-        this.examMode = 'simulated';
-        this.examQuestions = 46;
-        this.examMaxTime = 45;
-        this.pointsPerQuestion = 1000/this.examQuestions;
-        this.currentExam.finalTime = new Date().getTime()+ (this.examMaxTime * 60 * 1000);
+    configureExam(documentName) {
+        this.body.querySelector("#points").innerText = documentName;
+        this.getDatabase(documentName).then( (resp) => {
+            this.database = JSON.parse(resp)['questions'];
+            this.examQuestions = this.database.length;
+            this.pointsPerQuestion = 1000/this.examQuestions;
+            this.currentExam.startTime = new Date().getTime();
+            let div = this.body.querySelector("#question-icons");
+            this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage();
+            if (this.dashboardData) {
+                for (let i=0; i<this.database.length; i++) {
+                    let button = this.createQuestionMapQuestionButton(i);                
+                    div.appendChild(button);
+                    if (button.style.background == 'green') {
+                        this.currentExam.currentQuestion++;
+                    }                
+                }
+            } else {
+                this.dashboardData = new Array();
+                for (let i=0; i<this.database.length; i++) {
+                    this.dashboardData[i] = 'darkgrey';
+                    let button = this.createQuestionMapQuestionButton(i);  
+                    div.appendChild(button);
+                }
+            }
+            this.body.querySelector("#current-question").innerText = 0;
+            this.body.querySelector("#total-questions").innerText = this.examQuestions;
+            this.body.querySelector("#exam-progress").max = this.examQuestions;
+            this.body.querySelector("#question-map").disabled = false;
+            this.body.querySelector("#next").disabled = false;
+            this.prepareNextQuestion(this.currentExam.currentQuestion);
+        }).catch( (error) => {
+            console.error(error);
+        });
         this.intervalTime = setInterval( () => {
             this.tickCountdownClock();
         }, 1000);
     }
 
-    configureInfiniteMode() {
-        this.examMode = 'infinite';
-        this.examQuestions = this.database.length;
-        this.examMaxTime = 0;
-        this.pointsPerQuestion = 1000/this.examQuestions;
-        let div = this.body.querySelector("#question-icons");
-        this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage();
-        if (this.dashboardData) {
-            for (let i=0; i<this.database.length; i++) {
-                let icon = document.createElement("div");
-                icon.style.background = this.dashboardData[i];
-                div.appendChild(icon);
-                if (icon.style.background == 'green') {
-                    this.currentExam.questionNumbers.push({
-                        id : i,
-                        selected : [],
-                        isRevealed : false
-                    });
-                    this.currentExam.currentQuestion++;
-                }
-                
-            }
-        } else {
-            this.dashboardData = new Array();
-            for (let i=0; i<this.database.length; i++) {
-                let icon = document.createElement("div");
-                this.dashboardData[i] = 'darkgrey'
-                icon.style.background = this.dashboardData[i];
-                div.appendChild(icon);
-            }
-        }
+    goToQuestion(index) {
+        this.prepareNextQuestion(index);
+        this.toogleQuestionMap();
     }
 
-    prepareNextQuestion() {
-        this.currentExam.questionNumbers.push({
-            id : this.selectNextQuestionFromDatabase(),
-            selected : [],
-            isRevealed : false
-        });
+    prepareNextQuestion(id) {
         this.cleanQuestionCard();
-        const index = this.currentExam.currentQuestion;
-        this.body.querySelector("#current-question").innerText = index+1;
-
-        const questionId = this.currentExam.questionNumbers[index].id;
-        const questionType = this.database[questionId]['type'];
+        this.currentExam.currentQuestion = id;
+        const currentQuestion = this.currentExam.currentQuestion;
+        const questionType = this.database[currentQuestion]['type'];
+        this.body.querySelector("#current-question").innerText = currentQuestion+1;
         if (questionType === 'select') {  
-            this.fillQuestionSelect(questionId);
+            this.fillQuestionSelect(currentQuestion);
         } else
         if (questionType === 'choose') {
-            this.fillQuestionChoose(questionId);
+            this.fillQuestionChoose(currentQuestion);
         } else
         if (questionType === 'multiple-YesNo') {
-            this.fillQuestionMultipleYesNo(questionId);
+            this.fillQuestionMultipleYesNo(currentQuestion);
         } else
         if (questionType === 'multiple-select') {
-            this.fillQuestionMultipleSelect(questionId);
+            this.fillQuestionMultipleSelect(currentQuestion);
         }
-        this.currentExam.currentQuestion++;
         this.body.querySelector("#exam-progress").value = this.currentExam.currentQuestion;
-        this.body.querySelector("#question-id").innerText = this.currentExam.questionNumbers[index].id;
-        
-    }
-
-    nextQuestion() {
-        this.evaluateQuestion();
-        if (this.currentExam.currentQuestion >= this.examQuestions) {
-            this.gameover();
-        } else {
-            this.prepareNextQuestion();
-        }         
+        this.currentExam.isCurrentQuestionRevealed = false;
     }
 
     evaluateQuestion() {
         const index = this.currentExam.currentQuestion-1;
-        const questionId = this.currentExam.questionNumbers[index].id;
+        const questionId = this.currentExam.currentQuestion;
         const questionType = this.database[questionId]['type'];
-
-        if (this.currentExam.questionNumbers[index].isRevealed) {
-            return;
-        }
 
         if (questionType === 'select') {
             if (this.body.querySelector("select").value == 'true') {
@@ -206,7 +172,6 @@ export default class App extends AVElement {
                     points++;
                 }
             }
-
             if (points >= trueStatementsCount) {
                 this.updateDashboard(questionId, 'pass');
             } else
@@ -252,44 +217,33 @@ export default class App extends AVElement {
             } else {
                 this.updateDashboard(questionId, 'failed');
             }
-        }
-        let points = Math.round(this.currentExam.points);
-        if (points < 100) {
-            points = "000"+points;
-        } else
-        if (points < 100) {
-            points = "00"+points;
-        } else
-        if (points < 1000) {
-            points = "0"+points;
-        }
-        this.body.querySelector("#points").innerText = points;
+        } 
+    }
 
-        
+    toogleQuestionMap() {
+        let modal = this.body.querySelector("#modal-question-map").style;
+        modal.display = (modal.display == '') ? 'none' : '';
     }
 
     updateDashboard(questionId, status) {
-        if (this.examMode = 'infinite') {
-            let div = Array.from(this.body.querySelector("#question-icons").children);
-            if (status == 'pass') {
-                this.dashboardData[questionId] = 'green'
-                div[questionId].style.background = this.dashboardData[questionId];
-            } else 
-            if (status == 'warning') {
-                this.dashboardData[questionId] = 'yellow'
-                div[questionId].style.background = this.dashboardData[questionId];
-            } else
-            if (status == 'failed') {
-                this.dashboardData[questionId] = 'red'
-                div[questionId].style.background = this.dashboardData[questionId];
-            }
-            BrowserSave.saveOnBrowserStorage(this.dashboardData);
+        let div = Array.from(this.body.querySelector("#question-icons").children);
+        if (status == 'pass') {
+            this.dashboardData[questionId] = 'green'
+            div[questionId].style.background = this.dashboardData[questionId];
+        } else 
+        if (status == 'warning') {
+            this.dashboardData[questionId] = 'yellow'
+            div[questionId].style.background = this.dashboardData[questionId];
+        } else
+        if (status == 'failed') {
+            this.dashboardData[questionId] = 'red'
+            div[questionId].style.background = this.dashboardData[questionId];
         }
+        BrowserSave.saveOnBrowserStorage(this.dashboardData);
     }
 
     revealQuestion() {
-        const index = this.currentExam.currentQuestion-1;
-        const questionId = this.currentExam.questionNumbers[index].id;
+        const questionId = this.currentExam.currentQuestion;
         const questionType = this.database[questionId]['type'];
         if (questionType === 'select') {
             let select = this.body.querySelector("select");
@@ -335,15 +289,7 @@ export default class App extends AVElement {
             }            
         }
         this.body.querySelector("section#explanation").innerText = this.database[questionId].explanation;
-        this.currentExam.questionNumbers[index].isRevealed = true;
-    }
-
-    gameover() {
-        this.cleanQuestionCard();
-        this.body.querySelector("button#next").disabled = true;
-        this.body.querySelector("button#reveal").disabled = true;
-        let main = this.body.querySelector("main");
-        main.innerText = "Game Over";
+        this.currentExam.isCurrentQuestionRevealed = true;
     }
 
     cleanQuestionCard() {

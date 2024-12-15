@@ -3,7 +3,7 @@
     <h1>Simulado Microsoft Azure</h1>
     <nav class="header-node">
         <section>
-            <span>Pontuação </span><span id="points">0000</span>
+            <span>Certificação: </span><span id="points"></span>
         </section>
         <section>
             <div>
@@ -29,19 +29,24 @@
     <section id="explanation"></section>
 </article>
 <div class="control-buttons">
-    <div id="question-icons">
+    <button id="question-map">Mapa de questões</button>
+    <button id="next">Verificar questão</button>
+</div>
+<div id="modal-question-map">
+    <section class="background"></section>
+    <section class="card">
+        <h3>Mapa de questões</h3>
+        <div id="question-icons">
 
-    </div>
-    <button id="reveal">Revelar Resposta</button>
-    <button id="next">Próxima ></button>
+        </div>
+    </section>    
 </div>
 
 
 <template id="start-exam-template">
     <section class="start-exam">
-        <span>database length: <span id="qty-questions"></span></span>
-        <button id="simulated-mode">Modo Simulador</button>
-        <button id="infinite-mode">Modo Infinito</button>
+        <button class="start-exam" value="sc900">Iniciar SC-900</button>
+        <button class="start-exam" value="ia900">Iniciar IA-900</button>
         <button id="clear-data">Limpar Dados</button>
     </section>
     
@@ -50,7 +55,6 @@
 
 <template id="select">
     <section class="select">
-        <span>Id: </span><span id="question-id">0</span>
         <h3></h3>
         <fieldset>
             <label></label>
@@ -63,7 +67,6 @@
 
 <template id="multiple-select">
     <section class="multiple-select">
-        <span>Id: </span><span id="question-id">0</span>
         <h3></h3>
         <fieldset>
         </fieldset>
@@ -72,7 +75,6 @@
 
 <template id="choose">
     <section class="choose">
-        <span>Id: </span><span id="question-id">0</span>
         <h3></h3>
         <fieldset>
             <ul>
@@ -84,7 +86,6 @@
 
 <template id="multiple-YesNo">
     <section class="multiple-YesNo">
-        <span>Id: </span><span id="question-id">0</span>
         <h3></h3>
         <fieldset>
             <div>

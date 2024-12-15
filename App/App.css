@@ -64,18 +64,62 @@ div.control-buttons {
     padding-bottom: 2rem;
 }
 
-div#question-icons {
-    height: inherit;
-    width: 256px;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1px;
-    column-gap: 1px;
-
+div#modal-question-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
 }
-div#question-icons > div {
-    width: 8px;
-    height: 8px;
+
+div#modal-question-map > section.background {
+    background-color: #00000099;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "a";
+}
+div#modal-question-map > section.card {
+    position: absolute;
+    width: 50vw;
+    left: calc(50vw - 25vw);
+    height: 60vh;
+    top: calc(50vh - 30vh);
+    background: white;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    overflow: auto;
+    text-align: center;
+}
+@media (max-width: 640px) {
+    div#modal-question-map > section.card {
+        width: 90vw;
+        left: calc(50vw - 45vw);
+    }
+}
+
+div#question-icons {
+    display: flex;
+    row-gap: 4px;
+    column-gap: 4px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+div#question-icons > button:hover {
+    transform: scale(1.25);
+    box-shadow: 0px 0px 6px 1px black;
+}
+div#question-icons > button {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -90,7 +134,7 @@ button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-button#reveal {
+button#question-map {
     background-color: #5e5ed8;
 }
 button#next {
