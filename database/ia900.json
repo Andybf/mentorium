@@ -1,3 +1,734 @@
 {
-    "questions" : []
+    "questions" : [
+        {
+            "type": "choose",
+            "question": "Uma empresa emprega uma equipe de agentes de atendimento ao cliente para fornecer suporte telefônico e por e-mail aos clientes. A empresa desenvolve um bot de chat web para fornecer respostas automatizadas a perguntas comuns dos clientes. Qual benefício comercial a empresa deve esperar como resultado da criação da solução de bot de chat web?",
+            "explanation": "A criação de um bot de chat web reduz a carga de trabalho dos agentes de atendimento ao cliente ao automatizar as respostas a perguntas comuns, permitindo que os agentes se concentrem em questões mais complexas.",
+            "statements": [
+                {"title": "aumento de vendas", "isCorrect": false},
+                {"title": "redução da carga de trabalho para os agentes de atendimento ao cliente", "isCorrect": true},
+                {"title": "melhoria da confiabilidade do produto", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Como você deve dividir os dados para treinamento e avaliação em um processo de machine learning?",
+            "explanation": "A divisão aleatória dos dados em linhas para treinamento e linhas para avaliação ajuda a garantir que o modelo tenha uma visão equilibrada e representativa dos dados durante o treinamento e a avaliação.",
+            "statements": [
+                {"title": "Usar características para treinamento e rótulos para avaliação.", "isCorrect": false},
+                {"title": "Dividir aleatoriamente os dados em linhas para treinamento e linhas para avaliação.", "isCorrect": true},
+                {"title": "Usar rótulos para treinamento e características para avaliação.", "isCorrect": false},
+                {"title": "Dividir aleatoriamente os dados em colunas para treinamento e colunas para avaliação.", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você constrói um modelo de machine learning usando a interface do usuário (UI) de aprendizado de máquina automatizado. Você precisa garantir que o modelo atenda ao princípio de transparência da Microsoft para IA responsável. O que você deve fazer?",
+            "explanation": "Habilitar a explicação do melhor modelo garante que os usuários possam entender como o modelo toma decisões, alinhando-se com o princípio de transparência da Microsoft para IA responsável.",
+            "statements": [
+                {"title": "Definir o tipo de validação como Automático.", "isCorrect": false},
+                {"title": "Habilitar Explicar o melhor modelo.", "isCorrect": true},
+                {"title": "Definir a métrica primária para precisão.", "isCorrect": false},
+                {"title": "Definir o número máximo de iterações simultâneas como 0.", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Detectar desvios de padrões esperados para identificar algo fora do normal é o objetivo da detecção de anomalias.",
+            "statements": [
+                {
+                    "title": "Prever preços de habitação com base em dados históricos é um exemplo de detecção de anomalias.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Identificar logins suspeitos procurando desvios dos padrões usuais é um exemplo de detecção de anomalias.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Prever se um paciente desenvolverá diabetes com base no histórico médico do paciente é um exemplo de detecção de anomalias.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Para completar a frase, selecione a opção apropriada na área de resposta. A manipulação de valores incomuns ou ausentes fornecidos a um sistema de IA é uma consideração para o princípio da Microsoft __________ para IA responsável.",
+            "explanation": "A manipulação de valores incomuns ou ausentes é uma consideração para o princípio de confiabilidade e segurança, pois é importante garantir que o sistema de IA funcione de maneira segura e confiável em todas as situações.",
+            "statements": [
+                {"title": "inclusividade", "isCorrect": false},
+                {"title": "privacidade e segurança", "isCorrect": false},
+                {"title": "confiabilidade e segurança", "isCorrect": true},
+                {"title": "transparência", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Assegurar que os sistemas de IA operem conforme originalmente projetados, respondam a condições não antecipadas e resistam a manipulações prejudiciais...Implementar processos para garantir que as decisões tomadas pelos sistemas de IA possam ser substituídas por humanos...Fornecer aos consumidores informações e controles sobre a coleta, uso e armazenamento de seus dados.",
+            "explanation": "Os princípios orientadores da Microsoft para IA responsável são projetados para garantir que os sistemas de IA sejam confiáveis, seguros, inclusivos, justos e mantenham a privacidade e segurança dos dados dos consumidores.",
+            "statements": [
+                {"title": "Responsabilidade"},
+                {"title": "Justiça"},
+                {"title": "Inclusão"},
+                {"title": "Privacidade e segurança"},
+                {"title": "Confiabilidade e segurança"}
+            ],
+            "answers": [
+                "Privacidade e segurança",
+                "Responsabilidade",
+                "Privacidade e segurança"
+            ]
+        },             
+        {
+            "type": "choose",
+            "question": "Você está projetando um sistema de IA que capacita a todos, incluindo pessoas com deficiências auditivas, visuais e outras. Este é um exemplo de qual princípio orientador da Microsoft para IA responsável?",
+            "explanation": "O princípio da inclusividade da Microsoft para IA responsável garante que a tecnologia seja acessível e útil para todas as pessoas, independentemente de suas habilidades ou deficiências.",
+            "statements": [
+                {"title": "justiça", "isCorrect": false},
+                {"title": "inclusividade", "isCorrect": true},
+                {"title": "confiabilidade e segurança", "isCorrect": false},
+                {"title": "responsabilidade", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Garanta que os sistemas de IA operem conforme foram originalmente projetados, respondam a condições inesperadas e resistam a manipulações prejudiciais. ... Implementação de processos para garantir que as decisões tomadas pelos sistemas de IA possam ser substituídas por humanos. ... Fornecer aos consumidores informações e controles sobre a coleta, uso e armazenamento de seus dados.",
+            "explanation": "Os diferentes princípios orientadores da Microsoft para IA responsável são aplicados para garantir a operação segura, justa e inclusiva dos sistemas de IA.",
+            "statements": [
+                {
+                    "title": "Responsabilidade"
+                },
+                {
+                    "title": "Justiça"
+                },
+                {
+                    "title": "Inclusividade"
+                },
+                {
+                    "title": "Privacidade e segurança"
+                },
+                {
+                    "title": "Confiabilidade e segurança"
+                }
+            ],
+            "answers": [
+                "Confiabilidade e segurança",
+                "Responsabilidade",
+                "Privacidade e segurança"
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Ao desenvolver um sistema de IA para carros autônomos, o princípio de IA responsável da Microsoft __________ deve ser aplicado para garantir a operação consistente do sistema durante circunstâncias inesperadas.",
+            "explanation": "O princípio da confiabilidade e segurança é crucial para garantir que os sistemas de IA operem conforme projetados e resistam a manipulações prejudiciais, especialmente em circunstâncias inesperadas.",
+            "statements": [
+                {"title": "inclusividade", "isCorrect": false},
+                {"title": "responsabilidade", "isCorrect": false},
+                {"title": "confiabilidade e segurança", "isCorrect": true},
+                {"title": "justiça", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual tarefa você deve incluir para garantir que o serviço atenda ao princípio de transparência da Microsoft para IA responsável?",
+            "explanation": "Fornecer documentação para ajudar os desenvolvedores a depurar o código é importante para garantir a transparência no desenvolvimento e manutenção do serviço de IA.",
+            "statements": [
+                {"title": "Garantir que todas as imagens tenham um texto associado que possa ser lido por um leitor de tela.", "isCorrect": false},
+                {"title": "Habilitar a autoescalabilidade para garantir que um serviço escale com base na demanda.", "isCorrect": false},
+                {"title": "Fornecer documentação para ajudar os desenvolvedores a depurar o código.", "isCorrect": true},
+                {"title": "Garantir que um conjunto de dados de treinamento seja representativo da população.", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Identifica letras manuscritas...Prever o sentimento de uma postagem em mídia social...Identifique um pagamento de cartão de crédito fraudulento...Prever as vendas de brinquedos do próximo mês.",
+            "explanation": "Diferentes tipos de cargas de trabalho de IA são aplicados a cenários específicos, aproveitando suas capacidades únicas para resolver problemas variados.",
+            "statements": [
+                {
+                    "title": "Detecção de anomalias"
+                },
+                {
+                    "title": "Visão computacional"
+                },
+                {
+                    "title": "Aprendizado de máquina (Regressão)"
+                },
+                {
+                    "title": "Processamento de linguagem natural"
+                }
+            ],
+            "answers": [
+                "Visão computacional",
+                "Processamento de linguagem natural",
+                "Detecção de anomalias",
+                "Aprendizado de máquina (Regressão)"
+            ]
+        },
+        {
+            "type": "select",
+            "question": "usado para extrair datas, quantidades e locais de textos.",
+            "explanation": "Named Entity Recognition (NER) é uma técnica usada em processamento de linguagem natural para extrair entidades específicas, como datas, quantidades e locais, de textos.",
+            "statements": [
+                {"title": "Extração de frases-chave", "isCorrect": false},
+                {"title": "Detecção de linguagem", "isCorrect": false},
+                {"title": "Reconhecimento de Entidades Nomeadas (NER)", "isCorrect": true},
+                {"title": "Análise de Sentimento", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são três princípios orientadores da Microsoft para IA responsável? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "Os princípios orientadores da Microsoft para IA responsável incluem inclusividade, justiça e confiabilidade e segurança, pois garantem que a tecnologia seja acessível, justa e segura.",
+            "statements": [
+                {"title": "conhecimento", "isCorrect": false},
+                {"title": "decisão", "isCorrect": false},
+                {"title": "inclusividade", "isCorrect": true},
+                {"title": "justiça", "isCorrect": true},
+                {"title": "opinião", "isCorrect": false},
+                {"title": "confiabilidade e segurança", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Retornar uma caixa delimitadora que indica a localização de um veículo em uma imagem é um exemplo de ...",
+            "explanation": "A detecção de objetos envolve a identificação e localização de objetos específicos em uma imagem, retornando uma caixa delimitadora que indica a localização do objeto.",
+            "statements": [
+                {"title": "classificação de imagens.", "isCorrect": false},
+                {"title": "detecção de objetos.", "isCorrect": true},
+                {"title": "reconhecimento óptico de caracteres (OCR).", "isCorrect": false},
+                {"title": "segmentação semântica.", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "... é usado para gerar recursos adicionais.",
+            "explanation": "Feature engineering é o processo de criar novos recursos a partir dos dados existentes para melhorar o desempenho dos modelos de aprendizado de máquina.",
+            "statements": [
+                {"title": "Engenharia de recursos", "isCorrect": true},
+                {"title": "Seleção de recursos", "isCorrect": false},
+                {"title": "Avaliação de modelos", "isCorrect": false},
+                {"title": "Treinamento de modelos", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você organiza um evento de caridade que envolve postar fotos de pessoas usando óculos de sol no Twitter. Você precisa garantir que apenas retuíte fotos que atendam aos seguintes requisitos: Inclua um ou mais rostos. Contenha pelo menos uma pessoa usando óculos de sol. O que você deve usar para analisar as imagens?",
+            "explanation": "A operação Detect do serviço Face permite identificar rostos em imagens e detectar se as pessoas estão usando acessórios, como óculos de sol.",
+            "statements": [
+                {"title": "a operação Verify no serviço Face", "isCorrect": false},
+                {"title": "a operação Detect no serviço Face", "isCorrect": true},
+                {"title": "a operação Describe Image no serviço Computer Vision", "isCorrect": false},
+                {"title": "a operação Analyze Image no serviço Computer Vision", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quando você projeta um sistema de IA para avaliar se os empréstimos devem ser aprovados, os fatores usados para tomar a decisão devem ser explicáveis. Este é um exemplo de qual princípio orientador da Microsoft para IA responsável?",
+            "explanation": "O princípio da transparência da Microsoft para IA responsável garante que as decisões tomadas pelos sistemas de IA possam ser compreendidas e explicadas, promovendo confiança e responsabilidade.",
+            "statements": [
+                {"title": "transparência", "isCorrect": true},
+                {"title": "inclusividade", "isCorrect": false},
+                {"title": "justiça", "isCorrect": false},
+                {"title": "privacidade e segurança", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Os princípios orientadores da Microsoft para IA responsável garantem que a tecnologia seja transparente, confiável e inclusiva.",
+            "statements": [
+                {
+                    "title": "Fornecer uma explicação do resultado de uma aplicação de empréstimo de crédito é um exemplo do princípio da transparência da Microsoft para IA responsável.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um bot de triagem que prioriza as reivindicações de seguro com base em lesões é um exemplo do princípio de confiabilidade e segurança da Microsoft para IA responsável.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Uma solução de IA oferecida a preços diferentes para diferentes territórios de vendas é um exemplo do princípio de inclusividade da Microsoft para IA responsável.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "O sistema não deve discriminar com base em gênero, raça...Os dados pessoais devem ser visíveis apenas para aprovar...Processos de tomada de decisão automatizados devem ser registrados para que usuários aprovados possam identificar por que uma decisão foi tomada",
+            "explanation": "Os diferentes princípios orientadores da Microsoft para IA responsável são aplicados para garantir a operação segura, justa e inclusiva dos sistemas de IA.",
+            "statements": [
+                {
+                    "title": "Justiça"
+                },
+                {
+                    "title": "Privacidade e segurança"
+                },
+                {
+                    "title": "Confiabilidade e segurança"
+                },
+                {
+                    "title": "Transparência"
+                }
+            ],
+            "answers": [
+                "Justiça",
+                "Privacidade e segurança",
+                "Transparência"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Construir um aplicativo baseado em IA e garantir que o aplicativo utilize os princípios para IA responsável. Quais dois princípios devem ser seguidos?",
+            "explanation": "Para garantir a responsabilidade e a confiabilidade de um aplicativo baseado em IA, é essencial implementar um processo de validação do modelo de IA e estabelecer um comitê de governança de risco.",
+            "statements": [
+                {"title": "Implementar uma metodologia de desenvolvimento de software ágil", "isCorrect": false},
+                {"title": "Implementar um processo de validação do modelo de IA como parte do processo de revisão de software", "isCorrect": true},
+                {"title": "Estabelecer um comitê de governança de risco que inclua membros da equipe jurídica, membros da equipe de gerenciamento de risco e um oficial de privacidade", "isCorrect": true},
+                {"title": "Impedir a divulgação do uso de algoritmos baseados em IA para tomada de decisão automatizada", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "De acordo com o princípio ... da Microsoft para IA responsável, os sistemas de IA NÃO devem refletir vieses dos conjuntos de dados que são usados para treinar os sistemas.",
+            "explanation": "O princípio da justiça (fairness) da Microsoft para IA responsável garante que os sistemas de IA sejam projetados e treinados para evitar vieses e discriminação, promovendo decisões justas e imparciais.",
+            "statements": [
+                {"title": "responsabilidade (accountability)", "isCorrect": false},
+                {"title": "justiça (fairness)", "isCorrect": true},
+                {"title": "inclusividade (inclusiveness)", "isCorrect": false},
+                {"title": "transparência (transparency)", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Um chat automatizado para responder perguntas sobre reembolsos e trocas...Determinar se uma foto contém uma pessoa...Determinar se uma revisão é positiva ou negativa",
+            "explanation": "Os diferentes tipos de cargas de trabalho de IA são mais eficazes quando aplicados a cenários específicos, com base em suas capacidades e funcionalidades únicas.",
+            "statements": [
+                {
+                    "title": "Detecção de anomalias"
+                },
+                {
+                    "title": "Visão computacional"
+                },
+                {
+                    "title": "Mineração de conhecimento"
+                },
+                {
+                    "title": "Processamento de linguagem natural"
+                }
+            ],
+            "answers": [
+                "Mineração de conhecimentos",
+                "Visão computacional",
+                "Processamento de linguagem natural"
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Examinar os valores de uma matriz de confusão...Dividir uma data em campos de mês, dia e ano...Escolher temperatura e pressão para treinar um modelo de clima",
+            "explanation": "Os diferentes tipos de aprendizado de máquina são eficazes quando aplicados a cenários específicos com base em suas capacidades e funcionalidades únicas.",
+            "statements": [
+                {
+                    "title": "Engenharia de recursos"
+                },
+                {
+                    "title": "Seleção de recursos"
+                },
+                {
+                    "title": "Implantação de modelo"
+                },
+                {
+                    "title": "Avaliação de modelo"
+                },
+                {
+                    "title": "Treinamento de modelo"
+                }
+            ],
+            "answers": [
+                "Engenharia de recursos",
+                "Seleção de recursos",
+                "Avaliação de modelo"
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Valores de dados que influenciam a previsão de um modelo são chamados de...",
+            "explanation": "Os 'features' (características) são os valores de dados usados em modelos de aprendizado de máquina para fazer previsões.",
+            "statements": [
+                {"title": "variáveis dependentes", "isCorrect": false},
+                {"title": "características", "isCorrect": true},
+                {"title": "identificadores", "isCorrect": false},
+                {"title": "rótulos", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual tipo de aprendizado de máquina deve ser usado para prever o número de cartões-presente que serão vendidos no próximo mês?",
+            "explanation": "A regressão é usada para prever valores contínuos, como a quantidade de vendas futuras, com base em dados históricos.",
+            "statements": [
+                {"title": "classificação", "isCorrect": false},
+                {"title": "regressão", "isCorrect": true},
+                {"title": "agrupamento", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem um conjunto de dados que contém informações sobre viagens de táxi ocorridas durante um determinado período. Você precisa treinar um modelo para prever a tarifa de uma viagem de táxi. O que você deve usar como característica?",
+            "explanation": "A distância da viagem é uma característica relevante para prever a tarifa de uma viagem de táxi, pois geralmente existe uma correlação direta entre a distância e o valor da tarifa.",
+            "statements": [
+                {"title": "o número de viagens de táxi no conjunto de dados", "isCorrect": false},
+                {"title": "a distância da viagem de viagens de táxi individuais", "isCorrect": true},
+                {"title": "a tarifa de viagens de táxi individuais", "isCorrect": false},
+                {"title": "o ID da viagem de viagens de táxi individuais", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual tipo de aprendizado de máquina deve ser usado para prever o nível do mar em metros para os próximos 10 anos?",
+            "explanation": "A regressão é usada para prever valores contínuos, como o nível do mar, com base em dados históricos e tendências.",
+            "statements": [
+                {"title": "classificação", "isCorrect": false},
+                {"title": "regressão", "isCorrect": true},
+                {"title": "agrupamento", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Automatizar tarefas demoradas e iterativas do desenvolvimento de modelos de aprendizado de máquina economiza tempo e melhora a eficiência.",
+            "statements": [
+                {
+                    "title": "A automação de aprendizado de máquina é o processo de automatizar as tarefas demoradas e iterativas do desenvolvimento de modelos de aprendizado de máquina.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A automação de aprendizado de máquina pode automaticamente inferir os dados de treinamento a partir do caso de uso fornecido.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "A automação de aprendizado de máquina funciona executando várias iterações de treinamento que são pontuadas e classificadas pelas métricas que você especificar.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A automação de aprendizado de máquina permite que você especifique um conjunto de dados e entenderá automaticamente qual rótulo prever.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Um sistema bancário que prevê se um empréstimo será pago é um exemplo de que tipo de aprendizado de máquina?",
+            "explanation": "A classificação é usada para prever categorias ou rótulos, como prever se um empréstimo será pago ou não.",
+            "statements": [
+                {"title": "classificação", "isCorrect": true},
+                {"title": "regressão", "isCorrect": false},
+                {"title": "agrupamento", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Automatizar tarefas demoradas e iterativas do desenvolvimento de modelos de aprendizado de máquina economiza tempo e melhora a eficiência.",
+            "statements": [
+                {
+                    "title": "A rotulagem é o processo de marcar dados de treinamento com valores conhecidos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você deve avaliar um modelo usando os mesmos dados usados para treinar o modelo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Precisão é sempre a métrica principal usada para medir o desempenho de um modelo.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual serviço você deve usar para extrair automaticamente texto, pares chave/valor e dados de tabelas de documentos digitalizados?",
+            "explanation": "O Form Recognizer é um serviço que permite extrair automaticamente texto, pares chave/valor e dados de tabelas de documentos digitalizados.",
+            "statements": [
+                {"title": "Form Recognizer", "isCorrect": true},
+                {"title": "Text Analytics", "isCorrect": false},
+                {"title": "Language Understanding", "isCorrect": false},
+                {"title": "Custom Vision", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "A habilidade de extrair subtotais e totais de um recibo é uma capacidade do serviço ___",
+            "explanation": "O Form Recognizer é um serviço que permite extrair automaticamente subtotais e totais de recibos, facilitando a análise e processamento de dados financeiros.",
+            "statements": [
+                {"title": "Custom Vision", "isCorrect": false},
+                {"title": "Form Recognizer", "isCorrect": true},
+                {"title": "Ink Recognizer", "isCorrect": false},
+                {"title": "Text Analytics", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está usando o Azure Machine Learning designer para publicar um pipeline de inferência. Quais dois parâmetros você deve usar para acessar o serviço web? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "Ao publicar um pipeline de inferência no Azure Machine Learning, os parâmetros REST endpoint e authentication key são necessários para acessar o serviço web, pois garantem a conexão segura e a comunicação com o modelo.",
+            "statements": [
+                {"title": "o nome do modelo", "isCorrect": false},
+                {"title": "o endpoint de treinamento", "isCorrect": false},
+                {"title": "a chave de autenticação", "isCorrect": true},
+                {"title": "o endpoint REST", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "No Azure Machine Learning designer, para implantar um pipeline de inferência em tempo real como serviço para outros consumirem, você deve implantar o modelo em",
+            "explanation": "Para implantar um pipeline de inferência em tempo real com Azure Machine Learning designer, você deve usar o Azure Kubernetes Service (AKS) para garantir escalabilidade e confiabilidade.",
+            "statements": [
+                {"title": "um serviço web local", "isCorrect": false},
+                {"title": "Azure Container Instances", "isCorrect": false},
+                {"title": "Azure Kubernetes Service (AKS)", "isCorrect": true},
+                {"title": "Azure Machine Learning compute", "isCorrect": false}
+            ]
+        },        
+        {
+            "type": "select",
+            "question": "Prever quantas horas extras um entregador trabalhará com base no número de pedidos recebidos é um exemplo de...",
+            "explanation": "A regressão é usada para prever valores contínuos, como horas extras, com base em variáveis independentes, como o número de pedidos recebidos.",
+            "statements": [
+                {"title": "classificação", "isCorrect": false},
+                {"title": "agrupamento", "isCorrect": false},
+                {"title": "regressão", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "O Azure Machine Learning designer oferece uma interface visual intuitiva e funcionalidades que permitem salvar progresso como rascunho, porém não suporta funções personalizadas em JavaScript.",
+            "statements": [
+                {
+                    "title": "Azure Machine Learning designer fornece uma tela visual de arrastar e soltar para construir, testar e implantar modelos de aprendizado de máquina.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Azure Machine Learning designer permite que você salve seu progresso como um rascunho de pipeline.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Azure Machine Learning designer permite incluir funções personalizadas em JavaScript.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "O Azure Machine Learning designer permite criar modelos de aprendizado de máquina...",
+            "explanation": "Azure Machine Learning designer oferece uma interface de arrastar e soltar para adicionar e conectar módulos, facilitando a criação de modelos de aprendizado de máquina.",
+            "statements": [
+                {"title": "adicionando e conectando módulos em uma tela visual.", "isCorrect": true},
+                {"title": "realizando automaticamente tarefas comuns de preparação de dados.", "isCorrect": false},
+                {"title": "selecionando automaticamente um algoritmo para construir o modelo mais preciso.", "isCorrect": false},
+                {"title": "utilizando uma experiência de notebook com prioridade para código.", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Automated machine learning (AutoML) é projetado para simplificar o processo de desenvolvimento de modelos de aprendizado de máquina e pode integrar scripts personalizados, implementações automáticas e conexões visuais de dados e módulos.",
+            "statements": [
+                {
+                    "title": "Automated machine learning fornece a capacidade de incluir scripts Python personalizados em um pipeline de treinamento.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Automated machine learning implementa soluções de aprendizado de máquina sem a necessidade de experiência em programação.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Automated machine learning fornece a capacidade de conectar visualmente conjuntos de dados e módulos em um canvas interativo.",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Um projeto de pesquisa médica usa um grande conjunto de dados anônimos de imagens de escaneamento cerebral que são categorizadas em tipos predefinidos de hemorragia cerebral. Você precisa usar aprendizado de máquina para apoiar a detecção precoce dos diferentes tipos de hemorragia cerebral nas imagens antes que as imagens sejam revisadas por uma pessoa. Este é um exemplo de qual tipo de aprendizado de máquina?",
+            "explanation": "A classificação é usada para categorizar os dados em classes predefinidas, como diferentes tipos de hemorragia cerebral.",
+            "statements": [
+                {"title": "agrupamento", "isCorrect": false},
+                {"title": "regressão", "isCorrect": false},
+                {"title": "classificação", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Por que deve-se dividir aleatoriamente as linhas em subconjuntos separados ao treinar um modelo?",
+            "explanation": "Testar o modelo usando dados que não foram usados para treiná-lo permite avaliar a performance do modelo de maneira justa e evitar overfitting.",
+            "statements": [
+                {"title": "treinar o modelo duas vezes para atingir melhor precisão", "isCorrect": false},
+                {"title": "treinar múltiplos modelos simultaneamente para atingir melhor desempenho", "isCorrect": false},
+                {"title": "testar o modelo usando dados que não foram usados para treiná-lo", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais duas tarefas requerem um workspace corporativo no Azure Machine Learning?",
+            "explanation": "Um workspace corporativo oferece suporte à execução de experimentos de machine learning com uma interface gráfica de usuário (GUI) e à definição e execução de experimentos de machine learning no Azure Machine Learning designer.",
+            "statements": [
+                {"title": "Usar uma interface gráfica de usuário (GUI) para executar experimentos de machine learning automatizados.", "isCorrect": true},
+                {"title": "Criar uma instância de computação para usar como estação de trabalho.", "isCorrect": false},
+                {"title": "Usar uma interface gráfica de usuário (GUI) para definir e executar experimentos de machine learning no Azure Machine Learning designer.", "isCorrect": true},
+                {"title": "Criar um conjunto de dados a partir de um arquivo CSV (comma-separated value).", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está construindo uma ferramenta que processará imagens de lojas de varejo e identificará os produtos dos concorrentes. A solução usará um modelo personalizado. Qual serviço do Azure Cognitive Services você deve usar?",
+            "explanation": "O Custom Vision permite treinar modelos personalizados para identificar produtos específicos em imagens, o que é ideal para identificar produtos de concorrentes em lojas de varejo.",
+            "statements": [
+                {"title": "Custom Vision", "isCorrect": true},
+                {"title": "Form Recognizer", "isCorrect": false},
+                {"title": "Face", "isCorrect": false},
+                {"title": "Computer Vision", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Clustering é o processo de agrupar objetos baseados nas suas características similares. É usado em várias aplicações, incluindo a organização de documentos, agrupar pacientes com sintomas similares, etc.",
+            "statements": [
+                {
+                    "title": "Organizar documentos em grupos com base nas similaridades do texto contido nos documentos é um exemplo de clustering.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Agrupar pacientes semelhantes com base nos sintomas e resultados de testes diagnósticos é um exemplo de clustering.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Prever se uma pessoa desenvolverá sintomas de alergia leve, moderada ou severa com base na contagem de pólen é um exemplo de clustering.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Um conjunto de validação é usado para medir a precisão de um modelo em dados que não foram usados durante o treinamento e para ajustar hiperparâmetros do modelo.",
+            "statements": [
+                {
+                    "title": "Um conjunto de validação inclui o conjunto de exemplos de entrada que será usado para treinar um modelo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Um conjunto de validação pode ser usado para determinar quão bem um modelo prevê rótulos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um conjunto de validação pode ser usado para verificar se todos os dados de treinamento foram usados para treinar o modelo.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais duas métricas você pode usar para avaliar um modelo de regressão? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "A métrica Coeficiente de Determinação (R2) mede a proporção da variância nos dados dependentes que é previsível a partir dos dados independentes, enquanto o Erro Quadrático Médio (RMSE) mede a média dos erros quadráticos, ambos fornecendo uma avaliação da precisão de um modelo de regressão.",
+            "statements": [
+                {"title": "coeficiente de determinação (R2)", "isCorrect": true},
+                {"title": "pontuação F1", "isCorrect": false},
+                {"title": "erro quadrático médio (RMSE)", "isCorrect": true},
+                {"title": "área sob a curva (AUC)", "isCorrect": false},
+                {"title": "precisão equilibrada", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Prever quantos veículos atravessarão uma ponte em um determinado dia é um exemplo de...",
+            "explanation": "A regressão é utilizada para prever valores contínuos, como o número de veículos que atravessarão uma ponte, com base em variáveis independentes.",
+            "statements": [
+                {"title": "classificação", "isCorrect": false},
+                {"title": "agrupamento", "isCorrect": false},
+                {"title": "regressão", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual tipo de aprendizado de máquina deve ser usado para identificar grupos de pessoas que têm hábitos de compra semelhantes?",
+            "explanation": "O agrupamento (clustering) é usado para identificar grupos ou segmentos dentro de um conjunto de dados com base em características ou comportamentos semelhantes.",
+            "statements": [
+                {"title": "classificação", "isCorrect": false},
+                {"title": "regressão", "isCorrect": false},
+                {"title": "agrupamento", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Modelos de ... podem ser usados para prever o preço de venda de itens em leilão.",
+            "explanation": "Modelos de regressão são usados para prever valores contínuos, como o preço de venda de itens em leilão, com base em variáveis independentes.",
+            "statements": [
+                {"title": "Classificação", "isCorrect": false},
+                {"title": "Agrupamento", "isCorrect": false},
+                {"title": "Regressão", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual métrica você pode usar para avaliar um modelo de classificação?",
+            "explanation": "A taxa de verdadeiros positivos (true positive rate) é uma métrica usada para avaliar a performance de um modelo de classificação, indicando a proporção de positivos verdadeiros corretamente identificados pelo modelo.",
+            "statements": [
+                {"title": "taxa de verdadeiros positivos", "isCorrect": true},
+                {"title": "erro absoluto médio (MAE)", "isCorrect": false},
+                {"title": "coeficiente de determinação (R2)", "isCorrect": false},
+                {"title": "erro quadrático médio (RMSE)", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais dois componentes podem ser arrastados para um canvas no Azure Machine Learning designer? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "No Azure Machine Learning designer, tanto datasets quanto módulos podem ser arrastados para o canvas para construir, testar e implantar modelos de aprendizado de máquina.",
+            "statements": [
+                {"title": "dataset", "isCorrect": true},
+                {"title": "compute", "isCorrect": false},
+                {"title": "pipeline", "isCorrect": false},
+                {"title": "module", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual módulo deve ser usado para criar um conjunto de dados de treinamento e um conjunto de dados de validação a partir de um conjunto de dados existente?",
+            "explanation": "O módulo Dividir Dados é usado para criar conjuntos de dados de treinamento e validação a partir de um conjunto de dados existente. Isso permite avaliar o modelo de forma eficaz com dados que não foram usados durante o treinamento.",
+            "statements": [
+                {"title": "Selecionar Colunas no Conjunto de Dados", "isCorrect": false},
+                {"title": "Adicionar Linhas", "isCorrect": false},
+                {"title": "Dividir Dados", "isCorrect": true},
+                {"title": "Unir Dados", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": "Prever quantos minutos de atraso um voo terá com base na quantidade de neve em um aeroporto. ... Segmentar clientes em diferentes grupos para apoiar um departamento de marketing. ... Prever se um aluno completará um curso universitário.",
+            "explanation": "A classificação é usada para prever rótulos binários ou categóricos, o agrupamento é usado para segmentar dados em grupos com base nas similaridades, e a regressão é usada para prever valores contínuos.",
+            "statements": [
+                {"title": "Classificação"},
+                {"title": "Agrupamento"},
+                {"title": "Regressão"}
+            ],
+            "answers": [
+                "Regressão",
+                "Agrupamento",
+                "Classificação"
+            ]
+        },
+        {
+            "type": "select",
+            "question": "... é a probabilidade calculada de uma classificação de imagem correta.",
+            "explanation": "Confidence (Confiança) refere-se à probabilidade calculada de que a classificação de uma imagem esteja correta. Ele indica a certeza do modelo em relação à previsão feita.",
+            "statements": [
+                {"title": "Accuracy (Precisão)", "isCorrect": false},
+                {"title": "Confidence (Confiança)", "isCorrect": true},
+                {"title": "Root Mean Square Error (Erro Médio Quadrático)", "isCorrect": false},
+                {"title": "Sentiment (Sentimento)", "isCorrect": false}
+            ]
+        }
+        
+        
+        
+
+    ]
 }
