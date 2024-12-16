@@ -6,18 +6,18 @@ export default class BrowserSave {
         }
     }
 
-    static saveOnBrowserStorage(content) {
+    static saveOnBrowserStorage(key, value) {
         if (window.localStorage) {
-            window.localStorage.lastSave = JSON.stringify(content,null,4);
+            window.localStorage[key] = JSON.stringify(value,null,4);
         } else {
             alert("Your browser does not support local storage feature. Please update your current browser.");
         }
     }
 
-    static getSaveFromBrowserLocalStorage() {
+    static getSaveFromBrowserLocalStorage(key) {
         try {
-            if (window.localStorage.lastSave) {
-                return JSON.parse(window.localStorage.lastSave);
+            if (window.localStorage[key]) {
+                return JSON.parse(window.localStorage[key]);
             }
         } catch (e) {
             console.error(e);
@@ -26,8 +26,8 @@ export default class BrowserSave {
 
     static clearData() {
         try {
-            if (window.localStorage.lastSave) {
-                window.localStorage.lastSave = null;
+            if (window.localStorage) {
+                window.localStorage.clear();
             }
         } catch (e) {
             console.error(e);

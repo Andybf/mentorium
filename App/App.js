@@ -43,6 +43,7 @@ export default class App extends AVElement {
         };
         main.appendChild(newCard);
         this.currentExam = {
+            name : '',
             currentQuestion : 0,
             isCurrentQuestionRevealed : false,
             points : 0,
@@ -59,7 +60,7 @@ export default class App extends AVElement {
         }
     }
 
-    tickCountdownClock() {
+    tickClock() {
         let diff = new Date(new Date() - this.currentExam.startTime);
         let minutes = (diff.getMinutes() < 10 ) ? "0"+diff.getMinutes() : diff.getMinutes();
         let seconds = (diff.getSeconds() < 10 ) ? "0"+diff.getSeconds() : diff.getSeconds();
@@ -85,8 +86,9 @@ export default class App extends AVElement {
             this.examQuestions = this.database.length;
             this.pointsPerQuestion = 1000/this.examQuestions;
             this.currentExam.startTime = new Date().getTime();
+            this.currentExam.name = documentName;
             let div = this.body.querySelector("#question-icons");
-            this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage();
+            this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage(this.currentExam.name);
             if (this.dashboardData) {
                 for (let i=0; i<this.database.length; i++) {
                     let button = this.createQuestionMapQuestionButton(i);                
@@ -113,7 +115,7 @@ export default class App extends AVElement {
             console.error(error);
         });
         this.intervalTime = setInterval( () => {
-            this.tickCountdownClock();
+            this.tickClock();
         }, 1000);
     }
 
@@ -145,7 +147,6 @@ export default class App extends AVElement {
     }
 
     evaluateQuestion() {
-        const index = this.currentExam.currentQuestion-1;
         const questionId = this.currentExam.currentQuestion;
         const questionType = this.database[questionId]['type'];
 
@@ -239,7 +240,7 @@ export default class App extends AVElement {
             this.dashboardData[questionId] = 'red'
             div[questionId].style.background = this.dashboardData[questionId];
         }
-        BrowserSave.saveOnBrowserStorage(this.dashboardData);
+        BrowserSave.saveOnBrowserStorage(this.currentExam.name, this.dashboardData);
     }
 
     revealQuestion() {
@@ -304,25 +305,31 @@ export default class App extends AVElement {
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#multiple-YesNo").content,true);
         newCard.querySelector("h3").innerText = this.database[index].question;
-        for (let i=0; i<3; i++) {
-            newCard.querySelector("ul").children[i].firstElementChild.innerText = this.database[index].statements[i].title;
+        let statementIndex = 0;
+        for (let statement of this.database[index].statements) {
+            let li = document.createElement("li");
+            let label = document.createElement("label");
+            label.innerText = statement.title;
+            li.appendChild(label);
             for (let j=0; j<2; j++) {
                 let div = document.createElement('div');
                 let input = document.createElement('input');
                 input.type = 'radio';
-                input.name = i.toString();            
-                if (this.database[index].statements[i].isCorrect == true && j == 0) {
+                input.name = statementIndex.toString();            
+                if (statement.isCorrect == true && j == 0) {
                     input.value = true;
                 } else
-                if (this.database[index].statements[i].isCorrect == false && j == 1) {
+                if (statement.isCorrect == false && j == 1) {
                     input.value = true;
                 } else {
                     input.value = false;
                 }
                 div.appendChild(input);
-                newCard.querySelector("ul").children[i].appendChild(div);
+                li.appendChild(div);
             }
-        }        
+            newCard.querySelector('ul').appendChild(li);
+            statementIndex++;
+        }   
         main.appendChild(newCard);
     }
 
