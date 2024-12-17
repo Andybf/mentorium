@@ -1,13 +1,66 @@
-Extraia todo o texto da imagem, todo o texto ira ser colocado em uma estrutura .json. O primeiro bloco de texto no topo é a pergunta, coloque-a no campo "question" do .json. o segundo bloco são as perguntas, podem variar de 2 a 5 opções, marcadas entre a letra A até E, as que estão de cor verde são as respostas certas, para cada opção você irá colocar no campo "title", dentro de "statements", uma opção por vez, na lista. O que estiver abaixo de "Explanation" você irá adicionar no campo de mesmo nome após o campo "question". Faça uma avaliação na pergunta para verificar se ela realmente está certa. Se mudar o conteúdo que você extraiu em nenhum momento.
-Segue o .json: { "type" : "choose", "question" : "", "statements" : [ { "title" : "", "isCorrect" : false }, { "title" : "", "isCorrect" : true }, { "title" : "", "isCorrect" : false }, { "title" : "", "isCorrect" : false } ] }
-
-
-Extraia todo o texto da imagem, todo o texto ira ser colocado em uma estrutura .json. O texto fora do menu suspenso você irá colocar no campo "question". Peceba que o menu suspenso pode estar no meio do texto dentro de uma concordância verbal, nesse caso, você pode colocar um "...". Os itens do menu suspenso você irá colocar no campo "title" dentro de "statements", uma opção por vez, na lista. você irá colocar o texto que está abaixo de "Explanation" em um campo de mesmo nome após o campo "question". Segue o .json: { "type" : "select", "question" : "", "statements" : [ { "title" : "", "isCorrect" : false }, { "title" : "", "isCorrect" : true }, { "title" : "", "isCorrect" : false }, { "title" : "", "isCorrect" : false } ] }
-
-
-
-na imagem, você vai extrair as frases que estão abaixo de "Statements" apenas, as 3 frases você irá colocar de acordo com a estrutura .json, sendo que a primeira frase fica no campo "title" do primeiro objeto do array "statements" e assim por diante. No campo isCorrect de cada objeto, você irá avaliar se a frase é correta ou não. você irá colocar o texto que está abaixo de "Explanation" em um campo de mesmo nome após o campo "question". Segue o .json: { "type" : "multiple-YesNo", "question" : "For each of the following statements, select Yes if the statement is true. Otherwise, select No. NOTE: Each correct selection is worth one point.", "statements" : [ { "title" : "", "isCorrect" : false }, { "title" : "", "isCorrect" : true }, { "title" : "", "isCorrect" : true } ] }
-
-
-
-Extraia os textos dentro das caixas em baixo do "Action Subcategories" e coloque na estrutura json dentro do array "statements", sendo que, cada texto da caixa terá seu próprio objeto dentro do array, o texto ficará no campo "title". Extraia os textos que estão fora dos retangulos, em baixo do "Answer area", concatene os textos separados por "..." no campo "question" no .json. Agora, o que estiver em "Answer Area" dentro dos retângulos, você ira colocar os valores em formato de array em um campo chamado "answers" logo após "statements". O que estiver abaixo do "Explanation" você irá colocar no campo de mesmo nome na estrutura. Segue o json de modelo: { "type": "multiple-select", "question": "", "explanation": "", "statements": [ { "title": "", "isCorrect": false, "explanation": "" }, { "title": "", "isCorrect": true, "explanation": "" }, { "title": "", "isCorrect": true, "explanation": "" } ] }
+para as próximas mensagens:
+1 - identifique o tipo da pergunta: 
+ 1.1 - Existe o tipo "choose", que faz a pergunta com uma série de afirmações ordenadas de A até E.
+ 1.2 - Existe o tipo "multiple-YesNo" que fornece 3 afirmações com a possibilidade de escolher entre "sim" ou "não".
+ 1.3 - Existe o tipo "select" que apresenta um um menu suspenso no meio de um texto. O texto fora do menu suspenso você irá colocar no campo "question". Peceba que o menu suspenso pode estar no meio do texto dentro de uma concordância verbal, nesse caso, você pode colocar um "...". Os itens do menu suspenso você irá colocar no campo "title" dentro de "statements", uma opção por vez, na lista.
+ 1.4 - Existe o tipo "multiple-select" que apresenta duas colunas de retângulos. ignore a parte superior ao que está escrito em negrito, onde existe alguns textos. Na coluna da esquerda, extraia os textos dentro dos retângulos e coloque dentro de "statements", em um vetor, cada conteúdo como item do vetor. Na coluna da direita extraia os textos que estão fora dos retangulos, concatene os textos separados por "..." e coloque no campo "question" no .json. Agora, o que estiver dentro dos retângulos, você ira colocar os valores em formato de array em um campo chamado "answers" logo após "statements".
+2 - A pergunta estará em inglês, traduza para português, tanto a pergunta quanto a resposta.
+3 - Aproveite o campo "explanation" para adicionar o motivo da resposta ser verdadeira.
+4 - transforme o resultado final em um texto no formato .json
+segue o formato .json para a pergunta do tipo "select", removendo a letra no começo da resposta:
+{
+	"type": "select",
+	"question" : "",
+	"explanation": "",
+	"statements" : [
+		{"title" : "Statement1", "isCorrect" : false },
+		{"title" : "Statement2", "isCorrect" : false },
+		("title" : "Statement3", "isCorrect" : false },
+		{"title" : "Statement4", "isCorrect" : false }
+	]
+}
+segue o .json para a pergunta do tipo "multiple-YesNo":
+{
+	"type": "multiple-YesNo",
+	"question" : "",
+	"explanation" : "",
+	"statements": [
+		{"title" : "Statement1", "isCorrect" : false },
+		{"title" : "Statement2", "isCorrect" : false },
+		("title" : "Statement3", "isCorrect" : false }
+	]
+}
+segue o .json para a perguta do tipo "choose":
+{
+	"type": "choose",
+	"question" : "",
+	"explanation": "",
+	"statements" : [
+		{"title" : "Statement1", "isCorrect" : false },
+		{"title" : "Statement2", "isCorrect" : false },
+		("title" : "Statement3", "isCorrect" : false },
+		{"title" : "Statement4", "isCorrect" : false }
+	]
+}
+segue o .json para a perguta do tipo "multiple-select":
+{
+    "type": "multiple-select",
+    "question": "",
+    "explanation": "",
+    "statements": [
+        {
+            "title": ""
+        },
+        {
+            "title": ""
+        },
+        {
+            "title": ""
+        }
+    ],
+    "answers": [
+        "",
+        "",
+        ""
+    ]
+},

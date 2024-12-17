@@ -511,7 +511,11 @@
         },        
         {
             "type": "multiple-select",
-            "question": "Criptografar dados em repouso...Realizar uma auditoria de acesso ao sistema...Fazer alterações de configuração em resposta a um incidente de segurança",
+            "question": [
+                "Criptografar dados em repouso",
+                "Realizar uma auditoria de acesso ao sistema",
+                "Fazer alterações de configuração em resposta a um incidente de segurança"
+            ],            
             "explanation": "Box 1: Preventiva - As ações preventivas abordam riscos específicos. Por exemplo, proteger informações em repouso usando criptografia é uma ação preventiva contra ataques e violações. A separação de funções é uma ação preventiva para gerenciar conflitos de interesse e prevenir fraudes.\n\nBox 2: Detectiva - As ações detectivas monitoram ativamente os sistemas para identificar condições ou comportamentos irregulares que representam risco, ou que podem ser usados para detectar intrusões ou violações. Exemplos incluem auditoria de acesso ao sistema e ações administrativas privilegiadas. Auditorias de conformidade regulatória são um tipo de ação detectiva usada para encontrar problemas de processo.\n\nBox 3: Corretiva - As ações corretivas tentam manter os efeitos adversos de um incidente de segurança no mínimo, tomar medidas corretivas para reduzir o efeito imediato e reverter os danos, se possível. A resposta a incidentes de privacidade é uma ação corretiva para limitar danos e restaurar sistemas a um estado operacional após uma violação.",
             "statements": [
                 {
@@ -1247,7 +1251,11 @@
         },        
         {
             "type": "multiple-select",
-            "question": "Fornece serviços de Network Address Translation (NAT)...Fornece conectividade Remote Desktop segura e perfeita para máquinas virtuais do Azure...Fornece filtragem de tráfego que pode ser aplicada a interfaces de rede específicas em uma rede virtual",
+            "question": [
+                "Fornece serviços de Network Address Translation (NAT)",
+                "Fornece conectividade Remote Desktop segura e perfeita para máquinas virtuais do Azure",
+                "Fornece filtragem de tráfego que pode ser aplicada a interfaces de rede específicas em uma rede virtual"
+            ],            
             "explanation": "Box 1: Azure Firewall - O Azure Firewall fornece Source Network Address Translation e Destination Network Address Translation. Box 2: Azure Bastion - O Azure Bastion fornece conectividade segura e perfeita RDP/SSH para suas máquinas virtuais diretamente do portal do Azure via TLS. Box 3: Network security group (NSG) - Você pode usar um grupo de segurança de rede do Azure para filtrar o tráfego de rede de e para recursos do Azure em uma rede virtual do Azure.",
             "statements": [
                 {
@@ -3219,7 +3227,10 @@
         },
         {
             "type": "multiple-select",
-            "question": "Use criptografia para proteger dados em repouso...Monitore ativamente os sistemas para identificar irregularidades que possam representar riscos.",
+            "question": [
+                "Use criptografia para proteger dados em repouso",
+                "Monitore ativamente os sistemas para identificar irregularidades que possam representar riscos"
+            ],            
             "explanation": "A criptografia é usada como uma medida preventiva para proteger dados em repouso, garantindo que partes não autorizadas não possam acessar os dados. Monitorar ativamente os sistemas para identificar irregularidades é uma medida detetiva, que ajuda a identificar possíveis incidentes de segurança e tomar medidas oportunas.",
             "statements": [
                 {
@@ -3239,7 +3250,11 @@
         },
         {
             "type": "multiple-select",
-            "question": "Devem ser segmentados...Devem ser verificados usando autenticação forte...Devem ser classificados, rotulados e criptografados com base em seus atributos",
+            "question": [
+                "Devem ser segmentados",
+                "Devem ser verificados usando autenticação forte",
+                "Devem ser classificados, rotulados e criptografados com base em seus atributos"
+            ],            
             "explanation": "",
             "statements": [
                 {
@@ -3260,7 +3275,11 @@
         },
         {
             "type": "multiple-select",
-            "question": "Revise e filtre alertas...Crie casos no painel de Casos...Envie um lembrete das políticas corporativas aos usuários",
+            "question": [
+                "Revise e filtre alertas",
+                "Crie casos no painel de Casos",
+                "Envie um lembrete das políticas corporativas aos usuários"
+            ],            
             "explanation": "",
             "statements": [
                 {
@@ -3281,7 +3300,11 @@
         },
         {
             "type": "multiple-select",
-            "question": "Fornece inteligência sobre questões prevalentes de cibersegurança...Fornece relatórios em tempo real para identificar e analisar ameaças recentes...Detecta tentativas de personificação",
+            "question": [
+                "Fornece inteligência sobre questões prevalentes de cibersegurança",
+                "Fornece relatórios em tempo real para identificar e analisar ameaças recentes",
+                "Detecta tentativas de personificação"
+            ],            
             "explanation": "Prevalente = Trackers | Tempo real = Explorer | Personificação = Anti-phishing",
             "statements": [
                 {
@@ -3572,7 +3595,7 @@
             ]
         },
         {
-            "type": "multiple-select",
+            "type": "choose",
             "question": "Quais três formas de verificação podem ser usadas com a Autenticação Multifator (MFA) do Azure AD? Cada resposta correta apresenta uma solução completa.",
             "explanation": "A Autenticação Multifator (MFA) do Azure AD suporta vários métodos de verificação para aumentar a segurança. Estes incluem o aplicativo Microsoft Authenticator, mensagens SMS e Windows Hello para Empresas.",
             "statements": [
@@ -3852,7 +3875,11 @@
         },
         {
             "type": "multiple-select",
-            "question": "Revisar e filtrar alertas...Criar casos no painel de Casos...Enviar um lembrete das políticas corporativas aos usuários",
+            "question": [
+                "Revisar e filtrar alertas",
+                "Criar casos no painel de Casos",
+                "Enviar um lembrete das políticas corporativas aos usuários"
+            ],            
             "explanation": "",
             "statements": [
                 {
