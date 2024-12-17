@@ -30,11 +30,11 @@
                 },
                 {
                     "title" : "Azure Policy",
-                    "isCorrect" : true
+                    "isCorrect" : false
                 },
                 {
                     "title" : "O Microsoft Cloud Adoption Framework para Azure",
-                    "isCorrect" : false
+                    "isCorrect" : true
                 },
                 {
                     "title" : "Um bloqueio de recurso",
