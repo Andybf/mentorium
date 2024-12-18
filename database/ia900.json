@@ -1206,6 +1206,95 @@
                     "isCorrect": false
                 }
             ]
+        },
+        {
+            "type": "select",
+            "question": "Garantir que um sistema de IA não forneça uma previsão quando campos importantes contiverem valores incomuns ou ausentes é um 'Área da resposta' princípio de IA responsável.",
+            "explanation": "Confiabilidade e segurança referem-se à criação de sistemas de IA que são robustos e seguros. Garantir que previsões não sejam feitas quando campos importantes estão incompletos ou incorretos ajuda a manter a precisão e a segurança das decisões tomadas pelo sistema.",
+            "statements": [
+                {"title": "inclusividade", "isCorrect": false},
+                {"title": "privacidade e segurança", "isCorrect": false},
+                {"title": "confiabilidade e segurança", "isCorrect": true},
+                {"title": "transparência", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Garantir que as variáveis numéricas nos dados de treinamento estejam em uma escala similar é um exemplo de 'Área da resposta'.",
+            "explanation": "A engenharia de características inclui a preparação e transformação dos dados para melhorar a eficiência e eficácia do modelo. Garantir que as variáveis estejam em uma escala similar é uma parte essencial desse processo.",
+            "statements": [
+                {"title": "ingestão de dados", "isCorrect": false},
+                {"title": "engenharia de características", "isCorrect": true},
+                {"title": "seleção de características", "isCorrect": false},
+                {"title": "treinamento de modelo", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Atribuir classes a imagens antes de treinar um modelo de classificação é um exemplo de 'Área da resposta'.",
+            "explanation": "A rotulagem envolve a atribuição de etiquetas ou classes a dados, como imagens, para treinar modelos de IA. Este processo é essencial para que o modelo possa aprender a reconhecer e classificar corretamente os dados durante o treinamento.",
+            "statements": [
+                {"title": "avaliação", "isCorrect": false},
+                {"title": "engenharia de características", "isCorrect": false},
+                {"title": "ajuste de hiperparâmetros", "isCorrect": false},
+                {"title": "rotulagem", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Você treina um modelo de regressão usando dados não rotulados. A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo. Agrupar itens por suas características comuns é um exemplo de clustering.",
+            "explanation": "Modelos de regressão normalmente exigem dados rotulados para aprender e prever resultados. Classificação não é usada para prever dados numéricos sequenciais, isso é feito por técnicas de regressão ou séries temporais. Clustering é uma técnica que agrupa itens com base em características comuns.",
+            "statements": [
+                {"title": "Você treina um modelo de regressão usando dados não rotulados.", "isCorrect": false},
+                {"title": "A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo.", "isCorrect": false},
+                {"title": "Agrupar itens por suas características comuns é um exemplo de clustering.", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as duas ações executadas durante a fase de ingestão de dados e preparação de dados de um processo Azure Machine Learning? Cada resposta correta apresenta parte da solução.",
+            "explanation": "Combinar vários conjuntos de dados e remover registros com valores ausentes são tarefas essenciais na fase de ingestão e preparação de dados, pois ajudam a garantir que os dados estejam completos e prontos para serem usados no treinamento do modelo.",
+            "statements": [
+                {"title": "Calcule a precisão do modelo.", "isCorrect": false},
+                {"title": "Pontue os dados do teste usando o modelo.", "isCorrect": false},
+                {"title": "Combine vários conjuntos de dados.", "isCorrect": true},
+                {"title": "Use o modelo para previsões em tempo real.", "isCorrect": false},
+                {"title": "Remova os registros que possuem valores ausentes.", "isCorrect": true}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa prever a população animal de uma área. Qual tipo de Azure Machine Learning você deve usar?",
+            "explanation": "A regressão é utilizada para prever valores contínuos, como a população animal, ao analisar a relação entre variáveis.",
+            "statements": [
+                {"title": "regressão", "isCorrect": true},
+                {"title": "agrupamento", "isCorrect": false},
+                {"title": "classificação", "isCorrect": false}
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
+            "explanation": "Python e R são amplamente utilizados no ambiente do Azure Machine Learning para escrever código personalizado, devido à sua robustez e vasta disponibilidade de bibliotecas para machine learning e análise de dados.",
+            "statements": [
+                {"title": "Python", "isCorrect": true},
+                {"title": "R.", "isCorrect": true},
+                {"title": "C#", "isCorrect": false},
+                {"title": "Scala", "isCorrect": false}
+            ]
         }
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
     ]
 }
