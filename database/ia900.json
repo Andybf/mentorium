@@ -2,7 +2,7 @@
     "questions": [
         {
             "type": "choose",
-            "question": "Uma empresa emprega uma equipe de agentes de atendimento ao cliente para fornecer suporte telefônico e por e-mail aos clientes. A empresa desenvolve um bot de chat web para fornecer respostas automatizadas a perguntas comuns dos clientes. Qual benefício comercial a empresa deve esperar como resultado da criação da solução de bot de chat web?",
+            "question": "Uma empresa emprega uma equipe de agentes de atendimento ao cliente para fornecer suporte telefônico e por e-mail aos clientes.\nA empresa desenvolve um bot de chat web para fornecer respostas automatizadas a perguntas comuns dos clientes. Qual benefício comercial a empresa deve esperar como resultado da criação da solução de bot de chat web?",
             "explanation": "A criação de um bot de chat web reduz a carga de trabalho dos agentes de atendimento ao cliente ao automatizar as respostas a perguntas comuns, permitindo que os agentes se concentrem em questões mais complexas.",
             "statements": [
                 {
@@ -40,6 +40,34 @@
                     "title": "Dividir aleatoriamente os dados em colunas para treinamento e colunas para avaliação.",
                     "isCorrect": false
                 }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "pre-question": "Você está desenvolvendo um modelo para prever eventos usando classificação.\nVocê tem uma matriz de confusão para o modelo avaliado em dados de teste, como mostrado na seguinte exibição.\nUse os menus suspensos para selecionar a alternativa que completa cada declaração com base nas informações apresentadas no gráfico. ",
+            "question": [
+                "Há [escolha da resposta] previsões positivas corretas.",
+                "Há [escolha da resposta] falsos negativos."
+            ],
+            "attachment": "database/ia900/005.png",
+            "explanation": "Na matriz de confusão, as previsões positivas corretas (verdadeiros positivos) são os casos em que o modelo previu corretamente a classe positiva. Os falsos negativos são os casos em que o modelo previu incorretamente a classe negativa para exemplos que na verdade eram positivos. As respostas são baseadas nos números fornecidos na matriz de confusão.",
+            "statements": [
+                {
+                    "title": "5"
+                },
+                {
+                    "title": "11"
+                },
+                {
+                    "title": "1.033"
+                },
+                {
+                    "title": "13.951"
+                }
+            ],
+            "answers": [
+                "11",
+                "1.033"
             ]
         },
         {
@@ -107,14 +135,14 @@
                 }
             ]
         },
-{
+        {
             "type": "multiple-select",
             "question": [
                 "Combine os tipos de cargas de trabalho de IA com os cenários apropriados.",
                 "Um chat automatizado para responder perguntas sobre reembolsos e trocas",
                 "Determinar se uma foto contém uma pessoa",
                 "Determinar se uma revisão é positiva ou negativa"
-            ],            
+            ],
             "explanation": "Os diferentes tipos de cargas de trabalho de IA são mais eficazes quando aplicados a cenários específicos, com base em suas capacidades e funcionalidades únicas.",
             "statements": [
                 {
@@ -168,7 +196,7 @@
                 "Garanta que os sistemas de IA operem conforme foram originalmente projetados, respondam a condições inesperadas e resistam a manipulações prejudiciais",
                 "Implementação de processos para garantir que as decisões tomadas pelos sistemas de IA possam ser substituídas por humanos",
                 "Fornecer aos consumidores informações e controles sobre a coleta, uso e armazenamento de seus dados"
-            ],            
+            ],
             "explanation": "Os diferentes princípios orientadores da Microsoft para IA responsável são aplicados para garantir a operação segura, justa e inclusiva dos sistemas de IA.",
             "statements": [
                 {
@@ -440,7 +468,7 @@
                 "O sistema não deve discriminar com base em gênero, raça",
                 "Os dados pessoais devem ser visíveis apenas para aprovar",
                 "Processos de tomada de decisão automatizados devem ser registrados para que usuários aprovados possam identificar por que uma decisão foi tomada"
-            ],            
+            ],
             "explanation": "Os diferentes princípios orientadores da Microsoft para IA responsável são aplicados para garantir a operação segura, justa e inclusiva dos sistemas de IA.",
             "statements": [
                 {
@@ -514,7 +542,7 @@
                 "Um chat automatizado para responder perguntas sobre reembolsos e trocas",
                 "Determinar se uma foto contém uma pessoa",
                 "Determinar se uma revisão é positiva ou negativa"
-            ],            
+            ],
             "explanation": "Os diferentes tipos de cargas de trabalho de IA são mais eficazes quando aplicados a cenários específicos, com base em suas capacidades e funcionalidades únicas.",
             "statements": [
                 {
@@ -1161,11 +1189,47 @@
         },
         {
             "type": "multiple-select",
+            "pre-question": "Você precisa usar o Azure Machine Learning Designer para construir um modelo que preveja os preços de automóveis.\nQue tipo de módulos você deve usar para completar o modelo? Para responder, arraste os módulos apropriados para os locais corretos.\nCada módulo pode ser usado mais de uma vez, ou não ser usado.",
+            "question": [
+                "abaixo de Dados de preços de automóveis (Bruto)",
+                "abaixo de Limpar Dados Faltantes",
+                "acima de Treinar Modelo"
+            ],
+            "attachment": "database/ia900/007.png",
+            "explanation": "Selecione a Coluna no conjunto de dados - 1º à direita\nDivida os Dados - 2º à direita\nRegressão Linear - Esquerda",
+            "statements": [
+                {
+                    "title": "Converter para CSV"
+                },
+                {
+                    "title": "K-Means Clustering"
+                },
+                {
+                    "title": "Regressão Linear"
+                },
+                {
+                    "title": "Dividir Dados"
+                },
+                {
+                    "title": "Selecionar Colunas no Conjunto de Dados"
+                },
+                {
+                    "title": "Resumir Dados"
+                }
+            ],
+            "answers": [
+                "Selecionar Colunas no Conjunto de Dados",
+                "Dividir Dados",
+                "Regressão Linear"
+            ]
+        },
+        {
+            "type": "multiple-select",
             "question": [
                 "Prever quantos minutos de atraso um voo terá com base na quantidade de neve em um aeroporto",
                 "Segmentar clientes em diferentes grupos para apoiar um departamento de marketing",
                 "Prever se um aluno completará um curso universitário"
-            ],            
+            ],
             "explanation": "A classificação é usada para prever rótulos binários ou categóricos, o agrupamento é usado para segmentar dados em grupos com base nas similaridades, e a regressão é usada para prever valores contínuos.",
             "statements": [
                 {
@@ -1212,10 +1276,22 @@
             "question": "Garantir que um sistema de IA não forneça uma previsão quando campos importantes contiverem valores incomuns ou ausentes é um 'Área da resposta' princípio de IA responsável.",
             "explanation": "Confiabilidade e segurança referem-se à criação de sistemas de IA que são robustos e seguros. Garantir que previsões não sejam feitas quando campos importantes estão incompletos ou incorretos ajuda a manter a precisão e a segurança das decisões tomadas pelo sistema.",
             "statements": [
-                {"title": "inclusividade", "isCorrect": false},
-                {"title": "privacidade e segurança", "isCorrect": false},
-                {"title": "confiabilidade e segurança", "isCorrect": true},
-                {"title": "transparência", "isCorrect": false}
+                {
+                    "title": "inclusividade",
+                    "isCorrect": false
+                },
+                {
+                    "title": "privacidade e segurança",
+                    "isCorrect": false
+                },
+                {
+                    "title": "confiabilidade e segurança",
+                    "isCorrect": true
+                },
+                {
+                    "title": "transparência",
+                    "isCorrect": false
+                }
             ]
         },
         {
@@ -1223,10 +1299,22 @@
             "question": "Garantir que as variáveis numéricas nos dados de treinamento estejam em uma escala similar é um exemplo de 'Área da resposta'.",
             "explanation": "A engenharia de características inclui a preparação e transformação dos dados para melhorar a eficiência e eficácia do modelo. Garantir que as variáveis estejam em uma escala similar é uma parte essencial desse processo.",
             "statements": [
-                {"title": "ingestão de dados", "isCorrect": false},
-                {"title": "engenharia de características", "isCorrect": true},
-                {"title": "seleção de características", "isCorrect": false},
-                {"title": "treinamento de modelo", "isCorrect": false}
+                {
+                    "title": "ingestão de dados",
+                    "isCorrect": false
+                },
+                {
+                    "title": "engenharia de características",
+                    "isCorrect": true
+                },
+                {
+                    "title": "seleção de características",
+                    "isCorrect": false
+                },
+                {
+                    "title": "treinamento de modelo",
+                    "isCorrect": false
+                }
             ]
         },
         {
@@ -1234,20 +1322,41 @@
             "question": "Atribuir classes a imagens antes de treinar um modelo de classificação é um exemplo de 'Área da resposta'.",
             "explanation": "A rotulagem envolve a atribuição de etiquetas ou classes a dados, como imagens, para treinar modelos de IA. Este processo é essencial para que o modelo possa aprender a reconhecer e classificar corretamente os dados durante o treinamento.",
             "statements": [
-                {"title": "avaliação", "isCorrect": false},
-                {"title": "engenharia de características", "isCorrect": false},
-                {"title": "ajuste de hiperparâmetros", "isCorrect": false},
-                {"title": "rotulagem", "isCorrect": true}
+                {
+                    "title": "avaliação",
+                    "isCorrect": false
+                },
+                {
+                    "title": "engenharia de características",
+                    "isCorrect": false
+                },
+                {
+                    "title": "ajuste de hiperparâmetros",
+                    "isCorrect": false
+                },
+                {
+                    "title": "rotulagem",
+                    "isCorrect": true
+                }
             ]
         },
         {
             "type": "multiple-YesNo",
-            "question": "Você treina um modelo de regressão usando dados não rotulados. A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo. Agrupar itens por suas características comuns é um exemplo de clustering.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Modelos de regressão normalmente exigem dados rotulados para aprender e prever resultados. Classificação não é usada para prever dados numéricos sequenciais, isso é feito por técnicas de regressão ou séries temporais. Clustering é uma técnica que agrupa itens com base em características comuns.",
             "statements": [
-                {"title": "Você treina um modelo de regressão usando dados não rotulados.", "isCorrect": false},
-                {"title": "A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo.", "isCorrect": false},
-                {"title": "Agrupar itens por suas características comuns é um exemplo de clustering.", "isCorrect": true}
+                {
+                    "title": "Você treina um modelo de regressão usando dados não rotulados.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "A técnica de classificação é usada para prever dados numéricos sequenciais ao longo do tempo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Agrupar itens por suas características comuns é um exemplo de clustering.",
+                    "isCorrect": true
+                }
             ]
         },
         {
@@ -1255,11 +1364,26 @@
             "question": "Quais são as duas ações executadas durante a fase de ingestão de dados e preparação de dados de um processo Azure Machine Learning? Cada resposta correta apresenta parte da solução.",
             "explanation": "Combinar vários conjuntos de dados e remover registros com valores ausentes são tarefas essenciais na fase de ingestão e preparação de dados, pois ajudam a garantir que os dados estejam completos e prontos para serem usados no treinamento do modelo.",
             "statements": [
-                {"title": "Calcule a precisão do modelo.", "isCorrect": false},
-                {"title": "Pontue os dados do teste usando o modelo.", "isCorrect": false},
-                {"title": "Combine vários conjuntos de dados.", "isCorrect": true},
-                {"title": "Use o modelo para previsões em tempo real.", "isCorrect": false},
-                {"title": "Remova os registros que possuem valores ausentes.", "isCorrect": true}
+                {
+                    "title": "Calcule a precisão do modelo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Pontue os dados do teste usando o modelo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Combine vários conjuntos de dados.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Use o modelo para previsões em tempo real.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Remova os registros que possuem valores ausentes.",
+                    "isCorrect": true
+                }
             ]
         },
         {
@@ -1267,9 +1391,18 @@
             "question": "Você precisa prever a população animal de uma área. Qual tipo de Azure Machine Learning você deve usar?",
             "explanation": "A regressão é utilizada para prever valores contínuos, como a população animal, ao analisar a relação entre variáveis.",
             "statements": [
-                {"title": "regressão", "isCorrect": true},
-                {"title": "agrupamento", "isCorrect": false},
-                {"title": "classificação", "isCorrect": false}
+                {
+                    "title": "regressão",
+                    "isCorrect": true
+                },
+                {
+                    "title": "agrupamento",
+                    "isCorrect": false
+                },
+                {
+                    "title": "classificação",
+                    "isCorrect": false
+                }
             ]
         },
         {
@@ -1277,24 +1410,1352 @@
             "question": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
             "explanation": "Python e R são amplamente utilizados no ambiente do Azure Machine Learning para escrever código personalizado, devido à sua robustez e vasta disponibilidade de bibliotecas para machine learning e análise de dados.",
             "statements": [
-                {"title": "Python", "isCorrect": true},
-                {"title": "R.", "isCorrect": true},
-                {"title": "C#", "isCorrect": false},
-                {"title": "Scala", "isCorrect": false}
+                {
+                    "title": "Python",
+                    "isCorrect": true
+                },
+                {
+                    "title": "R.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C#",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Scala",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa prever a faixa de renda de um determinado cliente usando o seguinte conjunto de dados. Quais são os dois campos que você deve usar como características? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "attachment": "database/ia900/001.png",
+            "explanation": "Para prever a faixa de renda, é importante usar variáveis que influenciam essa variável. O 'Nível de Educação' e a 'Idade' são bons preditores para determinar a renda de uma pessoa.",
+            "statements": [
+                {
+                    "title": "Nível de Educação",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Sobrenome",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Idade",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Faixa de Renda",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Primeiro Nome",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual modelo o gráfico mostrado no anexo é usado para avaliar?",
+            "attachment": "database/ia900/002.png",
+            "explanation": "O gráfico 'Predicted vs. True' é usado para avaliar modelos de regressão, pois mostra a comparação entre os valores previstos e os valores reais.",
+            "statements": [
+                {
+                    "title": "classificação",
+                    "isCorrect": false
+                },
+                {
+                    "title": "regressão",
+                    "isCorrect": true
+                },
+                {
+                    "title": "clustering",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Sua empresa quer construir uma máquina de reciclagem de garrafas. A máquina de reciclagem deve identificar automaticamente as garrafas com o formato correto e rejeitar todos os demais itens. Que tipo de carga de trabalho de IA a empresa deve usar?",
+            "explanation": "Visão computacional é a área da IA que permite aos computadores interpretar e fazer decisões baseadas em imagens visuais. Essa tecnologia seria ideal para identificar o formato das garrafas e rejeitar itens que não correspondam ao formato desejado.",
+            "statements": [
+                {
+                    "title": "detecção de anomalias",
+                    "isCorrect": false
+                },
+                {
+                    "title": "IA conversacional",
+                    "isCorrect": false
+                },
+                {
+                    "title": "visão computacional",
+                    "isCorrect": true
+                },
+                {
+                    "title": "processamento de linguagem natural",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "No serviço Custom Vision, a escolha entre Multilabel e Multiclass é necessária para a configuração do modelo de classificação. O serviço permite a criação de modelos que identificam a localização de objetos específicos em uma imagem. Além disso, você pode escolher domínios predefinidos para ajustar o modelo a diferentes cenários.",
+            "statements": [
+                {
+                    "title": "Ao criar um modelo de detecção de objetos no serviço Custom Vision, você deve escolher um tipo de classificação entre Multilabel ou Multiclass.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você pode criar um modelo de detecção de objetos no serviço Custom Vision para encontrar a localização de conteúdo dentro de uma imagem.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Ao criar um modelo de detecção de objetos no serviço Custom Vision, você pode selecionar a partir de um conjunto de domínios predefinidos.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Modelos de regressão requerem rótulos numéricos porque estão prevendo valores contínuos. Agrupamento (clustering) não usa rótulos, pois agrupa dados com base em características sem categorias predefinidas. Classificação pode usar rótulos categóricos, mas não necessariamente numéricos.",
+            "statements": [
+                {
+                    "title": "Para um modelo de regressão, os rótulos devem ser numéricos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para um modelo de agrupamento, os rótulos devem ser usados.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para um modelo de classificação, os rótulos devem ser numéricos.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em quais dois cenários você pode usar o serviço Form Recognizer? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O Form Recognizer é utilizado para extrair dados de documentos de forma automatizada. Ele pode extrair informações específicas, como o número de uma fatura, e identificar detalhes como o varejista a partir de um recibo.",
+            "statements": [
+                {
+                    "title": "Extraia o número da fatura de uma fatura.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Traduzir um formulário do francês para o inglês.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Encontre a imagem do produto em um catálogo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Identifique o varejista a partir de um recibo.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Contar o número de animais em uma área com base em um feed de vídeo é um exemplo de 'Área da resposta'.",
+            "explanation": "Visão computacional é a área da IA que permite a análise de imagens e vídeos para extrair informações significativas. Contar animais em um feed de vídeo se enquadra nessa categoria, pois envolve a detecção e contagem de objetos visuais.",
+            "statements": [
+                {
+                    "title": "previsão",
+                    "isCorrect": false
+                },
+                {
+                    "title": "visão computacional",
+                    "isCorrect": true
+                },
+                {
+                    "title": "IA conversacional",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de anomalias",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Você tem um banco de dados que contém uma lista de funcionários e suas fotos. Você está marcando novas fotos dos funcionários. Para cada uma das seguintes afirmações, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O serviço de reconhecimento facial pode ser usado para realizar reconhecimento facial de funcionários e a precisão melhora com mais fotos de diferentes ângulos. O serviço de reconhecimento facial pode ainda reconhecer rostos mesmo com óculos escuros, dependendo da qualidade do algoritmo e da imagem.",
+            "statements": [
+                {
+                    "title": "O serviço de reconhecimento facial pode ser usado para realizar reconhecimento facial de funcionários.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço de reconhecimento facial será mais preciso se você fornecer mais fotos de amostra de cada funcionário de diferentes ângulos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Se um funcionário estiver usando óculos escuros, o serviço de reconhecimento facial sempre falhará em reconhecer o funcionário.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa desenvolver um aplicativo móvel para que os funcionários possam digitalizar e armazenar suas despesas durante a viagem. Que tipo de visão computacional você deve usar?",
+            "explanation": "O reconhecimento óptico de caracteres (OCR) é a tecnologia usada para converter diferentes tipos de documentos, como recibos e notas fiscais, em dados editáveis e pesquisáveis. Isso permite que as despesas sejam digitalizadas e armazenadas de forma eficiente.",
+            "statements": [
+                {
+                    "title": "segmentação semântica",
+                    "isCorrect": false
+                },
+                {
+                    "title": "classificação de imagens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de objetos",
+                    "isCorrect": false
+                },
+                {
+                    "title": "reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "O serviço Custom Vision pode ser usado para detectar objetos em uma imagem. O serviço Custom Vision requer que você forneça os dados para treinar o modelo. O serviço Custom Vision pode ser usado para analisar arquivos de vídeo.",
+            "explanation": "O serviço Custom Vision é projetado para identificar e classificar objetos em imagens, e requer dados de treinamento para construir modelos precisos. No entanto, ele não é usado para análise de vídeos diretamente; outras ferramentas específicas para vídeos são recomendadas.",
+            "statements": [
+                {
+                    "title": "O serviço Custom Vision pode ser usado para detectar objetos em uma imagem.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço Custom Vision requer que você forneça os dados para treinar o modelo.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço Custom Vision pode ser usado para analisar arquivos de vídeo.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está processando fotos de corredores em uma corrida. Você precisa ler os números nas camisas dos corredores para identificá-los nas fotos. Que tipo de visão computacional você deve usar?",
+            "explanation": "O reconhecimento óptico de caracteres (OCR) é a tecnologia ideal para ler e identificar números em imagens, como os números nas camisas dos corredores.",
+            "statements": [
+                {
+                    "title": "reconhecimento facial",
+                    "isCorrect": false
+                },
+                {
+                    "title": "reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": true
+                },
+                {
+                    "title": "classificação de imagens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de objetos",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": [
+                "Separar imagens de ursos polares e ursos marrons.",
+                "Determinar a localização de um urso em uma foto.",
+                "Determinar quais pixels em uma imagem fazem parte de um urso."
+            ],
+            "explanation": "Classificação de imagens é usada para identificar a classe à qual uma imagem pertence, como distinguir entre ursos polares e ursos marrons. Detecção de objetos é usada para localizar objetos em uma imagem, como encontrar a localização de um urso. Segmentação semântica é usada para identificar quais pixels em uma imagem pertencem a uma classe específica, como os pixels que fazem parte de um urso.",
+            "statements": [
+                {
+                    "title": "Detecção facial"
+                },
+                {
+                    "title": "Reconhecimento facial"
+                },
+                {
+                    "title": "Classificação de imagens"
+                },
+                {
+                    "title": "Detecção de objetos"
+                },
+                {
+                    "title": "Reconhecimento óptico de caracteres (OCR)"
+                },
+                {
+                    "title": "Segmentação semântica"
+                }
+            ],
+            "answers": [
+                "Classificação de imagens",
+                "Detecção de objetos",
+                "Segmentação semântica"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você usa drones para identificar onde as ervas daninhas crescem entre as fileiras das plantações para enviar uma instrução para a remoção das ervas daninhas. Este é um exemplo de que tipo de visão computacional?",
+            "explanation": "A detecção de objetos é a tecnologia de visão computacional utilizada para identificar e localizar objetos em imagens ou vídeos. Neste caso, é usada para detectar ervas daninhas nas plantações.",
+            "statements": [
+                {
+                    "title": "detecção de objetos",
+                    "isCorrect": true
+                },
+                {
+                    "title": "reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": false
+                },
+                {
+                    "title": "segmentação de cena",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": [
+                "Identificar celebridades em imagens.",
+                "Extrair nomes de títulos de filmes de imagens de pôsteres de filmes.",
+                "Localizar veículos em imagens."
+            ],
+            "explanation": "Reconhecimento facial é utilizado para identificar pessoas específicas em imagens, como celebridades. O reconhecimento óptico de caracteres (OCR) é utilizado para extrair texto de imagens, como nomes de títulos de filmes em pôsteres. A detecção de objetos é utilizada para localizar e identificar objetos específicos em imagens, como veículos.",
+            "statements": [
+                {
+                    "title": "Reconhecimento facial"
+                },
+                {
+                    "title": "Classificação de imagens"
+                },
+                {
+                    "title": "Detecção de objetos"
+                },
+                {
+                    "title": "Reconhecimento óptico de caracteres (OCR)"
+                }
+            ],
+            "answers": [
+                "Reconhecimento facial",
+                "Reconhecimento óptico de caracteres (OCR)",
+                "Detecção de objetos"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa determinar a localização dos carros em uma imagem para poder estimar a distância entre os carros. Que tipo de visão computacional você deve usar?",
+            "explanation": "A detecção de objetos é a técnica usada para localizar e identificar objetos específicos em imagens. Neste caso, ela seria utilizada para encontrar a localização dos carros nas imagens.",
+            "statements": [
+                {
+                    "title": "reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de objetos",
+                    "isCorrect": true
+                },
+                {
+                    "title": "classificação de imagens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de rosto",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Você pode usar o serviço ... para treinar um modelo de detecção de objetos usando suas próprias imagens.",
+            "explanation": "O Custom Vision é um serviço do Azure que permite treinar modelos de detecção de objetos personalizados usando suas próprias imagens. Ele é ideal para cenários em que você precisa de um modelo que reconheça objetos específicos em suas imagens.",
+            "statements": [
+                {
+                    "title": "Computer Vision",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Custom Vision",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Form Recognizer",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Video Indexer",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você envia uma imagem para uma API de Visão Computacional e recebe de volta a imagem anotada mostrada no exemplo. banana: 97,90% laranja: 96,77% maçã: 98,21% Qual tipo de visão computacional foi usado?",
+            "attachment": "database/ia900/003.png",
+            "explanation": "A classificação de imagem é a técnica usada para identificar e categorizar objetos em uma imagem, atribuindo uma probabilidade a cada categoria.",
+            "statements": [
+                {
+                    "title": "detecção de objetos",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de rosto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": false
+                },
+                {
+                    "title": "classificação de imagem",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as duas tarefas que podem ser executadas usando o serviço de Visão Computacional? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O serviço de Visão Computacional pode detectar rostos em uma imagem e reconhecer texto manuscrito, pois ele é projetado para analisar e extrair informações de imagens de forma automatizada.",
+            "statements": [
+                {
+                    "title": "Treine um modelo de classificação de imagens personalizado.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Detectar rostos em uma imagem.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Reconhecer texto manuscrito.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Traduzir o texto em uma imagem entre idiomas.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "O que é um caso de uso para classificação?",
+            "explanation": "A classificação é utilizada para categorizar dados em classes distintas. 'Prever se alguém usa bicicleta para ir ao trabalho com base na distância de casa até o trabalho' é um exemplo de classificação, pois categoriza a ação (usar bicicleta ou não) com base em uma variável (distância).",
+            "statements": [
+                {
+                    "title": "prever quantas xícaras de café uma pessoa beberá com base em quantas horas ela dormiu na noite anterior.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "analisar o conteúdo das imagens e agrupar imagens que possuem cores semelhantes",
+                    "isCorrect": false
+                },
+                {
+                    "title": "prever se alguém usa bicicleta para ir ao trabalho com base na distância de casa até o trabalho",
+                    "isCorrect": true
+                },
+                {
+                    "title": "prever quantos minutos alguém levará para participar de uma corrida com base nos tempos de corrida anteriores",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as duas tarefas que podem ser executadas usando visão computacional? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "Visão computacional é utilizada para analisar imagens e extrair informações relevantes. Detectar marcas em uma imagem e detectar o esquema de cores são tarefas que podem ser executadas por visão computacional.",
+            "statements": [
+                {
+                    "title": "Preveja os preços das ações.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Detectar marcas em uma imagem.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Detectar o esquema de cores em uma imagem.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Traduzir texto entre idiomas.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Extraia frases-chave.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa construir uma solução de marcação de imagens para mídias sociais que marque imagens de seus amigos automaticamente. Qual serviço dos Serviços Cognitivos do Azure você deve usar?",
+            "explanation": "O serviço de 'Rosto' dos Serviços Cognitivos do Azure é projetado para detectar e reconhecer rostos em imagens, permitindo a marcação automática de pessoas em fotos.",
+            "statements": [
+                {
+                    "title": "Rosto",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Reconhecedor de formulário",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Visão Computacional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em quais dois cenários você pode usar o serviço Form Recognizer? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O Form Recognizer é utilizado para extrair dados de documentos de forma automatizada. Ele pode extrair informações específicas, como o número de uma fatura, e identificar detalhes como o varejista a partir de um recibo.",
+            "statements": [
+                {
+                    "title": "Identifique o varejista a partir de um recibo",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Traduzir do francês para o inglês",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Extraia o número da fatura de uma fatura",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Encontre imagens de produtos em um catálogo",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "question": [
+                "As duas imagens de um rosto pertencem à mesma pessoa?",
+                "Esta pessoa se parece com outras pessoas?",
+                "Quem é esta pessoa neste grupo de pessoas?"
+            ],
+            "explanation": "Agrupamento é a tarefa de agrupar imagens semelhantes, enquanto identificação é usada para identificar pessoas em imagens. Similaridade mede quão semelhantes são duas imagens e verificação é usada para confirmar se duas imagens pertencem à mesma pessoa.",
+            "statements": [
+                {
+                    "title": "agrupamento"
+                },
+                {
+                    "title": "identificação"
+                },
+                {
+                    "title": "similaridade"
+                },
+                {
+                    "title": "verificacão"
+                }
+            ],
+            "answers": [
+                "verificação",
+                "similaridade",
+                "identificação"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual recurso de Visão Computacional você pode usar para gerar legendas automáticas para fotografias digitais?",
+            "explanation": "O recurso 'Descreva as imagens' é utilizado em Visão Computacional para gerar legendas automáticas que descrevem o conteúdo das imagens, permitindo uma melhor compreensão do contexto visual.",
+            "statements": [
+                {
+                    "title": "Reconhecer texto.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Identifique as áreas de interesse.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Detectar objetos.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Descreva as imagens.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual serviço você deve usar para extrair texto, pares chave/valor e dados de tabela automaticamente de documentos digitalizados?",
+            "explanation": "O Reconhecedor de Formulários é o serviço ideal para extrair texto, pares chave/valor e dados de tabela automaticamente de documentos digitalizados. Ele permite a análise e extração de informações estruturadas de vários tipos de documentos.",
+            "statements": [
+                {
+                    "title": "Visão Personalizada",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Rosto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Reconhecedor de formulário",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Idioma",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "... extrai texto de documentos manuscritos.",
+            "explanation": "O Reconhecimento Óptico de Caracteres (OCR) é a tecnologia usada para converter diferentes tipos de documentos, como textos manuscritos, em dados editáveis e pesquisáveis. Ele identifica e extrai o texto de documentos escritos à mão.",
+            "statements": [
+                {
+                    "title": "Detecção de objetos",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Reconhecimento facial",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Classificação de imagens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Reconhecimento óptico de caracteres (OCR)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está desenvolvendo uma solução que usa o serviço Text Analytics. Você precisa identificar os principais pontos de discussão em uma coleção de documentos. Que tipo de processamento de linguagem natural você deve usar?",
+            "explanation": "A extração de frase-chave é o processo de identificar palavras ou expressões importantes dentro de um documento, que resumem os principais tópicos discutidos no texto. Isso permite identificar rapidamente os pontos principais sem precisar ler o documento inteiro.",
+            "statements": [
+                {
+                    "title": "reconhecimento de entidade",
+                    "isCorrect": false
+                },
+                {
+                    "title": "extração de frase-chave",
+                    "isCorrect": true
+                },
+                {
+                    "title": "análise de sentimento",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de idioma",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em quais dois cenários você pode usar o reconhecimento de fala? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O reconhecimento de fala é utilizado para converter fala em texto e para leitura automática. Pode ser usado em sistemas automotivos para ler mensagens de texto em voz alta e para criar transcrições de chamadas telefônicas ou reuniões.",
+            "statements": [
+                {
+                    "title": "um sistema automotivo que lê mensagens de texto em voz alta",
+                    "isCorrect": true
+                },
+                {
+                    "title": "fornecer legendas ocultas para vídeos gravados ou ao vivo",
+                    "isCorrect": false
+                },
+                {
+                    "title": "criação de um sistema automatizado de endereço público para uma estação ferroviária",
+                    "isCorrect": false
+                },
+                {
+                    "title": "criar uma transcrição de uma chamada telefônica ou reunião",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Enquanto apresenta em uma conferência, sua sessão é transcrita em legendas para o público. Este é um exemplo de ...",
+            "explanation": "O reconhecimento de fala é o processo de converter a fala em texto. Durante uma apresentação, a transcrição de sua fala em legendas é um exemplo claro de uso de reconhecimento de fala.",
+            "statements": [
+                {
+                    "title": "análise de sentimento.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "reconhecimento de fala.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "síntese de fala.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "tradução.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa criar um aplicativo que leia as instruções da receita em voz alta para oferecer suporte aos usuários com visão reduzida. Qual serviço de versão você deve usar?",
+            "explanation": "O serviço de 'Discurso' do Azure permite converter texto em fala, proporcionando um suporte essencial para pessoas com visão reduzida, ao ler instruções e outros textos em voz alta.",
+            "statements": [
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Tradutor",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Discurso",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Compreensão da Linguagem (LUIS)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "O serviço de Fala do Azure pode transcrever chamadas para texto, o que permite a criação de transcrições. O serviço de Análise de Texto pode extrair entidades-chave de transcrições de chamadas, facilitando a identificação de informações importantes. Além disso, o serviço de Fala pode traduzir o áudio de chamadas para diferentes idiomas, ajudando na comunicação multilingue.",
+            "statements": [
+                {
+                    "title": "Você pode usar o serviço de Fala para transcrever uma chamada para texto.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você pode usar o serviço de Análise de Texto para extrair entidades-chave de uma transcrição de chamada.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você pode usar o serviço de Fala para traduzir o áudio de uma chamada para um idioma diferente.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Seu site possui um chatbot para atender os clientes. Você precisa detectar quando um cliente está chateado com base no que ele digita no chatbot. Que tipo de carga de trabalho de IA você deve usar?",
+            "explanation": "O processamento de linguagem natural (NLP) é utilizado para analisar e interpretar a linguagem humana, o que permite detectar o tom e a emoção nas mensagens dos clientes, identificando quando eles estão chateados.",
+            "statements": [
+                {
+                    "title": "detecção de anomalias",
+                    "isCorrect": false
+                },
+                {
+                    "title": "visão computacional",
+                    "isCorrect": false
+                },
+                {
+                    "title": "regressão",
+                    "isCorrect": false
+                },
+                {
+                    "title": "processamento de linguagem natural",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você planeja desenvolver um bot que permitirá aos usuários consultar uma base de conhecimento usando processamento de linguagem natural. Quais são os dois serviços que você deve incluir na solução? Cada resposta correta apresenta parte da solução. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "O Criador de Perguntas e Respostas (QnA Maker) é um serviço que permite criar uma base de conhecimento de perguntas e respostas, facilitando a criação de bots informativos. O Serviço de Bot do Azure é usado para desenvolver e implantar bots que podem interagir com os usuários, fornecendo uma interface para consultas e interações.",
+            "statements": [
+                {
+                    "title": "Criador de perguntas e respostas (QnA Maker)",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Serviço de bot do Azure",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Reconhecedor de formulário",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Detector de anomalias",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Você tem um modelo de Machine Learning do Azure que prevê a qualidade do produto. O modelo possui um conjunto de dados de treinamento que contém 50.000 registros. Uma amostra dos dados é mostrada na tabela a seguir.\nPara cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "attachment": "database/ia900/004.png",
+            "explanation": "Mass (kg) é uma característica (feature) porque é uma variável que pode ser usada como entrada para o modelo. Quality Test é um rótulo (label) porque é a variável que o modelo está tentando prever. Temperature (C) geralmente é uma característica (feature) a menos que esteja sendo usada diretamente como a variável alvo a ser prevista pelo modelo, mas em muitos casos, ela é uma entrada.",
+            "statements": [
+                {
+                    "title": "Mass (kg) é uma característica (feature).",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Quality Test é um rótulo (label).",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Temperature (C) é um rótulo (label).",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em quais dois cenários você pode usar uma solução de síntese de voz? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
+            "explanation": "A síntese de voz pode ser usada para criar uma voz automatizada que lê números de cartão de crédito inseridos por meio de um teclado numérico, e também pode ser usada para dar voz a um personagem de IA em um jogo de computador, fornecendo uma experiência mais interativa e imersiva.",
+            "statements": [
+                {
+                    "title": "uma voz automatizada que lê um número de cartão de crédito inserido em um telefone usando um teclado numérico",
+                    "isCorrect": true
+                },
+                {
+                    "title": "gerar legendas ao vivo para uma transmissão de notícias",
+                    "isCorrect": false
+                },
+                {
+                    "title": "extrair frases-chave da gravação de áudio de uma reunião",
+                    "isCorrect": false
+                },
+                {
+                    "title": "um personagem de IA em um jogo de computador que fala de forma audível com um jogador",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Você pode usar o serviço de Tradução para traduzir texto entre idiomas. Você pode usar o serviço de Tradução para detectar o idioma de um texto dado. Você pode usar o serviço de Tradução para transcrever fala audível em texto.",
+            "explanation": "O serviço de Tradução do Azure é capaz de traduzir texto entre idiomas e detectar o idioma de um texto dado. No entanto, ele não pode transcrever fala audível em texto, pois essa é uma funcionalidade do serviço de Fala.",
+            "statements": [
+                {
+                    "title": "Você pode usar o serviço de Tradução para traduzir texto entre idiomas.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você pode usar o serviço de Tradução para detectar o idioma de um texto dado.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Você pode usar o serviço de Tradução para transcrever fala audível em texto.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está construindo uma base de conhecimento usando o QnA Maker. Qual formato de arquivo você pode usar para preencher a base de conhecimento?",
+            "explanation": "O formato de arquivo XML é comumente usado para preencher a base de conhecimento no QnA Maker, pois permite a estruturação de dados de perguntas e respostas.",
+            "statements": [
+                {
+                    "title": "PPTX",
+                    "isCorrect": false
+                },
+                {
+                    "title": "XML",
+                    "isCorrect": true
+                },
+                {
+                    "title": "ZIP",
+                    "isCorrect": false
+                },
+                {
+                    "title": "PDF",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em qual cenário você deve usar a extração de frases-chave?",
+            "explanation": "A extração de frases-chave é utilizada para identificar termos importantes dentro de documentos. É especialmente útil para identificar quais documentos fornecem informações sobre os mesmos tópicos.",
+            "statements": [
+                {
+                    "title": "identificar se as avaliações de um restaurante são positivas ou negativas",
+                    "isCorrect": false
+                },
+                {
+                    "title": "gerar legendas para um vídeo com base na trilha de áudio",
+                    "isCorrect": false
+                },
+                {
+                    "title": "identificar quais documentos fornecem informações sobre os mesmos tópicos",
+                    "isCorrect": true
+                },
+                {
+                    "title": "traduzir um conjunto de documentos do inglês para o alemão",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem relatórios de sinistros de seguros armazenados como texto. Você precisa extrair termos-chave dos relatórios para gerar resumos. Que tipo de carga de trabalho de IA você deve usar?",
+            "explanation": "O processamento de linguagem natural (NLP) é utilizado para analisar e interpretar textos, incluindo a extração de termos-chave para gerar resumos de relatórios.",
+            "statements": [
+                {
+                    "title": "processamento de linguagem natural",
+                    "isCorrect": true
+                },
+                {
+                    "title": "IA conversacional",
+                    "isCorrect": false
+                },
+                {
+                    "title": "detecção de anomalias",
+                    "isCorrect": false
+                },
+                {
+                    "title": "visão computacional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "pre-question": "Você precisa escanear as notícias em busca de artigos sobre seus clientes e alertar os funcionários quando houver um artigo negativo. Artigos positivos devem ser adicionados a um press book.\nQuais tarefas de processamento de linguagem natural você deve usar para completar o processo? Para responder, arraste as tarefas apropriadas para os locais corretos. Cada tarefa pode ser usada uma vez, mais de uma vez ou não ser usada.\nPode ser necessário arrastar a barra dividida entre os painéis ou rolar para visualizar o conteúdo.",
+            "attachment": "database/ia900/008.png",
+            "question": [
+                "Depois de News articles",
+                "antes de Send alert"
+            ],
+            "explanation": "nenhuma",
+            "statements": [
+                {
+                    "title": "Reconhecimento de entidades"
+                },
+                {
+                    "title": "Análise de sentimento"
+                },
+                {
+                    "title": "Síntese de fala"
+                },
+                {
+                    "title": "Tradução"
+                }
+            ],
+            "answers": [
+                "Reconhecimento de entidades",
+                "Análise de sentimento"
+            ]
+        },
+        {
+            "type": "select",
+            "question": "O processamento de linguagem natural pode ser usado para ...",
+            "explanation": "O processamento de linguagem natural (NLP) pode ser utilizado para classificar mensagens de e-mail como relacionadas ao trabalho ou pessoais, ajudando a organizar e priorizar comunicações.",
+            "statements": [
+                {
+                    "title": "classificar mensagens de e-mail como relacionadas ao trabalho ou pessoais.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "prever o número de aluguéis de carros futuros.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "prever quais visitantes do site farão uma transação.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "parar um processo em uma fábrica quando temperaturas extremamente altas são registradas.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual serviço de IA você pode usar para interpretar o significado de uma entrada do usuário, como 'Ligue-me mais tarde?'",
+            "explanation": "O serviço de Compreensão da Linguagem (LUIS) é projetado para interpretar a intenção por trás das entradas de linguagem natural dos usuários.",
+            "statements": [
+                {
+                    "title": "Tradutor",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Discurso",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Compreensão da Linguagem (LUIS)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está desenvolvendo uma solução de chatbot no Azure. Qual serviço você deve usar para determinar a intenção de um usuário?",
+            "explanation": "O serviço de Compreensão da Linguagem (LUIS) é utilizado para determinar a intenção do usuário em interações com chatbots, proporcionando respostas mais precisas e relevantes.",
+            "statements": [
+                {
+                    "title": "Tradutor",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Criador de perguntas e respostas",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Discurso",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Compreensão da Linguagem (LUIS)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa disponibilizar os comunicados de imprensa escritos da sua empresa em vários idiomas. Qual serviço você deve usar?",
+            "explanation": "O serviço Tradutor do Azure permite a tradução de textos entre vários idiomas, facilitando a comunicação global e a acessibilidade.",
+            "statements": [
+                {
+                    "title": "Tradutor",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Discurso",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Compreensão da Linguagem (LUIS)",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "O serviço de Análise de Texto pode identificar em qual idioma o texto está escrito. O serviço de Análise de Texto pode detectar assinaturas manuscritas em um documento. O serviço de Análise de Texto pode identificar empresas e organizações mencionadas em um documento.",
+            "explanation": "O serviço de Análise de Texto do Azure pode identificar o idioma em que um texto foi escrito e pode identificar empresas e organizações mencionadas em um documento através de reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
+            "statements": [
+                {
+                    "title": "O serviço de Análise de Texto pode identificar em qual idioma o texto está escrito.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço de Análise de Texto pode detectar assinaturas manuscritas em um documento.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "O serviço de Análise de Texto pode identificar empresas e organizações mencionadas em um documento.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Monitorar avaliações de serviços online para profanidades é um exemplo de processamento de linguagem natural. Identificar logotipos de marcas em uma imagem é um exemplo de processamento de linguagem natural. Monitorar sites de notícias públicas para menções negativas de um produto é um exemplo de processamento de linguagem natural.",
+            "explanation": "O processamento de linguagem natural (NLP) é utilizado para analisar e interpretar textos. Monitorar avaliações de serviços online para profanidades e monitorar sites de notícias públicas para menções negativas de um produto são exemplos de NLP. Identificar logotipos de marcas em uma imagem não é NLP, mas sim um exemplo de visão computacional.",
+            "statements": [
+                {
+                    "title": "Monitorar avaliações de serviços online para profanidades é um exemplo de processamento de linguagem natural.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Identificar logotipos de marcas em uma imagem é um exemplo de processamento de linguagem natural.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Monitorar sites de notícias públicas para menções negativas de um produto é um exemplo de processamento de linguagem natural.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "pre-question": "Selecione e arraste a tarefa de processamento de linguagem natural apropriada para cada cenário.",
+            "question": [
+                "Extrai pessoas, locais e organizações do texto.",
+                "Avalia o texto em uma escala positiva-negativa.",
+                "Converte texto para um idioma diferente."
+            ],
+            "explanation": "O reconhecimento de entidade é a tarefa de identificar e classificar entidades mencionadas no texto, como pessoas, locais e organizações. A análise de sentimento avalia o texto em uma escala positiva-negativa, determinando o tom emocional do conteúdo. A tradução converte texto de um idioma para outro, facilitando a comunicação entre falantes de diferentes idiomas.",
+            "statements": [
+                {
+                    "title": "Reconhecimento de entidade"
+                },
+                {
+                    "title": "Extração de frases-chave"
+                },
+                {
+                    "title": "Modelagem de linguagem"
+                },
+                {
+                    "title": "Análise de sentimento"
+                },
+                {
+                    "title": "Tradução"
+                },
+                {
+                    "title": "Reconhecimento e síntese de fala"
+                }
+            ],
+            "answers": [
+                "Reconhecimento de entidade",
+                "Análise de sentimento",
+                "Tradução"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está desenvolvendo uma solução de processamento de linguagem natural no Azure. A solução analisará as avaliações dos clientes e determinará o quão positiva ou negativa é cada avaliação. Este é um exemplo de que tipo de carga de trabalho de processamento de linguagem natural?",
+            "explanation": "A análise de sentimento é utilizada para determinar a atitude, opinião ou sentimento expresso em um texto. Ela avalia se o texto possui um tom positivo, negativo ou neutro. Esta técnica é muito comum em aplicações que analisam opiniões de usuários, como avaliações de clientes.",
+            "statements": [
+                {
+                    "title": "detecção de idioma",
+                    "isCorrect": false
+                },
+                {
+                    "title": "análise de sentimento",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Extração de frase-chave",
+                    "isCorrect": false
+                },
+                {
+                    "title": "reconhecimento de entidade",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está criando um aplicativo Language Understanding (LUIS) para dar suporte a um festival de música. Você deseja que os usuários possam fazer perguntas sobre os shows agendados, como: 'Qual artista está tocando no palco principal?' A pergunta 'Qual ato está sendo apresentado no palco principal?' é um exemplo de que tipo de elemento?",
+            "explanation": "Um enunciado (utterance) é um exemplo específico de como um usuário pode perguntar algo ao aplicativo. Enunciados são usados para treinar o modelo LUIS a fim de reconhecer intenções e entidades com base nas diferentes maneiras que os usuários podem formular suas perguntas.",
+            "statements": [
+                {
+                    "title": "uma intenção",
+                    "isCorrect": false
+                },
+                {
+                    "title": "um enunciado (an utterance)",
+                    "isCorrect": true
+                },
+                {
+                    "title": "um domínio",
+                    "isCorrect": false
+                },
+                {
+                    "title": "uma entidade",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você cria um bot do QnA Maker usando uma página de perguntas frequentes (FAQ). Você precisa adicionar saudações profissionais e outras respostas para tornar o bot mais amigável. O que você deve fazer?",
+            "explanation": "Adicionar bate-papo ao bot permite que ele forneça respostas mais interativas e amigáveis, incluindo saudações e outras interações personalizadas que melhoram a experiência do usuário.",
+            "statements": [
+                {
+                    "title": "Aumentar o limite de confiança das respostas",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Permitir aprendizagem ativa",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Crie perguntas multivoltas",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Adicionar bate-papo",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa desenvolver um chatbot para um site. O chatbot deve responder às dúvidas dos usuários com base nas informações dos seguintes documentos: Um guia de solução de problemas do produto em um documento do Microsoft Word Uma lista de perguntas frequentes (FAQ) em uma página da web Qual serviço você deve usar para processar os documentos?",
+            "explanation": "O Criador de perguntas e respostas (QnA Maker) é o serviço adequado para processar documentos e criar uma base de conhecimento que pode ser utilizada por um chatbot para responder às dúvidas dos usuários. Ele permite extrair informações de diferentes formatos de documentos e páginas da web para fornecer respostas precisas e úteis.",
+            "statements": [
+                {
+                    "title": "Serviço de bot do Azure",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Compreensão da linguagem",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Criador de perguntas e respostas (QnA Maker)",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está construindo um modelo de compreensão linguística para uma empresa de comércio eletrônico. Você precisa garantir que o modelo detecte quando as declarações estão fora do escopo pretendido do modelo. O que você deve fazer?",
+            "explanation": "Adicionar declarações à intenção 'None' ajuda o modelo a reconhecer quando as entradas não se enquadram em nenhuma das intenções específicas que ele foi treinado para entender. Isso permite que o modelo identifique declarações fora do escopo de maneira eficaz.",
+            "statements": [
+                {
+                    "title": "Teste o modelo usando novas declarações",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Adicionar declarações à intenção None",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Crie uma entidade de tarefa pré-construída",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Crie um novo modelo",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "O serviço de linguagem pode identificar em qual idioma o texto está escrito. O serviço de linguagem pode detectar assinaturas manuscritas em um documento. O serviço de linguagem pode identificar empresas e organizações mencionadas em um documento.",
+            "explanation": "O serviço de linguagem do Azure pode identificar o idioma em que um texto foi escrito e identificar empresas e organizações mencionadas em um documento através do reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
+            "statements": [
+                {
+                    "title": "O serviço de linguagem pode identificar em qual idioma o texto está escrito.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço de linguagem pode detectar assinaturas manuscritas em um documento.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "O serviço de linguagem pode identificar empresas e organizações mencionadas em um documento.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Um bot que responde a consultas de usuários internos é um exemplo de uma carga de trabalho de IA conversacional. Um aplicativo que exibe imagens relacionadas a um termo de pesquisa inserido é um exemplo de uma carga de trabalho de IA conversacional. Um formulário da web usado para enviar uma solicitação para redefinir uma senha é um exemplo de uma carga de trabalho de IA conversacional.",
+            "explanation": "Uma carga de trabalho de IA conversacional envolve interações diretas entre usuários e sistemas inteligentes, como chatbots que respondem a consultas. Um bot que responde a consultas de usuários internos é um exemplo claro de IA conversacional. Já aplicativos que exibem imagens baseadas em termos de pesquisa e formulários para redefinição de senhas não se enquadram nessa categoria, pois não envolvem interações conversacionais contínuas.",
+            "statements": [
+                {
+                    "title": "Um bot que responde a consultas de usuários internos é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um aplicativo que exibe imagens relacionadas a um termo de pesquisa inserido é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Um formulário da web usado para enviar uma solicitação para redefinir uma senha é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está desenvolvendo uma solução de IA conversacional que se comunicará com os usuários por meio de vários canais, incluindo e-mail, Microsoft Teams e webchat. Qual serviço você deve usar?",
+            "explanation": "O Serviço de bot do Azure permite a criação e o gerenciamento de bots que podem interagir com usuários em vários canais, como e-mail, Microsoft Teams e webchat, proporcionando uma experiência de comunicação consistente e eficiente.",
+            "statements": [
+                {
+                    "title": "Análise de texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Serviço de bot do Azure",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Tradutor",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Reconhecedor de formulário",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem o processo mostrado no seguinte diagrama. Qual tipo de solução de IA é mostrada no diagrama?",
+            "attachment": "database/ia900/006.png",
+            "explanation": "O diagrama descreve uma interação em que um usuário faz uma pergunta e recebe uma resposta automatizada contendo um link para mais informações. Esse tipo de interação é característica de um chatbot, que é projetado para responder automaticamente a consultas dos usuários.",
+            "statements": [
+                {
+                    "title": "uma solução de análise de sentimento",
+                    "isCorrect": false
+                },
+                {
+                    "title": "um chatbot",
+                    "isCorrect": true
+                },
+                {
+                    "title": "um modelo de aprendizado de máquina",
+                    "isCorrect": false
+                },
+                {
+                    "title": "uma aplicação de visão computacional",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Você pode usar o QnA Maker para consultar um banco de dados Azure SQL. Você deve usar o QnA Maker quando quiser uma base de conhecimento para fornecer a mesma resposta a diferentes usuários que enviam perguntas semelhantes. O serviço QnA Maker pode determinar a intenção de uma expressão do usuário.",
+            "explanation": "O QnA Maker é projetado para criar uma base de conhecimento a partir de documentos e páginas da web, mas ele não pode consultar diretamente um banco de dados Azure SQL. Ele é ideal para fornecer respostas consistentes para perguntas frequentes. No entanto, o QnA Maker não determina a intenção de uma expressão do usuário; essa função é do serviço LUIS (Language Understanding).",
+            "statements": [
+                {
+                    "title": "Você pode usar o QnA Maker para consultar um banco de dados Azure SQL.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Você deve usar o QnA Maker quando quiser uma base de conhecimento para fornecer a mesma resposta a diferentes usuários que enviam perguntas semelhantes.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O serviço QnA Maker pode determinar a intenção de uma expressão do usuário.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa disponibilizar os comunicados de imprensa escritos da sua empresa em vários idiomas. Qual serviço você deve usar?",
+            "explanation": "O serviço Tradutor do Azure permite a tradução de textos entre vários idiomas, facilitando a comunicação global e a acessibilidade.",
+            "statements": [
+                {
+                    "title": "Discurso",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Idioma",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Tradutor",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Personalizador",
+                    "isCorrect": false
+                }
             ]
         }
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
     ]
 }

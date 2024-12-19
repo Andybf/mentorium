@@ -301,10 +301,19 @@ export default class App extends AVElement {
         }
     }
 
+    fillQuestionImageIfExists(newCard, questionObj) {
+        if (questionObj.attachment) {
+            let img = document.createElement("img");
+            img.src =  questionObj.attachment;
+            newCard.querySelector("section").insertBefore(img, newCard.querySelector("fieldset"));
+        }
+    }
+
     fillQuestionMultipleYesNo(index) {
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#multiple-YesNo").content,true);
         newCard.querySelector("h3").innerText = this.database[index].question;
+        this.fillQuestionImageIfExists(newCard, this.database[index]);
         let statementIndex = 0;
         for (let statement of this.database[index].statements) {
             let li = document.createElement("li");
@@ -337,7 +346,8 @@ export default class App extends AVElement {
         let questionObj = this.database[index];
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#choose").content,true);
-        newCard.querySelector("h3").innerText = questionObj.question;
+        newCard.querySelector("h3").innerText = questionObj.question;        
+        this.fillQuestionImageIfExists(newCard, questionObj);
 
         let list = newCard.querySelector("ul");
         for (let statement of questionObj.statements) {
@@ -360,6 +370,7 @@ export default class App extends AVElement {
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#select").content,true);
         newCard.querySelector("h3").innerText = this.database[index].question;
+        this.fillQuestionImageIfExists(newCard, this.database[index]);
         let select = newCard.querySelector("select");
         let option = document.createElement("option");
         option.value = ' ';
@@ -379,7 +390,15 @@ export default class App extends AVElement {
         let newCard = document.importNode(this.body.querySelector("template#multiple-select").content,true);
         let string = this.database[index].question;
 
-        newCard.querySelector("h3").innerText = "Selecione os valores apropriados:";
+        let title;
+        if (this.database[index]['pre-question']) {
+            title = this.database[index]['pre-question'];
+        } else {
+            title = "Selecione os valores apropriados:"
+        }
+        newCard.querySelector("h3").innerText = title;
+
+        this.fillQuestionImageIfExists(newCard, this.database[index]);
         const statementLength = this.database[index].answers.length;
         for (let i=0; i<statementLength; i++ ) {
             let div = document.createElement("div");

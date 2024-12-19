@@ -10,6 +10,11 @@ h1 {
     text-align: center;
 }
 
+img {
+    max-height: 50vh;
+    max-width: 85vw;
+}
+
 nav {
     height: 50px;
     display: flex;
@@ -47,6 +52,7 @@ main {
 
 fieldset {
     border-radius: 6px;
+    margin-top: 1rem;
 }
 
 ul {
