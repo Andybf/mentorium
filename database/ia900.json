@@ -137,8 +137,8 @@
         },
         {
             "type": "multiple-select",
+            "pre-question" : "Combine os tipos de cargas de trabalho de IA com os cenários apropriados.",
             "question": [
-                "Combine os tipos de cargas de trabalho de IA com os cenários apropriados.",
                 "Um chat automatizado para responder perguntas sobre reembolsos e trocas",
                 "Determinar se uma foto contém uma pessoa",
                 "Determinar se uma revisão é positiva ou negativa"
