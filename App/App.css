@@ -43,7 +43,8 @@ progress {
 
 article {
     padding: 1rem 2rem;
-    overflow-y: scroll;
+    overflow-y: auto;
+    background: var(--interface-background);
 }
 
 main {
@@ -90,12 +91,12 @@ div#modal-question-map > section.background {
 }
 div#modal-question-map > section.card {
     position: absolute;
-    width: 50vw;
-    left: calc(50vw - 25vw);
+    width: 60vw;
+    left: calc(50vw - 30vw);
     height: 60vh;
     top: calc(50vh - 30vh);
-    background: white;
-    border: 2px solid grey;
+    background: var(--background-color);
+    border: 2px solid var(--border);
     border-radius: 1rem;
     overflow: auto;
     text-align: center;
@@ -105,6 +106,30 @@ div#modal-question-map > section.card {
         width: 90vw;
         left: calc(50vw - 45vw);
     }
+}
+div.questions-status {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+#question-status-hits-box {
+    background-color: green;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+#question-status-parcial-box {
+    background-color: yellow;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+#question-status-miss-box {
+    background-color: red;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 }
 
 div#question-icons {
@@ -126,11 +151,13 @@ div#question-icons > button {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 button {
-    background-color: #555555;
-    color: white;
+    background-color: var(--button-background);
+    color: inherit;
+    font-weight: bold;
     border: none;
     padding: 1.0rem;
     cursor: pointer;
@@ -142,9 +169,11 @@ button:disabled {
 }
 button#question-map {
     background-color: #5e5ed8;
+    color: white;
 }
 button#next {
     background-color: #52ba6e;
+    color: white;
 }
 
 section.start-exam {

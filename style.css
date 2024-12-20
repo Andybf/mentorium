@@ -18,6 +18,8 @@ html {
 
 body {
     height: inherit;
+    background: var(--background-color);
+    color: var(--font-color);
 }
 
 
@@ -29,4 +31,58 @@ comp-app {
     height: inherit;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media (prefers-color-scheme: light) {
+    .dynamic-theme {
+        --background-color : #fff;
+        --background-brightness : blur(10px) brightness(1.0);
+        --interface-background: #fafafa;
+        --terciary-color : #9a9a9a; 
+        --opaque-backgorund : #FFFFFF69;
+        --transparent-backgorund : #FFFFFF49;
+        --button-background : #f0f0f0;
+        --button-background-hover : #dadada;
+        --window-header-background : linear-gradient(#eee,#ccc);
+        --border: #e0e0e0;
+        --shadow : #787878;
+        --font-color: #000;
+        --font: OpenSans, arial, sans-serif;
+        --svg-color: invert(1);
+        --tone-red: #f73333;
+    
+        --sticky-color-yellow: #FEF4A1;
+        --sticky-color-red: #FEC8C8;
+        --sticky-color-green: #b3fea4;
+        --sticky-color-blue: #aef3f3;
+        --sticky-color-purple: #b7c9fd;
+        --sticky-color-grey: #EEEEEE;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dynamic-theme {
+        --background-color : #2f2f2f;
+        --background-brightness : blur(10px) brightness(0.5);
+        --interface-background: #353535;
+        --terciary-color : #adadad; 
+        --opaque-backgorund : #00000069;
+        --transparent-backgorund : #00000050;
+        --button-background : #403e3ecc;
+        --button-background-hover : #656565d1;
+        --window-header-background : linear-gradient(#555,#333);
+        --border: #000000;
+        --shadow : #191919; 
+        --font-color: #fff;
+        --font: OpenSans, arial, sans-serif;
+        --svg-color: invert(0);
+        --tone-red: #f73333;
+    
+        --sticky-color-yellow: #e9e088;
+        --sticky-color-red: #e5a9a9;
+        --sticky-color-green: #93df84;
+        --sticky-color-blue: #92dddd;
+        --sticky-color-purple: #9aace3;
+        --sticky-color-grey: #EEEEEE;
+    }
 }

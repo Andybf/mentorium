@@ -105,6 +105,7 @@ export default class App extends AVElement {
                     div.appendChild(button);
                 }
             }
+            this.countStatus();
             this.body.querySelector("#current-question").innerText = 0;
             this.body.querySelector("#total-questions").innerText = this.examQuestions;
             this.body.querySelector("#exam-progress").max = this.examQuestions;
@@ -126,8 +127,12 @@ export default class App extends AVElement {
 
     prepareNextQuestion(id) {
         this.cleanQuestionCard();
-        this.currentExam.currentQuestion = id;
-        const currentQuestion = this.currentExam.currentQuestion;
+        if (id >= this.database.length) {
+            this.currentExam.currentQuestion = 0;
+        } else {
+            this.currentExam.currentQuestion = id;  
+        }              
+        const currentQuestion = this.currentExam.currentQuestion;        
         const questionType = this.database[currentQuestion]['type'];
         this.body.querySelector("#current-question").innerText = currentQuestion+1;
         if (questionType === 'select') {  
@@ -226,6 +231,30 @@ export default class App extends AVElement {
         modal.display = (modal.display == '') ? 'none' : '';
     }
 
+    countStatus() {
+        let hits = 0;
+        for (let q of this.dashboardData) {
+            if (q === 'green') {
+                hits++;
+            }
+        }
+        this.body.querySelector("#status-hits").innerText = hits;
+        let parcials = 0;
+        for (let q of this.dashboardData) {
+            if (q === 'yellow') {
+                parcials++;
+            }
+        }
+        this.body.querySelector("#status-parcial").innerText = parcials;
+        let misses = 0;
+        for (let q of this.dashboardData) {
+            if (q === 'red') {
+                misses++;
+            }
+        }
+        this.body.querySelector("#status-miss").innerText = misses;
+    }
+
     updateDashboard(questionId, status) {
         let div = Array.from(this.body.querySelector("#question-icons").children);
         if (status == 'pass') {
@@ -241,6 +270,7 @@ export default class App extends AVElement {
             div[questionId].style.background = this.dashboardData[questionId];
         }
         BrowserSave.saveOnBrowserStorage(this.currentExam.name, this.dashboardData);
+        this.countStatus();
     }
 
     revealQuestion() {
