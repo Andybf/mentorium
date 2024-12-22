@@ -1627,7 +1627,7 @@
         },
         {
             "type": "multiple-YesNo",
-            "question": "O serviço Custom Vision pode ser usado para detectar objetos em uma imagem. O serviço Custom Vision requer que você forneça os dados para treinar o modelo. O serviço Custom Vision pode ser usado para analisar arquivos de vídeo.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço Custom Vision é projetado para identificar e classificar objetos em imagens, e requer dados de treinamento para construir modelos precisos. No entanto, ele não é usado para análise de vídeos diretamente; outras ferramentas específicas para vídeos são recomendadas.",
             "statements": [
                 {
@@ -2236,7 +2236,7 @@
         },
         {
             "type": "multiple-YesNo",
-            "question": "Você pode usar o serviço de Tradução para traduzir texto entre idiomas. Você pode usar o serviço de Tradução para detectar o idioma de um texto dado. Você pode usar o serviço de Tradução para transcrever fala audível em texto.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de Tradução do Azure é capaz de traduzir texto entre idiomas e detectar o idioma de um texto dado. No entanto, ele não pode transcrever fala audível em texto, pois essa é uma funcionalidade do serviço de Fala.",
             "statements": [
                 {
@@ -2444,7 +2444,7 @@
         },
         {
             "type": "multiple-YesNo",
-            "question": "O serviço de Análise de Texto pode identificar em qual idioma o texto está escrito. O serviço de Análise de Texto pode detectar assinaturas manuscritas em um documento. O serviço de Análise de Texto pode identificar empresas e organizações mencionadas em um documento.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de Análise de Texto do Azure pode identificar o idioma em que um texto foi escrito e pode identificar empresas e organizações mencionadas em um documento através de reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
             "statements": [
                 {
@@ -2463,7 +2463,7 @@
         },
         {
             "type": "multiple-YesNo",
-            "question": "Monitorar avaliações de serviços online para profanidades é um exemplo de processamento de linguagem natural. Identificar logotipos de marcas em uma imagem é um exemplo de processamento de linguagem natural. Monitorar sites de notícias públicas para menções negativas de um produto é um exemplo de processamento de linguagem natural.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O processamento de linguagem natural (NLP) é utilizado para analisar e interpretar textos. Monitorar avaliações de serviços online para profanidades e monitorar sites de notícias públicas para menções negativas de um produto são exemplos de NLP. Identificar logotipos de marcas em uma imagem não é NLP, mas sim um exemplo de visão computacional.",
             "statements": [
                 {
@@ -2631,8 +2631,58 @@
             ]
         },
         {
+            "type": "choose",
+            "question": "Quais são os dois cenários que são exemplos de uma carga de trabalho de processamento de linguagem natural? Cada resposta correta apresenta uma solução completa.",
+            "explanation": "Os cenários B e C envolvem a compreensão e a geração de linguagem natural, que são tarefas típicas de processamento de linguagem natural (NLP).",
+            "statements": [
+              {
+                "title": "Monitorar a temperatura do maquinário para ligar um ventilador quando a temperatura atingir um limite específico",
+                "isCorrect": false
+              },
+              {
+                "title": "Um dispositivo inteligente em casa que responde a perguntas como: 'Como estará o tempo hoje?'",
+                "isCorrect": true
+              },
+              {
+                "title": "Um site que usa uma base de conhecimento para responder interativamente às perguntas dos usuários",
+                "isCorrect": true
+              },
+              {
+                "title": "Máquinas de linha de montagem que inserem faróis de forma autônoma nos carros",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem uma solução de IA que oferece aos usuários a capacidade de controlar dispositivos inteligentes usando comandos verbais. Quais são os dois tipos de cargas de trabalho de processamento de linguagem natural (PNL) que a solução usa? Cada resposta correta apresenta parte da solução.",
+            "explanation": "As cargas de trabalho A e C são fundamentais para uma solução que permite o controle de dispositivos inteligentes usando comandos verbais: conversão de texto em fala para dar respostas audíveis e fala para texto para entender os comandos dos usuários.",
+            "statements": [
+              {
+                "title": "Conversão de texto em fala",
+                "isCorrect": true
+              },
+              {
+                "title": "Extração de frase-chave",
+                "isCorrect": false
+              },
+              {
+                "title": "Fala para texto",
+                "isCorrect": true
+              },
+              {
+                "title": "Modelagem de linguagem",
+                "isCorrect": false
+              },
+              {
+                "title": "Tradução",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
             "type": "multiple-YesNo",
-            "question": "O serviço de linguagem pode identificar em qual idioma o texto está escrito. O serviço de linguagem pode detectar assinaturas manuscritas em um documento. O serviço de linguagem pode identificar empresas e organizações mencionadas em um documento.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de linguagem do Azure pode identificar o idioma em que um texto foi escrito e identificar empresas e organizações mencionadas em um documento através do reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
             "statements": [
                 {
@@ -2650,22 +2700,74 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
-            "question": "Um bot que responde a consultas de usuários internos é um exemplo de uma carga de trabalho de IA conversacional. Um aplicativo que exibe imagens relacionadas a um termo de pesquisa inserido é um exemplo de uma carga de trabalho de IA conversacional. Um formulário da web usado para enviar uma solicitação para redefinir uma senha é um exemplo de uma carga de trabalho de IA conversacional.",
-            "explanation": "Uma carga de trabalho de IA conversacional envolve interações diretas entre usuários e sistemas inteligentes, como chatbots que respondem a consultas. Um bot que responde a consultas de usuários internos é um exemplo claro de IA conversacional. Já aplicativos que exibem imagens baseadas em termos de pesquisa e formulários para redefinição de senhas não se enquadram nessa categoria, pois não envolvem interações conversacionais contínuas.",
+            "type": "multiple-select",
+            "pre-question" : "Você planeja usar os Serviços Cognitivos do Azure para desenvolver um aplicativo de assistente pessoal controlado por voz. Combine os Serviços Cognitivos do Azure com as tarefas apropriadas. Para responder, arraste o serviço apropriado da coluna à esquerda para sua descrição à direita. Cada serviço pode ser usado uma vez, mais de uma vez ou não ser usado. NOTA: Cada seleção correta vale um ponto",
+            "question": [
+                "Converter a fala do usuário em texto",
+                "Identificar a intenção do usuário",
+                "Fornecer uma resposta falada ao usuário"
+            ],
+            "explanation": "A tarefa de 'Converter a fala do usuário em texto' usa o serviço de 'Fala' para transcrever as palavras do usuário. 'Identificar a intenção do usuário' utiliza o 'Serviço de linguagem' para compreender e processar a intenção por trás do texto. 'Fornecer uma resposta falada ao usuário' novamente recorre ao serviço de 'Fala' para converter o texto da resposta em fala.",
             "statements": [
                 {
-                    "title": "Um bot que responde a consultas de usuários internos é um exemplo de uma carga de trabalho de IA conversacional.",
-                    "isCorrect": true
+                    "title": "Fala"
                 },
                 {
-                    "title": "Um aplicativo que exibe imagens relacionadas a um termo de pesquisa inserido é um exemplo de uma carga de trabalho de IA conversacional.",
-                    "isCorrect": false
+                    "title": "Serviço de linguagem"
                 },
                 {
-                    "title": "Um formulário da web usado para enviar uma solicitação para redefinir uma senha é um exemplo de uma carga de trabalho de IA conversacional.",
-                    "isCorrect": false
+                    "title": "Texto do tradutor"
                 }
+            ],
+            "answers": [
+                "Fala",
+                "Serviço de linguagem",
+                "Fala"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa criar um aplicativo que leia as instruções da receita em voz alta para oferecer suporte aos usuários com visão reduzida. Qual serviço de versão você deve usar?",
+            "explanation": "O serviço 'Discurso' é apropriado para converter texto em fala, permitindo que o aplicativo leia as instruções da receita em voz alta para os usuários com visão reduzida.",
+            "statements": [
+              {
+                "title": "Serviço linguístico",
+                "isCorrect": false
+              },
+              {
+                "title": "Tradutor",
+                "isCorrect": false
+              },
+              {
+                "title": "Discurso",
+                "isCorrect": true
+              },
+              {
+                "title": "Personalizador",
+                "isCorrect": false
+              }
+            ]
+        },{
+            "type": "choose",
+            "question": "Você tem um webchat bot que fornece respostas de uma base de conhecimento do QnA Maker. Você precisa garantir que o bot use o feedback do usuário para melhorar a relevância das respostas ao longo do tempo. O que você deve usar?",
+            "explanation": "A 'Aprendizagem ativa' permite que o bot melhore continuamente suas respostas com base no feedback do usuário, ajustando-se para fornecer respostas mais relevantes ao longo do tempo.",
+            "statements": [
+              {
+                "title": "Extração de frase-chave",
+                "isCorrect": false
+              },
+              {
+                "title": "Análise de sentimento",
+                "isCorrect": false
+              },
+              {
+                "title": "Lógica de negócios",
+                "isCorrect": false
+              },
+              {
+                "title": "Aprendizagem ativa",
+                "isCorrect": true
+              }
             ]
         },
         {
@@ -2692,6 +2794,121 @@
             ]
         },
         {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Uma carga de trabalho de IA conversacional envolve interações diretas entre usuários e sistemas inteligentes, como chatbots que respondem a consultas. Um bot que responde a consultas de usuários internos é um exemplo claro de IA conversacional. Já aplicativos que exibem imagens baseadas em termos de pesquisa e formulários para redefinição de senhas não se enquadram nessa categoria, pois não envolvem interações conversacionais contínuas.",
+            "statements": [
+                {
+                    "title": "Um bot que responde a consultas de usuários internos é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um aplicativo que exibe imagens relacionadas a um termo de pesquisa inserido é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Um formulário da web usado para enviar uma solicitação para redefinir uma senha é um exemplo de uma carga de trabalho de IA conversacional.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa fornecer conteúdo para um chatbot empresarial que ajude a responder às dúvidas simples dos usuários. Quais são as três maneiras de criar texto de perguntas e respostas usando o QnA Maker? Cada resposta correta apresenta uma solução completa.",
+            "explanation": "As opções A, C e E são métodos válidos para criar texto de perguntas e respostas usando o QnA Maker: gerar perguntas e respostas a partir de uma página da web existente, inserir manualmente as perguntas e respostas, e importar conteúdo de bate-papo de uma fonte de dados predefinida.",
+            "statements": [
+              {
+                "title": "Gere perguntas e respostas a partir de uma página da web existente.",
+                "isCorrect": true
+              },
+              {
+                "title": "Use aprendizado de máquina automatizado para treinar um modelo com base em um arquivo que contém as perguntas.",
+                "isCorrect": false
+              },
+              {
+                "title": "Insira manualmente as perguntas e respostas.",
+                "isCorrect": true
+              },
+              {
+                "title": "Conecte o bot ao canal da Cortana e faça perguntas usando a Cortana.",
+                "isCorrect": false
+              },
+              {
+                "title": "Importe conteúdo de bate-papo de uma fonte de dados predefinida.",
+                "isCorrect": true
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem um arquivo PDF de perguntas frequentes (FAQ). Você precisa criar um sistema de suporte conversacional baseado no FAQ. Qual serviço você deve usar?",
+            "explanation": "O Criador de perguntas e respostas (QnA Maker) é o serviço apropriado para criar um sistema de suporte conversacional baseado em um arquivo de perguntas frequentes (FAQ).",
+            "statements": [
+              {
+                "title": "Criador de perguntas e respostas (QnA Maker)",
+                "isCorrect": true
+              },
+              {
+                "title": "Análise de texto",
+                "isCorrect": false
+              },
+              {
+                "title": "Visão Computacional",
+                "isCorrect": false
+              },
+              {
+                "title": "Compreensão da Linguagem (LUIS)",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa reduzir a carga das operadoras de telefonia implementando um chatbot para responder perguntas simples com respostas predefinidas. Quais dois serviços de IA você deve usar para atingir a meta? Cada resposta correta apresenta parte da solução.",
+            "explanation": "Os serviços de IA apropriados para essa meta são o Criador de perguntas e respostas (QnA Maker), que fornece respostas predefinidas, e o Serviço de bot do Azure, que implementa o chatbot.",
+            "statements": [
+              {
+                "title": "Análise de texto",
+                "isCorrect": false
+              },
+              {
+                "title": "Criador de perguntas e respostas (QnA Maker)",
+                "isCorrect": true
+              },
+              {
+                "title": "Serviço de bot do Azure",
+                "isCorrect": true
+              },
+              {
+                "title": "Tradutor",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são os dois cenários que são exemplos de uma carga de trabalho de IA conversacional? Cada resposta correta apresenta uma solução completa.",
+            "explanation": "Os cenários A e B são exemplos de uma carga de trabalho de IA conversacional: um dispositivo inteligente em casa que responde a perguntas como 'Como estará o tempo hoje?' e um site que usa uma base de conhecimento para responder interativamente às perguntas dos usuários.",
+            "statements": [
+              {
+                "title": "Um dispositivo inteligente em casa que responde a perguntas como 'Como estará o tempo hoje?'",
+                "isCorrect": true
+              },
+              {
+                "title": "Um site que usa uma base de conhecimento para responder interativamente às perguntas dos usuários",
+                "isCorrect": true
+              },
+              {
+                "title": "Máquinas de linha de montagem que inserem faróis de forma autônoma nos carros",
+                "isCorrect": false
+              },
+              {
+                "title": "Monitorar a temperatura das máquinas para ligar um ventilador quando a temperatura atinge um limite específico",
+                "isCorrect": false
+              }
+            ]
+        },          
+        {
             "type": "choose",
             "question": "Você tem o processo mostrado no seguinte diagrama. Qual tipo de solução de IA é mostrada no diagrama?",
             "attachment": "database/ia900/006.png",
@@ -2717,7 +2934,7 @@
         },
         {
             "type": "multiple-YesNo",
-            "question": "Você pode usar o QnA Maker para consultar um banco de dados Azure SQL. Você deve usar o QnA Maker quando quiser uma base de conhecimento para fornecer a mesma resposta a diferentes usuários que enviam perguntas semelhantes. O serviço QnA Maker pode determinar a intenção de uma expressão do usuário.",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O QnA Maker é projetado para criar uma base de conhecimento a partir de documentos e páginas da web, mas ele não pode consultar diretamente um banco de dados Azure SQL. Ele é ideal para fornecer respostas consistentes para perguntas frequentes. No entanto, o QnA Maker não determina a intenção de uma expressão do usuário; essa função é do serviço LUIS (Language Understanding).",
             "statements": [
                 {
@@ -2756,6 +2973,315 @@
                     "isCorrect": false
                 }
             ]
-        }
+        },
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Sim, você pode se comunicar com bots usando Cortana, Microsoft Teams e interfaces de chat na web. Essas plataformas suportam a integração com bots para diversas funcionalidades.",
+            "statements": [
+              {
+                "title": "Você pode se comunicar com um bot usando o Cortana.",
+                "isCorrect": true
+              },
+              {
+                "title": "Você pode se comunicar com um bot usando o Microsoft Teams.",
+                "isCorrect": true
+              },
+              {
+                "title": "Você pode se comunicar com um bot usando uma interface de chat na web.",
+                "isCorrect": true
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual afirmação é um exemplo de um princípio de IA responsável da Microsoft?",
+            "explanation": "Os princípios de IA responsável da Microsoft incluem a transparência e a inclusão para garantir que os sistemas de IA sejam justos e acessíveis a todos.",
+            "statements": [
+              {
+                "title": "Os sistemas de IA devem usar apenas dados disponíveis publicamente.",
+                "isCorrect": false
+              },
+              {
+                "title": "Os sistemas de IA devem ser transparentes e inclusivos.",
+                "isCorrect": true
+              },
+              {
+                "title": "Os sistemas de IA devem manter os detalhes pessoais públicos.",
+                "isCorrect": false
+              },
+              {
+                "title": "Os sistemas de IA devem proteger os interesses da empresa.",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Durante o processo de Aprendizado de Máquina, quando você deve revisar as métricas de avaliação?",
+            "explanation": "As métricas de avaliação devem ser revisadas depois de testar um modelo nos dados de validação para avaliar o desempenho do modelo e ajustar conforme necessário.",
+            "statements": [
+              {
+                "title": "Antes de treinar um modelo.",
+                "isCorrect": false
+              },
+              {
+                "title": "Depois de limpar os dados.",
+                "isCorrect": false
+              },
+              {
+                "title": "Antes de escolher o tipo de modelo.",
+                "isCorrect": false
+              },
+              {
+                "title": "Depois de testar um modelo nos dados de validação.",
+                "isCorrect": true
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual técnica de machine learning pode ser usada para detecção de anomalias?",
+            "explanation": "A técnica que analisa dados ao longo do tempo e identifica mudanças incomuns é usada para detecção de anomalias, pois permite detectar padrões que não se ajustam ao comportamento esperado.",
+            "statements": [
+              {
+                "title": "Uma técnica de machine learning que classifica objetos com base em imagens fornecidas pelo usuário",
+                "isCorrect": false
+              },
+              {
+                "title": "Uma técnica de machine learning que entende linguagem escrita e falada.",
+                "isCorrect": false
+              },
+              {
+                "title": "Uma técnica de machine learning que classifica imagens com base em seus conteúdos.",
+                "isCorrect": false
+              },
+              {
+                "title": "Uma técnica de machine learning que analisa dados ao longo do tempo e identifica mudanças incomuns.",
+                "isCorrect": true
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Durante o teste, você descobre que o sistema tem um viés de gênero. Qual princípio de IA responsável isso viola?",
+            "explanation": "O viés de gênero viola o princípio da justiça, que busca garantir que os sistemas de IA tratem todas as pessoas de forma justa e sem discriminação.",
+            "statements": [
+              {
+                "title": "Responsabilidade",
+                "isCorrect": false
+              },
+              {
+                "title": "Confiabilidade e segurança",
+                "isCorrect": false
+              },
+              {
+                "title": "Transparência",
+                "isCorrect": false
+              },
+              {
+                "title": "Justiça",
+                "isCorrect": true
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você está desenvolvendo um sistema para prever os preços do seguro para motoristas no Reino Unido. Você precisa minimizar o viés no sistema. O que você deve fazer?",
+            "explanation": "Para minimizar o viés no sistema, é importante que a amostra de treinamento seja representativa da população do Reino Unido, garantindo que todos os grupos relevantes estejam adequadamente representados.",
+            "statements": [
+              {
+                "title": "Remover informações sobre características protegidas dos dados antes da amostragem.",
+                "isCorrect": false
+              },
+              {
+                "title": "Fazer uma amostra de treinamento que seja representativa da população do Reino Unido.",
+                "isCorrect": true
+              },
+              {
+                "title": "Criar um conjunto de dados de treinamento que utilize dados de seguradoras globais.",
+                "isCorrect": false
+              },
+              {
+                "title": "Fazer uma amostra de treinamento completamente aleatória.",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Azure Machine Learning designer permite que você crie modelos de aprendizado de máquina...",
+            "explanation": "Azure Machine Learning designer oferece uma interface visual que facilita a criação de modelos de aprendizado de máquina por meio da adição e conexão de módulos, além de automatizar tarefas comuns de preparação de dados.",
+            "statements": [
+              {
+                "title": "adicionando e conectando módulos em uma interface visual.",
+                "isCorrect": true
+              },
+              {
+                "title": "realizando automaticamente tarefas comuns de preparação de dados.",
+                "isCorrect": true
+              },
+              {
+                "title": "selecionando automaticamente um algoritmo para construir o modelo mais preciso.",
+                "isCorrect": false
+              },
+              {
+                "title": "utilizando uma experiência de notebook baseada em código.",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você tem um conjunto de dados. Você precisa criar um modelo de classificação de Azure Machine Learning que identifique produtos defeituosos. O que você deve fazer primeiro?",
+            "explanation": "A primeira etapa na criação de um modelo de classificação é carregar o conjunto de dados no ambiente de trabalho para que você possa começar a processá-lo e analisá-lo.",
+            "statements": [
+              {
+                "title": "Carregar o conjunto de dados.",
+                "isCorrect": true
+              },
+              {
+                "title": "Criar um modelo de agrupamento.",
+                "isCorrect": false
+              },
+              {
+                "title": "Dividir os dados em conjuntos de treinamento e teste.",
+                "isCorrect": false
+              },
+              {
+                "title": "Criar um modelo de classificação.",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você usa o Azure Machine Learning Designer para criar um pipeline de modelo. O que você deve criar antes de poder executar o pipeline?",
+            "explanation": "Antes de executar o pipeline, você precisa criar um recurso de computação no Azure Machine Learning Designer. Este recurso fornece a infraestrutura necessária para a execução das tarefas no pipeline.",
+            "statements": [
+              {
+                "title": "Um modelo registrado",
+                "isCorrect": false
+              },
+              {
+                "title": "Um recurso de computação",
+                "isCorrect": true
+              },
+              {
+                "title": "Um notebook Jupyter",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "pre-question": "Associe a ferramenta à tarefa do Azure Machine Learning.\nPara responder, arraste a ferramenta apropriada da coluna à esquerda para suas tarefas à direita. Cada ferramenta pode ser usada uma vez, mais de uma vez ou não ser usada.",
+            "question": [
+                "Criar um workspace de Machine Learning",
+                "Usar uma interface de arrastar e soltar usada para treinar e implantar modelos",
+                "Usar um assistente para selecionar configurações para uma execução de aprendizado de máquina"
+            ],
+            "explanation": "O portal do Azure é usado para criar um workspace de Machine Learning. O Designer do Machine Learning é a ferramenta que permite treinar e implantar modelos usando uma interface de arrastar e soltar. O Aprendizado de máquina automatizado (Automated ML) utiliza um assistente para selecionar automaticamente as configurações para uma execução de aprendizado de máquina.",
+            "statements": [
+                {
+                    "title": "Aprendizado de máquina automatizado (Automated ML)"
+                },
+                {
+                    "title": "O portal do Azure"
+                },
+                {
+                    "title": "Designer do Machine Learning"
+                }
+            ],
+            "answers": [
+                "O portal do Azure",
+                "Designer do Machine Learning",
+                "Aprendizado de máquina automatizado (Automated ML)"
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Em um modelo de aprendizado de máquina, os dados usados como entradas são chamados de",
+            "explanation": "Os dados usados como entradas em um modelo de aprendizado de máquina são geralmente referidos como 'conjunto de dados'. Eles contêm tanto as características quanto os rótulos (se supervisionado) para treinar o modelo.",
+            "statements": [
+              {
+                "title": "Conjunto de dados",
+                "isCorrect": true
+              },
+              {
+                "title": "Rótulos",
+                "isCorrect": false
+              },
+              {
+                "title": "Variáveis",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Ao construir um modelo de regressão, os rótulos devem ter um tipo de dado do tipo...",
+            "explanation": "Para um modelo de regressão, os rótulos devem ter um tipo de dado numérico, pois a regressão busca prever um valor contínuo.",
+            "statements": [
+              {
+                "title": "booleano",
+                "isCorrect": false
+              },
+              {
+                "title": "datetime",
+                "isCorrect": false
+              },
+              {
+                "title": "numérico",
+                "isCorrect": true
+              },
+              {
+                "title": "texto",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Você precisa rastrear várias versões de um modelo que foi treinado usando Azure Machine Learning. O que você deve fazer?",
+            "explanation": "Para rastrear várias versões de um modelo, é necessário registrar o modelo no Azure Machine Learning. Isso permite manter um histórico de versões e facilitar a gestão e reprodutibilidade dos modelos.",
+            "statements": [
+              {
+                "title": "Explicar o modelo.",
+                "isCorrect": false
+              },
+              {
+                "title": "Registrar o modelo.",
+                "isCorrect": true
+              },
+              {
+                "title": "Registrar os dados de treinamento.",
+                "isCorrect": false
+              },
+              {
+                "title": "Provisionar um cluster de inferência.",
+                "isCorrect": false
+              }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "... pode ser usado para criar aplicativos sem código que utilizam modelos de processamento de linguagem natural integrados.",
+            "explanation": "Power Virtual Agents é a ferramenta que permite criar aplicativos sem código, utilizando modelos de processamento de linguagem natural integrados.",
+            "statements": [
+              {
+                "title": "Azure Health Bot",
+                "isCorrect": false
+              },
+              {
+                "title": "Microsoft Bot Framework",
+                "isCorrect": false
+              },
+              {
+                "title": "Power Virtual Agents",
+                "isCorrect": true
+              }
+            ]
+          }          
     ]
 }

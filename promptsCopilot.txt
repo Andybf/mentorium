@@ -13,10 +13,22 @@ segue o formato .json para a pergunta do tipo "select", removendo a letra no com
 	"question" : "",
 	"explanation": "",
 	"statements" : [
-		{"title" : "Statement1", "isCorrect" : false },
-		{"title" : "Statement2", "isCorrect" : false },
-		("title" : "Statement3", "isCorrect" : false },
-		{"title" : "Statement4", "isCorrect" : false }
+		{
+			"title" : "Statement1",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement2",
+			"isCorrect" : false
+		},
+		(
+			"title" : "Statement3",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement4",
+			"isCorrect" : false
+		}
 	]
 }
 segue o .json para a pergunta do tipo "multiple-YesNo":
@@ -36,10 +48,22 @@ segue o .json para a perguta do tipo "choose":
 	"question" : "",
 	"explanation": "",
 	"statements" : [
-		{"title" : "Statement1", "isCorrect" : false },
-		{"title" : "Statement2", "isCorrect" : false },
-		("title" : "Statement3", "isCorrect" : false },
-		{"title" : "Statement4", "isCorrect" : false }
+		{
+			"title" : "Statement1",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement2",
+			"isCorrect" : false
+		},
+		(
+			"title" : "Statement3",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement4",
+			"isCorrect" : false
+		}
 	]
 }
 segue o .json para a perguta do tipo "multiple-select":
