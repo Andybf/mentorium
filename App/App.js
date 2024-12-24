@@ -242,6 +242,7 @@ export default class App extends AVElement {
         this.body.querySelector("#status-parcial").innerText = parcials;
         this.body.querySelector("#status-miss").innerText = misses;
         this.body.querySelector("#status-success-rate").innerText = ((1 - misses/(hits + (parcials/2)) )*100).toFixed(2)+'%';
+        this.body.querySelector("#status-total-answered").innerText = hits + parcials + misses;
     }
 
     updateDashboard(questionId, status) {
