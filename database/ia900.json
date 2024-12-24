@@ -3772,7 +3772,7 @@
         {
             "type": "select",
             "question": "Por que você deve considerar um plano de entrega em fases para sua solução de IA generativa?",
-            "explanation": "Um lançamento inicial para uma base de usuários restrita permite minimizar os danos coletando comentários e identificando problemas antes do lançamento amplo.",
+            "explanation": "Um lançamento inicial para uma base de usuários restrita permite minimizar os danos coletando comentários e identificando problemas antes do lançamento amplo.\n\n*Pergunta extraída do Microsoft Learning sobre IA Generativa.",
             "statements": [
                 {
                     "title": "Para permitir que você colete comentários e identifique problemas antes de lançar a solução de maneira mais ampla",
@@ -4044,8 +4044,286 @@
                     "isCorrect": true
                 }
             ]
-        }
-          
-          
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as quatro fases do processo para desenvolver e implementar um plano de IA responsável ao usar modelos generativos, segundo as diretrizes da Microsoft para IA generativa responsável?",
+            "explanation": "As diretrizes da Microsoft para IA generativa responsável definem um processo de quatro fases para desenvolver e implementar um plano de IA responsável.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Identificar possíveis danos relevantes para a solução planejada.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Medir a presença desses danos nas saídas geradas pela solução.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Atenuar os danos em várias camadas da solução para minimizar sua presença e impacto.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Operar a solução com responsabilidade definindo e seguindo um plano de implantação e de preparação operacional.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Desenvolver um modelo de IA completamente autônomo sem supervisão humana.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são alguns dos tipos comuns de possíveis danos em uma solução de IA generativa?",
+            "explanation": "Os possíveis danos em uma solução de IA generativa dependem de vários fatores, incluindo os serviços e modelos usados, bem como dos ajustes finos ou dados de contexto. Alguns tipos comuns incluem gerar conteúdo ofensivo, impreciso ou que incentiva práticas ilegais.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Gerar conteúdo ofensivo, pejorativo ou discriminatório.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Gerar conteúdo que tem imprecisões factuais.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Gerar conteúdo que incentiva ou dá suporte a comportamentos ou práticas ilegais ou antiéticas.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Gerar conteúdo sempre preciso e ético.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual é o objetivo de priorizar os possíveis danos identificados em uma solução de IA generativa?",
+            "explanation": "A priorização dos possíveis danos permite que a equipe de desenvolvimento se concentre em localizar e mitigar os riscos mais prejudiciais na solução, levando em conta o uso pretendido, o potencial de uso indevido e a probabilidade e impacto dos danos.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Para garantir que todos os danos sejam evitados completamente.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para focar nos danos mais prováveis e impactantes primeiro.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para desenvolver um plano de marketing para a solução.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para eliminar a necessidade de consultas a especialistas jurídicos.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Qual é uma abordagem comum para testar possíveis danos ou vulnerabilidades em uma solução de software?",
+            "explanation": "Uma abordagem comum para testar possíveis danos ou vulnerabilidades em uma solução de software é usar testes de 'equipe vermelha'. Esses testes ajudam a detectar pontos fracos e tentativas de produzir resultados prejudiciais.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Usar testes de 'equipe vermelha' para investigar a solução.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Realizar uma pesquisa de mercado para identificar possíveis vulnerabilidades.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Ignorar possíveis danos até que eles se tornem um problema.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Solicitar a opinião de usuários finais sem testes prévios.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as três etapas para medir um sistema quanto a possíveis danos?",
+            "explanation": "A abordagem generalizada para medir um sistema quanto a possíveis danos inclui preparar prompts de entrada, enviar os prompts para o sistema e recuperar a saída, e aplicar critérios predefinidos para avaliar a saída.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Preparar uma seleção diversificada de prompts de entrada.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Enviar os prompts para o sistema e recuperar a saída gerada.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Ajustar automaticamente o sistema para corrigir danos.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Aplicar critérios predefinidos para avaliar a saída e categorizá-la de acordo com o nível dos possíveis danos.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são as quatro camadas envolvidas na mitigação de possíveis danos em uma solução de IA generativa?",
+            "explanation": "A mitigação de possíveis danos em uma solução de IA generativa envolve uma abordagem em camadas, incluindo modelo, sistema de segurança, metaprompt e aterramento, e experiência do usuário.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Modelo, Sistema de Segurança, Metaprompt e Aterramento, Experiência do Usuário",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Modelo, Algoritmo de Regressão, Análise de Dados, Experiência do Usuário",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Metaprompt e Aterramento, Validação de Entrada, Sistema de Segurança, Rede Neural",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Sistema de Segurança, Modelo, Rede Neural, Análise de Dados",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais técnicas de mitigação podem ser aplicadas na camada de modelo em uma solução de IA generativa?",
+            "explanation": "As técnicas de mitigação na camada de modelo incluem selecionar um modelo apropriado para o uso pretendido e ajustar um modelo fundamental com dados de treinamento específicos.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Selecionar um modelo apropriado para o uso pretendido da solução.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Ajustar um modelo fundamental com os seus dados de treinamento.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Projetar a interface do usuário do aplicativo.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Implementar algoritmos de detecção de abuso.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais ações podem ser realizadas na camada de metaprompt e aterramento para mitigar danos em uma solução de IA generativa?",
+            "explanation": "Na camada de metaprompt e aterramento, ações como especificar metaprompts, aplicar engenharia de prompt e usar uma abordagem de geração aumentada de recuperação (RAG) podem ser realizadas para mitigar danos.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Especificar metaprompts ou entradas do sistema que definem parâmetros comportamentais para o modelo.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Aplicar engenharia de prompt para adicionar dados de aterramento aos prompts de entrada.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Usar uma abordagem de geração aumentada de recuperação (RAG) para recuperar dados contextuais de fontes de dados confiáveis.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Projetar a interface do usuário do aplicativo para restringir entradas.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais serviços a Azure AI Foundry combina em um único ambiente de desenvolvimento unificado?",
+            "explanation": "Azure AI Foundry combina o catálogo de modelos, capacidades de desenvolvimento de prompt flow, implantação de modelos de IA generativa, teste e integração de dados personalizados do serviço Azure OpenAI, e a integração com serviços de IA da Azure para fala, visão, linguagem, inteligência de documentos e segurança de conteúdo.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "O catálogo de modelos e capacidades de desenvolvimento de prompt flow.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A implantação, teste e integração de dados personalizados do serviço Azure OpenAI.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Serviços de IA da Azure para fala, visão, linguagem, inteligência de documentos e segurança de conteúdo.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A criação de novos modelos de aprendizado de máquina sem integração com dados externos.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são algumas das funcionalidades suportadas pelo Azure AI Foundry?",
+            "explanation": "Azure AI Foundry inclui suporte para criar hubs de IA do Azure, criar projetos, computação escalável sob demanda, integração com fontes de dados e outros serviços em nuvem, ambientes de desenvolvimento de código baseados na web, SDKs e bibliotecas de CLI para automação.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Criação de hubs de IA do Azure para desenvolvimento colaborativo.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Computação escalável sob demanda.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Desenvolvimento de hardware dedicado para IA.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Integração com fontes de dados e outros serviços em nuvem.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais tarefas você pode realizar com o portal Azure AI Foundry?",
+            "explanation": "Com o portal Azure AI Foundry, você pode implantar modelos, testar modelos generativos de IA, integrar dados personalizados, definir workflows usando prompt flow, integrar filtros de segurança de conteúdo, e estender uma solução de IA generativa com capacidades de IA múltiplas.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Implantar modelos do catálogo de modelos para endpoints de inferência em tempo real.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Desenvolver novos algoritmos de hardware para IA.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Integrar dados de fontes de dados personalizadas para suportar uma abordagem de geração aumentada de recuperação (RAG).",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Integrar filtros de segurança de conteúdo em uma solução de IA generativa.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são algumas das funcionalidades oferecidas pelo Azure AI Foundry?",
+            "explanation": "Azure AI Foundry oferece uma série de funcionalidades essenciais para o desenvolvimento e gestão de aplicações de IA generativa, incluindo a criação e gestão de projetos de IA, desenvolvimento de aplicações de IA generativa, exploração de modelos de IA, uso de RAG, monitoramento e avaliação de modelos de IA, integração com serviços Azure e construção responsável.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
+            "statements": [
+                {
+                    "title": "Criar e gerenciar projetos de IA.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Desenvolver aplicações de IA generativa.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Explorar modelos de IA disponíveis.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Criar hardware personalizado para IA.",
+                    "isCorrect": false
+                }
+            ]
+        }        
     ]
 }
