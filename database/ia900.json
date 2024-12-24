@@ -1956,7 +1956,7 @@
                     "title": "similaridade"
                 },
                 {
-                    "title": "verificacão"
+                    "title": "verificação"
                 }
             ],
             "answers": [
@@ -3239,6 +3239,28 @@
                 "title": "texto",
                 "isCorrect": false
               }
+            ]
+        },
+        {
+            "type": "multiple-select",
+            "pre-question": "Você tem o seguinte conjunto de dados.\nVocê planeja usar o conjunto de dados para treinar um modelo que preverá as categorias de preço das casas.\nO que são Renda Familiar e Categoria de Preço da Casa? Para responder, selecione a opção apropriada na área de resposta.",
+            "attachment" :"database/ia900/009.png",
+            "question": [
+                "Renda Familiar:",
+                "Categoria de Preço da Casa:"
+            ],
+            "explanation": "Renda Familiar: é considerado uma característica (feature) porque é uma variável independente usada para prever a categoria de preço das casas.\nCategoria de Preço da Casa: é considerado um rótulo (label) porque é a variável dependente que estamos tentando prever com base nas características fornecidas, como a renda familiar.",
+            "statements": [
+                {
+                    "title": "Uma característica"
+                },
+                {
+                    "title": "Um rótulo"
+                }
+            ],
+            "answers": [
+                "Uma característica",
+                "Um rótulo"
             ]
         },
         {

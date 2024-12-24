@@ -5,7 +5,6 @@ export default class App extends AVElement {
 
     database;
     examQuestions = 0;
-    pointsPerQuestion = 0;
     currentExam;
     intervalTime;
     dashboardData;
@@ -46,7 +45,6 @@ export default class App extends AVElement {
             name : '',
             currentQuestion : 0,
             isCurrentQuestionRevealed : false,
-            points : 0,
             startTime : 0
         };
     }
@@ -82,11 +80,10 @@ export default class App extends AVElement {
     }
 
     configureExam(documentName) {
-        this.body.querySelector("#points").innerText = documentName;
+        this.body.querySelector("#certification").innerText = documentName;
         this.getDatabase(documentName).then( (resp) => {
             this.database = JSON.parse(resp)['questions'];
             this.examQuestions = this.database.length;
-            this.pointsPerQuestion = 1000/this.examQuestions;
             this.currentExam.startTime = new Date().getTime();
             this.currentExam.name = documentName;
             let div = this.body.querySelector("#question-icons");
@@ -159,7 +156,6 @@ export default class App extends AVElement {
 
         if (questionType === 'select') {
             if (this.body.querySelector("select").value == 'true') {
-                this.currentExam.points += this.pointsPerQuestion;
                 this.updateDashboard(questionId, 'pass');
             } else {
                 this.updateDashboard(questionId, 'failed');
@@ -172,11 +168,9 @@ export default class App extends AVElement {
                     trueStatementsCount++;
                 }
             }
-            let pointPerStatement = this.pointsPerQuestion/trueStatementsCount;
             let points = 0;
             for (let input of Array.from(this.body.querySelectorAll('input'))) {
                 if (input.value == 'true' && input.checked == true) {
-                    this.currentExam.points += pointPerStatement;
                     points++;
                 }
             }
@@ -190,11 +184,9 @@ export default class App extends AVElement {
             }
         } else
         if (questionType === 'multiple-YesNo') {
-            let pointPerStatement = this.pointsPerQuestion/3;
             let points = 0;
             for (let input of Array.from(this.body.querySelectorAll('input'))) {
                 if (input.value == 'true' && input.checked == true) {
-                    this.currentExam.points += pointPerStatement;
                     points++;
                 }
             }
@@ -209,11 +201,9 @@ export default class App extends AVElement {
         } else
         if (questionType === 'multiple-select') {
             const selectList = Array.from(this.body.querySelectorAll("select"));
-            let pointPerStatement = this.pointsPerQuestion/selectList.length;
             let points = 0;
             for (let select of selectList) {
                 if (select.value == select.answer) {
-                    this.currentExam.points += pointPerStatement;
                     points++;
                 }
             }
@@ -235,26 +225,23 @@ export default class App extends AVElement {
 
     countStatus() {
         let hits = 0;
+        let parcials = 0;
+        let misses = 0;
         for (let q of this.dashboardData) {
             if (q === 'green') {
                 hits++;
-            }
-        }
-        this.body.querySelector("#status-hits").innerText = hits;
-        let parcials = 0;
-        for (let q of this.dashboardData) {
+            } else
             if (q === 'yellow') {
                 parcials++;
-            }
-        }
-        this.body.querySelector("#status-parcial").innerText = parcials;
-        let misses = 0;
-        for (let q of this.dashboardData) {
+            } else
             if (q === 'red') {
                 misses++;
             }
         }
+        this.body.querySelector("#status-hits").innerText = hits;
+        this.body.querySelector("#status-parcial").innerText = parcials;
         this.body.querySelector("#status-miss").innerText = misses;
+        this.body.querySelector("#status-success-rate").innerText = ((1 - misses/(hits + (parcials/2)) )*100).toFixed(2)+'%';
     }
 
     updateDashboard(questionId, status) {
