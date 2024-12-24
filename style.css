@@ -41,7 +41,7 @@ comp-app {
         --terciary-color : #9a9a9a; 
         --opaque-backgorund : #FFFFFF69;
         --transparent-backgorund : #FFFFFF49;
-        --button-background : #f0f0f0;
+        --button-background : #b6b6b6;
         --button-background-hover : #dadada;
         --window-header-background : linear-gradient(#eee,#ccc);
         --border: #e0e0e0;
@@ -68,7 +68,7 @@ comp-app {
         --terciary-color : #adadad; 
         --opaque-backgorund : #00000069;
         --transparent-backgorund : #00000050;
-        --button-background : #403e3ecc;
+        --button-background : #787878;
         --button-background-hover : #656565d1;
         --window-header-background : linear-gradient(#555,#333);
         --border: #000000;

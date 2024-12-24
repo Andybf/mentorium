@@ -71,7 +71,9 @@ export default class App extends AVElement {
     createQuestionMapQuestionButton(index) {
         let button = document.createElement("button");
         button.innerText = index+1;
-        button.style.background = this.dashboardData[index];
+        if (this.dashboardData[index] != 'darkgrey') {
+            button.style.background = this.dashboardData[index];
+        }        
         button.value = index;
         button.addEventListener("click", (event) => {
             this.goToQuestion(Number(event.target.value));
@@ -100,7 +102,7 @@ export default class App extends AVElement {
             } else {
                 this.dashboardData = new Array();
                 for (let i=0; i<this.database.length; i++) {
-                    this.dashboardData[i] = 'darkgrey';
+                    this.dashboardData[i] = '';
                     let button = this.createQuestionMapQuestionButton(i);  
                     div.appendChild(button);
                 }
