@@ -3282,6 +3282,742 @@
                 "isCorrect": true
               }
             ]
-          }          
+        },
+        {
+            "type": "choose",
+            "question": "Qual é a principal função do bloco codificador em um modelo de transformador?",
+            "explanation": "A principal função do bloco codificador em um modelo de transformador é criar representações semânticas do vocabulário de treinamento.",
+            "statements": [
+                {
+                    "title": "Gerar novas sequências de linguagem",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Dividir sequências de texto em tokens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Criar representações semânticas do vocabulário de treinamento",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Prever a conclusão apropriada de uma frase",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Analisar a gramática das frases",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "O que você pode fazer com um hub de IA do Azure?",
+            "explanation": "Um hub de IA do Azure é a base para projetos de desenvolvimento de IA no Azure, permitindo a criação de membros, gerenciamento de instâncias de computação, conexões a recursos e definição de políticas.",
+            "statements": [
+                {
+                    "title": "Hospedar um ou mais projetos de IA.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Criar um marketplace online para venda de modelos de IA.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Gerenciar conexões a recursos como armazenamentos de dados e GitHub.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Apenas executar experimentos fora do Azure.",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Os modelos de transformador são treinados com grandes volumes de texto para aprender relações semânticas entre palavras, o que permite gerar sequências de texto coerentes. O bloco codificador não gera novas sequências de linguagem; essa tarefa é do bloco decodificador. O modelo BERT utiliza apenas o bloco codificador, enquanto o GPT utiliza apenas o bloco decodificador. Portanto, as implementações podem variar.",
+            "statements": [
+                {
+                    "title": "Os modelos de transformador são treinados com grandes volumes de texto para representar relações semânticas entre palavras.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O bloco codificador de um modelo de transformador gera novas sequências de linguagem.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Modelos transformadores como BERT utilizam apenas o bloco decodificador.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "As implementações de modelos de transformador podem variar, como o uso apenas do bloco codificador ou apenas do bloco decodificador.",
+                    "isCorrect": true
+                }
+            ]            
+        },     
+        {
+            "type": "select",
+            "question": "O que são Modelos de linguagem grandes?",
+            "explanation": "Modelos de linguagem grandes usam o aprendizado profundo para processar e entender a linguagem natural em grande escala.",
+            "statements": [
+                {
+                    "title": "Os modelos que detectam significado extras nos parágrafos dos textos.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Listas de palavras e código que os computadores usam para gerar texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Modelos que usam o aprendizado profundo para processar e entender a linguagem natural em grande escala.",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Qual modelo utiliza apenas o bloco codificador?",
+            "explanation": "O modelo BERT (Representações de codificador bidirecional de transformadores) desenvolvido pelo Google utiliza apenas o bloco codificador.",
+            "statements": [
+                {
+                    "title": "GPT",
+                    "isCorrect": false
+                },
+                {
+                    "title": "BERT",
+                    "isCorrect": true
+                },
+                {
+                    "title": "VAE",
+                    "isCorrect": false
+                },
+                {
+                    "title": "LSTM",
+                    "isCorrect": false
+                },
+                {
+                    "title": "RNN",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "O bloco decodificador utiliza as inserções do bloco codificador para gerar novas sequências de linguagem. Os vetores gerados pelo bloco codificador são chamados de inserções, não atenções. Os tokens são os menores elementos de texto que podem ser processados pelo modelo. A técnica de atenção é usada tanto pelo bloco codificador quanto pelo decodificador.",
+            "statements": [
+                {
+                    "title": "O bloco decodificador utiliza as inserções do bloco codificador para gerar uma saída de linguagem natural.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Os vetores gerados pelo bloco codificador são chamados de atenções.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Os tokens são os menores elementos de texto que podem ser processados pelo modelo de transformador.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A técnica de atenção é usada apenas pelo bloco decodificador.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais recursos adicionais são criados quando você configura um hub de IA do Azure?",
+            "explanation": "Além do recurso principal de hub de IA, outros recursos do Azure são criados, como uma conta de Armazenamento, um cofre de chaves, um registro de contêiner, um recurso de insights de aplicativo e um recurso do Serviço OpenAI do Azure.",
+            "statements": [
+                {
+                    "title": "Uma conta de Armazenamento para armazenar dados do projeto.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um marketplace online para comprar e vender modelos de IA.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Um cofre de chaves para proteger credenciais e valores confidenciais.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um recurso de insights de aplicativo para registrar métricas de uso e desempenho.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Qual Microsoft Copilot um agente de suporte ao cliente deve usar para pesquisar e resolver um problema de suporte?",
+            "explanation": "Os agentes de atendimento ao cliente podem usar o Copilot no Serviço de Atendimento ao Cliente do Dynamics 365 para analisar tíquetes de suporte, pesquisar problemas semelhantes, encontrar resoluções e comunicá-los aos usuários com apenas alguns cliques e solicitações.",
+            "statements": [
+                {
+                    "title": "Microsoft Copilot para Microsoft Edge",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft Copilot para o Dynamics 365 Customer Service",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Microsoft Copilot para Segurança",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Quais são algumas das tarefas que você pode executar em um projeto no Estúdio de IA do Azure?",
+            "explanation": "Em um projeto no Estúdio de IA do Azure, você pode implantar modelos de linguagem grande, testar modelos no playground de chat, adicionar dados para aumentar os prompts, usar o prompt flow, avaliar respostas de modelo, gerenciar índices e conjuntos de dados, definir filtros de conteúdo e usar o Visual Studio Code para criar código personalizado.",
+            "statements": [
+                {
+                    "title": "Implantar modelos de linguagem grande para dar suporte a um chatbot ou copiloto.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Criar um marketplace online para venda de modelos de IA.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Adicionar seus dados para aumentar os prompts.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Usar o Visual Studio Code em seu navegador para criar código personalizado.",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Quais são os dois componentes principais da arquitetura de um modelo de transformador?",
+            "explanation": "A arquitetura de um modelo de transformador consiste em dois componentes principais: um bloco codificador e um bloco decodificador.",
+            "statements": [
+                {
+                    "title": "Bloco codificador e bloco decodificador",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Camada convolucional e camada densa",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Bloco de embedding e bloco de pooling",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Camada de atenção e camada de ativação",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Camada de entrada e camada de saída",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "Modelos de transformador podem gerar respostas de linguagem difíceis de distinguir das humanas. Eles são treinados com grandes volumes de texto, mas não exclusivamente de fontes públicas na Internet. O modelo GPT usa apenas o bloco decodificador. Os modelos de transformador utilizam técnicas de atenção para processar sequências de tokens.",
+            "statements": [
+                {
+                    "title": "Modelos de transformador podem gerar respostas de linguagem que são difíceis de distinguir das respostas humanas.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Os modelos de transformador são treinados exclusivamente com texto proveniente de fontes públicas na Internet.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "O modelo GPT usa apenas o bloco codificador.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Os modelos de transformador não utilizam técnicas de atenção para processar sequências de tokens.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Qual ferramenta um desenvolvedor profissional deve usar para criar um copiloto personalizado e implantá-lo como um ponto de extremidade de serviço no Azure?",
+            "explanation": "O Estúdio de IA do Microsoft Azure foi projetado como um portal de desenvolvimento unificado para desenvolvedores profissionais de software para permitir a personalização completa de modelos de linguagem.",
+            "statements": [
+                {
+                    "title": "Microsoft Copilot para Azure",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Microsoft Copilot Studio",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Estúdio de IA do Microsoft Azure",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "O que são inserções em um modelo de transformador?",
+            "explanation": "Inserções são coleções de vetores gerados pelo bloco codificador, onde cada elemento do vetor representa um atributo semântico dos tokens.",
+            "statements": [
+                {
+                    "title": "Sequências de texto divididas em tokens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Vetores gerados pelo bloco codificador",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Técnicas usadas para determinar relações entre tokens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Novas sequências de linguagem geradas pelo bloco decodificador",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Representações semânticas criadas pelo bloco decodificador",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "multiple-YesNo",
+            "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
+            "explanation": "As inserções são coleções de vetores que representam atributos semânticos dos tokens. O modelo BERT foi desenvolvido pelo Google, não pela OpenAI. A técnica de atenção ajuda a determinar relações entre tokens. Modelos de transformador são capazes de dar suporte à IA generativa.",
+            "statements": [
+                {
+                    "title": "As inserções são coleções de vetores que representam atributos semânticos dos tokens.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O modelo BERT foi desenvolvido pela OpenAI.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "A técnica de atenção ajuda a determinar relações entre tokens em uma sequência.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Modelos de transformador são incapazes de dar suporte à IA generativa.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Por que você deve considerar a criação de uma Avaliação de Impacto de IA ao criar uma solução de IA generativa?",
+            "explanation": "Um guia de Avaliação de Impacto de IA documenta o uso esperado do sistema e ajuda a identificar possíveis danos.",
+            "statements": [
+                {
+                    "title": "Para criar um caso jurídico que isente você da responsabilidade pelos danos causados pela solução",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para documentar a finalidade, o uso esperado e os possíveis danos da solução",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para avaliar o custo dos serviços de nuvem necessários para implementar a solução",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Como a atenção multi-head funciona no processo de previsão de tokens em um decodificador?",
+            "explanation": "A atenção multi-head usa diferentes elementos das inserções para calcular várias pontuações de atenção, que são então usadas por uma rede neural para prever o token mais provável na sequência.",
+            "statements": [
+                {
+                    "title": "Calcula a frequência das palavras no texto",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Usa diferentes elementos das inserções para calcular várias pontuações de atenção",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Atribui IDs de token às palavras",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Gera novas sequências de linguagem",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Atribui pesos fixos a cada token na sequência",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.",
+            "statements": [
+                {
+                    "title": "A primeira etapa no treinamento de um modelo transformador é decompor o texto de treinamento em tokens.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Tokens sempre correspondem a palavras completas e nunca a partes de palavras ou combinações de palavras e pontuação.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Vetores de inserções representam linhas no espaço multidimensional e descrevem a direção e a distância ao longo de múltiplos eixos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A técnica de similaridade de cosseno é usada para atribuir IDs de token às palavras no vocabulário.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Qual capacidade do IA do Azure Studio ajuda a mitigar a geração de conteúdo prejudicial no nível do Sistema de Segurança?",
+            "explanation": "Filtros de conteúdo permitem suprimir conteúdo prejudicial na camada de Sistema de Segurança.",
+            "statements": [
+                {
+                    "title": "Suporte ao modelo DALL-E",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Ajuste fino",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Filtros de conteúdo",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "O que ocorre durante o processo de tokenização em um modelo de transformador?",
+            "explanation": "Durante a tokenização, o texto de treinamento é decomposto em tokens, que podem ser palavras individuais, partes de palavras ou combinações de palavras e pontuação.",
+            "statements": [
+                {
+                    "title": "O texto é dividido em tokens",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Vetores de inserções são gerados",
+                    "isCorrect": false
+                },
+                {
+                    "title": "IDs de token são atribuídos às palavras",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Camadas de atenção são adicionadas",
+                    "isCorrect": false
+                },
+                {
+                    "title": "A frequência das palavras é calculada",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.",
+            "statements": [
+                {
+                    "title": "A tokenização envolve dividir o texto de treinamento em tokens, que podem ser palavras inteiras ou partes de palavras.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O vocabulário de um modelo de transformador é composto apenas por palavras completas.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Durante o treinamento, o modelo atribui IDs de token a cada palavra ou token identificado.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Os vetores de inserções são usados para representar a frequência de palavras no texto.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Por que você deve considerar um plano de entrega em fases para sua solução de IA generativa?",
+            "explanation": "Um lançamento inicial para uma base de usuários restrita permite minimizar os danos coletando comentários e identificando problemas antes do lançamento amplo.",
+            "statements": [
+                {
+                    "title": "Para permitir que você colete comentários e identifique problemas antes de lançar a solução de maneira mais ampla",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para eliminar a necessidade de identificar, medir e atenuar possíveis danos",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para permitir que você cobre mais pela solução",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Qual é a técnica usada para calcular se dois vetores têm direções semelhantes?",
+            "explanation": "A técnica de similaridade de cosseno é usada para determinar se dois vetores têm direções semelhantes, indicando que representam palavras semanticamente vinculadas.",
+            "statements": [
+                {
+                    "title": "Atenção multi-head",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Codificação posicional",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Similaridade de cosseno",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Inserções vetoriais",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Treinamento supervisado",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.",
+            "statements": [
+                {
+                    "title": "A camada de codificação posicional adiciona um valor a cada inserção para indicar sua posição na sequência.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Os modelos de transformador utilizam a frequência das palavras para atribuir pesos aos tokens.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "As inserções de tokens podem representar a direção e a distância no espaço tridimensional.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A camada de atenção não é utilizada durante a previsão de novos tokens.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Qual das opções a seguir descreve melhor o Estúdio de IA do Azure?",
+            "explanation": "Correto. O Estúdio de IA do Azure fornece um ambiente de desenvolvimento colaborativo para projetos de IA no Azure.",
+            "statements": [
+                {
+                    "title": "Um marketplace online onde você pode comprar e vender modelos de IA",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Um ambiente de desenvolvimento colaborativo para projetos de IA no Azure.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Um aplicativo de edição gráfica que usa IA para gerar imagens.",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Como os vetores de inserções são usados no modelo de transformador?",
+            "explanation": "Os vetores de inserções representam atributos semânticos dos tokens e descrevem a direção e a distância no espaço multidimensional.",
+            "statements": [
+                {
+                    "title": "Para representar atributos semânticos dos tokens",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para dividir o texto em tokens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para atribuir IDs de token às palavras",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para calcular a frequência das palavras",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para descrever a direção e a distância no espaço multidimensional",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.",
+            "statements": [
+                {
+                    "title": "Tokens em um modelo de transformador podem ser gerados para combinações de palavras e pontuação.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "A técnica de similaridade de cosseno é usada para quantificar a força das relações entre tokens.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Os vetores de inserções são usados para calcular a frequência das palavras no texto.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Camadas de atenção são usadas para prever o próximo token em uma sequência.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Como você pode habilitar um colega a colaborar com você em um projeto de IA?",
+            "explanation": "Correto. Para permitir que um colega colabore com você, adicione-o como membro do seu hub de IA do Azure.",
+            "statements": [
+                {
+                    "title": "Adicione-os como membros na função apropriada ao seu hub Azure AI.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Implante um modelo como um aplicativo Web e configure a autenticação para o serviço de aplicativo Web.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Diga ao colega para criar o seu próprio hub Azure AI na mesma subscrição do Azure que a sua.",
+                    "isCorrect": false
+                }
+            ]
+        },             
+        {
+            "type": "choose",
+            "question": "Qual é a função das camadas de atenção em um modelo de transformador?",
+            "explanation": "As camadas de atenção são usadas para examinar uma sequência de tokens e quantificar a força das relações entre eles, tanto no bloco codificador quanto no decodificador.",
+            "statements": [
+                {
+                    "title": "Para gerar novas sequências de linguagem",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para criar representações semânticas dos tokens",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para examinar a sequência de tokens e quantificar a força das relações entre eles",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Para atribuir IDs de token às palavras",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Para prever a conclusão apropriada de uma frase",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre os diferentes casos de uso do Microsoft Copilot.",
+            "statements": [
+                {
+                    "title": "O Microsoft Copilot pode ser usado para gerar uma lista de oportunidades em um setor.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O Microsoft Copilot para Microsoft 365 não integra o Copilot aos aplicativos de produtividade.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Os agentes de atendimento ao cliente usam o Copilot no Dynamics 365 Customer Service para analisar tíquetes de suporte.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O GitHub Copilot não ajuda os desenvolvedores a gerar novo código com base em solicitações de linguagem natural.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "question": "Você implantou um modelo de GPT do OpenAI do Azure no Estúdio de IA do Azure. Qual é a maneira mais fácil de testá-lo?",
+            "explanation": "Correto. Você pode testar um modelo de GPT do Azure OpenAI na página Playground.",
+            "statements": [
+                {
+                    "title": "Implante o modelo como um aplicativo Web, configure a autenticação e use-o em um navegador.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Exporte o modelo e teste-o localmente usando o Visual Studio Code.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Na página Playground, selecione a implantação e use a interface de chat.",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Como o Microsoft Copilot pode ser utilizado em diferentes aplicações?",
+            "explanation": "O Microsoft Copilot possui uma ampla gama de utilizações em diversos aplicativos e serviços, como navegação na Web, produtividade no Microsoft 365, suporte a processos de negócios no Dynamics 365, análise de dados no Power BI, e desenvolvimento de software com o GitHub Copilot.",
+            "statements": [
+                {
+                    "title": "O Microsoft Copilot pode ser usado no Microsoft Word para gerar e melhorar documentos.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O Microsoft Copilot não pode ser integrado ao navegador Edge.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "O Copilot no Dynamics 365 Sales ajuda os profissionais de vendas a localizar informações relevantes do cliente.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O Microsoft Copilot não oferece assistência para profissionais de segurança.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "O GitHub Copilot não gera novo código com base em solicitações de linguagem natural.",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "multiple-YesNo",
+            "explanation": "Estas afirmações baseiam-se no texto sobre os diferentes casos de uso do Microsoft Copilot.",
+            "statements": [
+                {
+                    "title": "O Microsoft Copilot pode ser usado no Microsoft PowerPoint para criar apresentações com base no conteúdo de um documento.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O Microsoft Copilot não pode ser integrado ao Microsoft Edge.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Os profissionais de vendas usam o Copilot para Dynamics 365 Sales para localizar informações relevantes do cliente.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "O Copilot no Power BI analisa dados e cria visualizações apropriadas a partir dele.",
+                    "isCorrect": true
+                }
+            ]
+        }
+          
+          
     ]
 }

@@ -37,9 +37,18 @@ segue o .json para a pergunta do tipo "multiple-YesNo":
 	"question" : "",
 	"explanation" : "",
 	"statements": [
-		{"title" : "Statement1", "isCorrect" : false },
-		{"title" : "Statement2", "isCorrect" : false },
-		("title" : "Statement3", "isCorrect" : false }
+		{
+			"title" : "Statement1",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement2",
+			"isCorrect" : false
+		},
+		(
+			"title" : "Statement3",
+			"isCorrect" : false
+		}
 	]
 }
 segue o .json para a perguta do tipo "choose":
