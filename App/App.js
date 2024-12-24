@@ -84,7 +84,6 @@ export default class App extends AVElement {
         this.getDatabase(documentName).then( (resp) => {
             this.database = JSON.parse(resp)['questions'];
             this.examQuestions = this.database.length;
-            this.currentExam.startTime = new Date().getTime();
             this.currentExam.name = documentName;
             let div = this.body.querySelector("#question-icons");
             this.dashboardData = BrowserSave.getSaveFromBrowserLocalStorage(this.currentExam.name);
@@ -114,18 +113,20 @@ export default class App extends AVElement {
         }).catch( (error) => {
             console.error(error);
         });
-        this.intervalTime = setInterval( () => {
-            this.tickClock();
-        }, 1000);
     }
 
     goToQuestion(index) {
+        clearInterval(this.intervalTime);
         this.prepareNextQuestion(index);
         this.toogleQuestionMap();
     }
 
     prepareNextQuestion(id) {
         this.cleanQuestionCard();
+        this.currentExam.startTime = new Date().getTime();
+        this.intervalTime = setInterval( () => {
+            this.tickClock();
+        }, 1000);
         if (id >= this.database.length) {
             this.currentExam.currentQuestion = 0;
         } else {
@@ -264,6 +265,7 @@ export default class App extends AVElement {
     }
 
     revealQuestion() {
+        clearInterval(this.intervalTime);
         const questionId = this.currentExam.currentQuestion;
         const questionType = this.database[questionId]['type'];
         if (questionType === 'select') {
