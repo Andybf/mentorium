@@ -571,7 +571,7 @@
                 "Dividir uma data em campos de mês, dia e ano",
                 "Escolher temperatura e pressão para treinar um modelo de clima"
             ],
-            "explanation": "Os diferentes tipos de aprendizado de máquina são eficazes quando aplicados a cenários específicos com base em suas capacidades e funcionalidades únicas.",
+            "explanation": "A matriz de confusão é uma ferramenta utilizada na avaliação do desempenho de modelos de classificação, permitindo analisar a precisão e a taxa de erro das previsões.\nDividir uma data em campos de mês, dia e ano se alinha com o conceito de engenharia de recursos. Engenharia de recursos envolve a transformação e criação de novas variáveis a partir dos dados brutos para melhorar a performance do modelo. Nesse caso, a data está sendo transformada em componentes distintos (mês, dia e ano) que podem ser mais úteis no treinamento do modelo.\nA seleção de recursos envolve escolher quais variáveis serão utilizadas para treinar um modelo, garantindo que as mais relevantes sejam incluídas no processo",
             "statements": [
                 {
                     "title": "Engenharia de recursos"
@@ -724,7 +724,7 @@
         {
             "type": "multiple-YesNo",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
-            "explanation": "Automatizar tarefas demoradas e iterativas do desenvolvimento de modelos de aprendizado de máquina economiza tempo e melhora a eficiência.",
+            "explanation": "A rotulagem é o processo de marcar dados de treinamento com valores conhecidos, fornecendo informações explícitas que ajudam os modelos de aprendizado de máquina a aprender padrões e fazer previsões.\nAvaliar um modelo usando os mesmos dados usados para treiná-lo pode levar a uma avaliação enganosa do desempenho, conhecida como overfitting. Em vez disso, é essencial dividir o conjunto de dados em dados de treinamento e dados de teste (ou validação).\nA precisão não é sempre a métrica principal usada para medir o desempenho de um modelo. A escolha da métrica depende do tipo de problema e dos objetivos específicos do modelo.",
             "statements": [
                 {
                     "title": "A rotulagem é o processo de marcar dados de treinamento com valores conhecidos.",
@@ -765,7 +765,7 @@
         },
         {
             "type": "select",
-            "question": "A habilidade de extrair subtotais e totais de um recibo é uma capacidade do serviço ___",
+            "question": "A habilidade de extrair subtotais e totais de um recibo é uma capacidade do serviço ...",
             "explanation": "O Form Recognizer é um serviço que permite extrair automaticamente subtotais e totais de recibos, facilitando a análise e processamento de dados financeiros.",
             "statements": [
                 {
