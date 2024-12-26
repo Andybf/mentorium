@@ -446,7 +446,7 @@
         {
             "type": "multiple-YesNo",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
-            "explanation": "Os princípios orientadores da Microsoft para IA responsável garantem que a tecnologia seja transparente, confiável e inclusiva.",
+            "explanation": "O princípio da transparência da Microsoft para IA responsável enfatiza a importância de fornecer explicações claras e compreensíveis sobre como as decisões são tomadas pelos sistemas de IA. Fornecer uma explicação do resultado de uma aplicação de empréstimo de crédito é um exemplo claro de transparência, permitindo que os indivíduos entendam os critérios e processos que levaram à decisão.\nA Microsoft segue princípios de IA responsável, que incluem a inclusividade. Oferecer soluções de IA a preços diferentes para diferentes territórios de vendas é uma maneira de garantir que as tecnologias de IA sejam acessíveis e benéficas para pessoas de diferentes contextos e necessidades.\nPriorizar reivindicações de seguro com base em lesões é uma maneira de garantir que as decisões sejam tomadas de maneira justa e transparente, focando em fornecer suporte rápido e adequado a quem mais precisa. Isso reflete o princípio de confiabilidade e segurança da Microsoft para IA responsável, que visa criar sistemas de IA que sejam confiáveis, seguros e projetados para o bem-estar humano.",
             "statements": [
                 {
                     "title": "Fornecer uma explicação do resultado de uma aplicação de empréstimo de crédito é um exemplo do princípio da transparência da Microsoft para IA responsável.",
@@ -458,7 +458,7 @@
                 },
                 {
                     "title": "Uma solução de IA oferecida a preços diferentes para diferentes territórios de vendas é um exemplo do princípio de inclusividade da Microsoft para IA responsável.",
-                    "isCorrect": false
+                    "isCorrect": true
                 }
             ]
         },
