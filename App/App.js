@@ -73,6 +73,7 @@ export default class App extends AVElement {
             button.style.background = this.dashboardData[index];
         }        
         button.value = index;
+        button.style.borderColor = this.database[index]['golden'] ? 'goldenrod' : '';
         button.addEventListener("click", (event) => {
             this.goToQuestion(Number(event.target.value));
         });
@@ -146,6 +147,11 @@ export default class App extends AVElement {
         } else
         if (questionType === 'multiple-select') {
             this.fillQuestionMultipleSelect(currentQuestion);
+        }
+        if (this.database[currentQuestion]['golden']) {
+            this.body.querySelector("fieldset").style.borderColor = 'goldenrod';
+        } else {
+            this.body.querySelector("fieldset").style.borderColor = '';
         }
         this.body.querySelector("#exam-progress").value = this.currentExam.currentQuestion;
         this.currentExam.isCurrentQuestionRevealed = false;
