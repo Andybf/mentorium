@@ -22,7 +22,7 @@
         {
             "type" : "select",
             "question" : "Selecione a resposta que completa corretamente a frase: ...fornece melhores práticas de funcionários, parceiros e clientes da Microsoft, incluindo ferramentas e orientações para auxiliar na implantação do Azure.",
-            "explanation" : "O Azure Policy garante que os recursos em seu ambiente Azure estejam em conformidade com as regras e padrões definidos por sua organização. Ele fornece diretrizes de funcionários, parceiros e clientes da Microsoft, juntamente com ferramentas para auxiliar na implantação e gerenciamento de seus recursos de forma eficaz.",
+            "explanation" : "Microsoft Cloud Adoption Framework para Azure: Este framework fornece uma estrutura completa de ciclo de vida que ajuda arquitetos de nuvem, profissionais de TI e tomadores de decisão de negócios a alcançar suas metas de adoção da nuvem. Ele reúne as melhores práticas de adoção da nuvem de funcionários, parceiros e clientes da Microsoft.",
             "statements" : [
                 {
                     "title" : "Azure Blueprints",
