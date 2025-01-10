@@ -177,10 +177,12 @@ export default class App extends AVElement {
                 misses++;
             }
         }
+        let successRate = ((1 - misses/(hits+misses + (parcials/2)) )*100);
+        successRate = (successRate < 0) ? 0 : successRate;
         this.body.querySelector("#status-hits").innerText = hits;
         this.body.querySelector("#status-parcial").innerText = parcials;
         this.body.querySelector("#status-miss").innerText = misses;
-        this.body.querySelector("#status-success-rate").innerText = ((1 - misses/(hits + (parcials/2)) )*100).toFixed(2)+'%';
+        this.body.querySelector("#status-success-rate").innerText = successRate.toFixed(2)+'%';
         this.body.querySelector("#status-total-answered").innerText = hits + parcials + misses;
     }
 
