@@ -6,7 +6,7 @@ header {
 h1 {
     margin: 0;
     margin-bottom: 0.75rem;
-    font-size: 18pt;
+    font-size: 14pt;
     text-align: center;
 }
 
@@ -188,7 +188,6 @@ button#next {
 }
 
 section.start-exam {
-    height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;

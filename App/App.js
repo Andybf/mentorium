@@ -28,6 +28,7 @@ export default class App extends AVElement {
             this.toogleQuestionMap();
         });
         this.toogleQuestionMap();
+        this.body.querySelector("#explanation").style.display = 'none';
         this.body.querySelector("#question-map").disabled = true;
         this.body.querySelector("#next").disabled = true;
         
@@ -111,6 +112,7 @@ export default class App extends AVElement {
             this.body.querySelector("#current-question").innerText = 0;
             this.body.querySelector("#total-questions").innerText = this.examQuestions;
             this.body.querySelector("#exam-progress").max = this.examQuestions;
+            this.body.querySelector("#explanation").style.display = null;
             this.body.querySelector("#question-map").disabled = false;
             this.body.querySelector("#next").disabled = false;
             this.prepareNextQuestion(this.currentExam.currentQuestion);
@@ -220,7 +222,7 @@ export default class App extends AVElement {
         if (questionObj.attachment) {
             let img = document.createElement("img");
             img.src =  questionObj.attachment;
-            newCard.querySelector("section").insertBefore(img, newCard.querySelector("fieldset"));
+            newCard.insertBefore(img, newCard.querySelector("fieldset"));
         }
     }
     

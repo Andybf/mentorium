@@ -7,6 +7,30 @@ para as próximas mensagens:
 2 - A pergunta estará em inglês, traduza para português, tanto a pergunta quanto a resposta.
 3 - Aproveite o campo "explanation" para adicionar o motivo da resposta ser verdadeira.
 4 - transforme o resultado final em um texto no formato .json
+segue o .json para a perguta do tipo "choose":
+{
+	"type": "choose",
+	"question" : "",
+	"explanation": "",
+	"statements" : [
+		{
+			"title" : "Statement1",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement2",
+			"isCorrect" : false
+		},
+		(
+			"title" : "Statement3",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement4",
+			"isCorrect" : false
+		}
+	]
+}
 segue o formato .json para a pergunta do tipo "select", removendo a letra no começo da resposta:
 {
 	"type": "select",
@@ -33,7 +57,7 @@ segue o formato .json para a pergunta do tipo "select", removendo a letra no com
 }
 segue o .json para a pergunta do tipo "multiple-YesNo":
 {
-	"type": "multiple-YesNo",
+	"type": "multiple-yes-no",
 	"question" : "",
 	"explanation" : "",
 	"statements": [
@@ -47,30 +71,6 @@ segue o .json para a pergunta do tipo "multiple-YesNo":
 		},
 		(
 			"title" : "Statement3",
-			"isCorrect" : false
-		}
-	]
-}
-segue o .json para a perguta do tipo "choose":
-{
-	"type": "choose",
-	"question" : "",
-	"explanation": "",
-	"statements" : [
-		{
-			"title" : "Statement1",
-			"isCorrect" : false
-		},
-		{
-			"title" : "Statement2",
-			"isCorrect" : false
-		},
-		(
-			"title" : "Statement3",
-			"isCorrect" : false
-		},
-		{
-			"title" : "Statement4",
 			"isCorrect" : false
 		}
 	]
