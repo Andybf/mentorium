@@ -94,7 +94,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Detectar desvios de padrões esperados para identificar algo fora do normal é o objetivo da detecção de anomalias.",
             "statements": [
@@ -246,7 +246,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Qual tarefa você deve incluir para garantir que o serviço atenda ao princípio de transparência da Microsoft para IA responsável?",
             "explanation": "Fornecer documentação para ajudar os desenvolvedores a depurar o código é importante para garantir a transparência no desenvolvimento e manutenção do serviço de IA.",
             "statements": [
@@ -300,7 +300,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "usado para extrair datas, quantidades e locais de textos.",
             "explanation": "Named Entity Recognition (NER) é uma técnica usada em processamento de linguagem natural para extrair entidades específicas, como datas, quantidades e locais, de textos.",
             "statements": [
@@ -446,7 +446,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O princípio da transparência da Microsoft para IA responsável enfatiza a importância de fornecer explicações claras e compreensíveis sobre como as decisões são tomadas pelos sistemas de IA. Fornecer uma explicação do resultado de uma aplicação de empréstimo de crédito é um exemplo claro de transparência, permitindo que os indivíduos entendam os critérios e processos que levaram à decisão.\nA Microsoft segue princípios de IA responsável, que incluem a inclusividade. Oferecer soluções de IA a preços diferentes para diferentes territórios de vendas é uma maneira de garantir que as tecnologias de IA sejam acessíveis e benéficas para pessoas de diferentes contextos e necessidades.\nPriorizar reivindicações de seguro com base em lesões é uma maneira de garantir que as decisões sejam tomadas de maneira justa e transparente, focando em fornecer suporte rápido e adequado a quem mais precisa. Isso reflete o princípio de confiabilidade e segurança da Microsoft para IA responsável, que visa criar sistemas de IA que sejam confiáveis, seguros e projetados para o bem-estar humano.",
             "statements": [
@@ -682,7 +682,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Automatizar tarefas demoradas e iterativas do desenvolvimento de modelos de aprendizado de máquina economiza tempo e melhora a eficiência.",
             "statements": [
@@ -706,7 +706,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Um sistema bancário que prevê se um empréstimo será pago é um exemplo de que tipo de aprendizado de máquina?",
             "explanation": "A classificação é usada para prever categorias ou rótulos, como prever se um empréstimo será pago ou não.",
             "statements": [
@@ -725,7 +725,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "A rotulagem é o processo de marcar dados de treinamento com valores conhecidos, fornecendo informações explícitas que ajudam os modelos de aprendizado de máquina a aprender padrões e fazer previsões.\nAvaliar um modelo usando os mesmos dados usados para treiná-lo pode levar a uma avaliação enganosa do desempenho, conhecida como overfitting. Em vez disso, é essencial dividir o conjunto de dados em dados de treinamento e dados de teste (ou validação).\nA precisão não é sempre a métrica principal usada para medir o desempenho de um modelo. A escolha da métrica depende do tipo de problema e dos objetivos específicos do modelo.",
             "statements": [
@@ -791,7 +791,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você está usando o Azure Machine Learning designer para publicar um pipeline de inferência. Quais dois parâmetros você deve usar para acessar o serviço web? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "Ao publicar um pipeline de inferência no Azure Machine Learning, os parâmetros REST endpoint e authentication key são necessários para acessar o serviço web, pois garantem a conexão segura e a comunicação com o modelo.",
             "statements": [
@@ -838,7 +838,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Prever quantas horas extras um entregador trabalhará com base no número de pedidos recebidos é um exemplo de...",
             "explanation": "A regressão é usada para prever valores contínuos, como horas extras, com base em variáveis independentes, como o número de pedidos recebidos.",
             "statements": [
@@ -857,8 +857,8 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
-            "golden" : true,
+            "type": "multiple-yes-no",
+            "isGolden" : true,
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O Azure Machine Learning designer oferece uma interface visual intuitiva e funcionalidades que permitem salvar progresso como rascunho, porém não suporta funções personalizadas em JavaScript.",
             "statements": [
@@ -900,7 +900,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Automated machine learning (AutoML) é projetado para simplificar o processo de desenvolvimento de modelos de aprendizado de máquina e pode integrar scripts personalizados, implementações automáticas e conexões visuais de dados e módulos.",
             "statements": [
@@ -981,7 +981,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você está construindo uma ferramenta que processará imagens de lojas de varejo e identificará os produtos dos concorrentes. A solução usará um modelo personalizado. Qual serviço do Azure Cognitive Services você deve usar?",
             "explanation": "O Custom Vision (Visão personalizada) permite treinar modelos personalizados para identificar produtos específicos em imagens, o que é ideal para identificar produtos de concorrentes em lojas de varejo.",
             "statements": [
@@ -1004,7 +1004,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Clustering é o processo de agrupar objetos baseados nas suas características similares. É usado em várias aplicações, incluindo a organização de documentos, agrupar pacientes com sintomas similares, etc.",
             "statements": [
@@ -1023,7 +1023,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Um conjunto de validação é usado para medir a precisão de um modelo em dados que não foram usados durante o treinamento e para ajustar hiperparâmetros do modelo.",
             "statements": [
@@ -1089,7 +1089,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Qual tipo de aprendizado de máquina deve ser usado para identificar grupos de pessoas que têm hábitos de compra semelhantes?",
             "explanation": "O agrupamento (clustering) é usado para identificar grupos ou segmentos dentro de um conjunto de dados com base em características ou comportamentos semelhantes.",
             "statements": [
@@ -1349,8 +1349,8 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
-            "golden" : true,
+            "type": "multiple-yes-no",
+            "isGolden" : true,
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Modelos de regressão normalmente exigem dados rotulados para aprender e prever resultados. Classificação não é usada para prever dados numéricos sequenciais, isso é feito por técnicas de regressão ou séries temporais. Clustering é uma técnica que agrupa itens com base em características comuns.",
             "statements": [
@@ -1416,7 +1416,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Quais são as duas linguagens que você pode usar para escrever código personalizado para o designer do Azure Machine Learning? Cada resposta correta apresenta uma solução completa.",
             "explanation": "Python e R são amplamente utilizados no ambiente do Azure Machine Learning para escrever código personalizado, devido à sua robustez e vasta disponibilidade de bibliotecas para machine learning e análise de dados.",
             "statements": [
@@ -1440,7 +1440,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você precisa prever a faixa de renda de um determinado cliente usando o seguinte conjunto de dados. Quais são os dois campos que você deve usar como características? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
             "attachment": "database/ia900/001.png",
             "explanation": "Para prever a faixa de renda, é importante usar variáveis que influenciam essa variável. O 'Nível de Educação' e a 'Idade' são bons preditores para determinar a renda de uma pessoa.",
@@ -1511,7 +1511,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "No serviço Custom Vision (Visão personalizada), a escolha entre Multilabel e Multiclass é necessária para a configuração do modelo de classificação. O serviço permite a criação de modelos que identificam a localização de objetos específicos em uma imagem. Além disso, você pode escolher domínios predefinidos para ajustar o modelo a diferentes cenários.",
             "statements": [
@@ -1530,7 +1530,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Modelos de regressão requerem rótulos numéricos porque estão prevendo valores contínuos. Agrupamento (clustering) não usa rótulos, pois agrupa dados com base em características sem categorias predefinidas. Classificação pode usar rótulos categóricos, mas não necessariamente numéricos.",
             "statements": [
@@ -1573,7 +1573,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Contar o número de animais em uma área com base em um feed de vídeo é um exemplo de 'Área da resposta'.",
             "explanation": "Visão computacional é a área da IA que permite a análise de imagens e vídeos para extrair informações significativas. Contar animais em um feed de vídeo se enquadra nessa categoria, pois envolve a detecção e contagem de objetos visuais.",
             "statements": [
@@ -1596,7 +1596,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Você tem um banco de dados que contém uma lista de funcionários e suas fotos. Você está marcando novas fotos dos funcionários. Para cada uma das seguintes afirmações, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "O serviço de reconhecimento facial pode ser usado para realizar reconhecimento facial de funcionários e a precisão melhora com mais fotos de diferentes ângulos. O serviço de reconhecimento facial pode ainda reconhecer rostos mesmo com óculos escuros, dependendo da qualidade do algoritmo e da imagem.",
             "statements": [
@@ -1638,7 +1638,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço Custom Vision (Visão personalizada) é projetado para identificar e classificar objetos em imagens, e requer dados de treinamento para construir modelos precisos. No entanto, ele não é usado para análise de vídeos diretamente; outras ferramentas específicas para vídeos são recomendadas.",
             "statements": [
@@ -1785,7 +1785,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você pode usar o serviço ... para treinar um modelo de detecção de objetos usando suas próprias imagens.",
             "explanation": "O Custom Vision (Visão personalizada) é um serviço do Azure que permite treinar modelos de detecção de objetos personalizados usando suas próprias imagens. Ele é ideal para cenários em que você precisa de um modelo que reconheça objetos específicos em suas imagens.",
             "statements": [
@@ -1879,7 +1879,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Quais são as duas tarefas que podem ser executadas usando visão computacional? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "Visão computacional é utilizada para analisar imagens e extrair informações relevantes. Detectar marcas em uma imagem e detectar o esquema de cores são tarefas que podem ser executadas por visão computacional.",
             "statements": [
@@ -1930,7 +1930,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Em quais dois cenários você pode usar o serviço Form Recognizer? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "O Form Recognizer é utilizado para extrair dados de documentos de forma automatizada. Ele pode extrair informações específicas, como o número de uma fatura, e identificar detalhes como o varejista a partir de um recibo.",
             "statements": [
@@ -1982,7 +1982,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Qual recurso de Visão Computacional você pode usar para gerar legendas automáticas para fotografias digitais?",
             "explanation": "O recurso 'Descreva as imagens' é utilizado em Visão Computacional para gerar legendas automáticas que descrevem o conteúdo das imagens, permitindo uma melhor compreensão do contexto visual.",
             "statements": [
@@ -2075,7 +2075,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Em quais dois cenários você pode usar o reconhecimento de fala? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "O reconhecimento de fala é utilizado para converter fala em texto e para leitura automática. Pode ser usado em sistemas automotivos para ler mensagens de texto em voz alta e para criar transcrições de chamadas telefônicas ou reuniões.",
             "statements": [
@@ -2144,7 +2144,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de Fala do Azure pode transcrever chamadas para texto, o que permite a criação de transcrições. O serviço de Análise de Texto pode extrair entidades-chave de transcrições de chamadas, facilitando a identificação de informações importantes. Além disso, o serviço de Fala pode traduzir o áudio de chamadas para diferentes idiomas, ajudando na comunicação multilingue.",
             "statements": [
@@ -2209,8 +2209,8 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
-            "golden" : true,
+            "type": "multiple-yes-no",
+            "isGolden" : true,
             "question": "Você tem um modelo de Machine Learning do Azure que prevê a qualidade do produto. O modelo possui um conjunto de dados de treinamento que contém 50.000 registros. Uma amostra dos dados é mostrada na tabela a seguir.\nPara cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "attachment": "database/ia900/004.png",
             "explanation": "Mass (kg) é uma característica (feature) porque é uma variável que pode ser usada como entrada para o modelo. Quality Test é um rótulo (label) porque é a variável que o modelo está tentando prever. Temperature (C) geralmente é uma característica (feature) a menos que esteja sendo usada diretamente como a variável alvo a ser prevista pelo modelo, mas em muitos casos, ela é uma entrada.",
@@ -2253,7 +2253,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de Tradução do Azure é capaz de traduzir texto entre idiomas e detectar o idioma de um texto dado. No entanto, ele não pode transcrever fala audível em texto, pois essa é uma funcionalidade do serviço de Fala.",
             "statements": [
@@ -2370,7 +2370,7 @@
         },
         {
             "type": "select",
-            "golden" : true,
+            "isGolden" : true,
             "question": "O processamento de linguagem natural pode ser usado para ...",
             "explanation": "O processamento de linguagem natural (NLP) pode ser utilizado para classificar mensagens de e-mail como relacionadas ao trabalho ou pessoais, ajudando a organizar e priorizar comunicações.",
             "statements": [
@@ -2462,7 +2462,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de Análise de Texto do Azure pode identificar o idioma em que um texto foi escrito e pode identificar empresas e organizações mencionadas em um documento através de reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
             "statements": [
@@ -2481,8 +2481,8 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
-            "golden" : true,
+            "type": "multiple-yes-no",
+            "isGolden" : true,
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O processamento de linguagem natural (NLP) é utilizado para analisar e interpretar textos. Monitorar avaliações de serviços online para profanidades e monitorar sites de notícias públicas para menções negativas de um produto são exemplos de NLP. Identificar logotipos de marcas em uma imagem não é NLP, mas sim um exemplo de visão computacional.",
             "statements": [
@@ -2652,7 +2652,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Quais são os dois cenários que são exemplos de uma carga de trabalho de processamento de linguagem natural? Cada resposta correta apresenta uma solução completa.",
             "explanation": "Os cenários B e C envolvem a compreensão e a geração de linguagem natural, que são tarefas típicas de processamento de linguagem natural (NLP).",
             "statements": [
@@ -2702,7 +2702,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O serviço de linguagem do Azure pode identificar o idioma em que um texto foi escrito e identificar empresas e organizações mencionadas em um documento através do reconhecimento de entidades. No entanto, não pode detectar assinaturas manuscritas, pois essa tarefa envolve visão computacional.",
             "statements": [
@@ -2815,7 +2815,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Uma carga de trabalho de IA conversacional envolve interações diretas entre usuários e sistemas inteligentes, como chatbots que respondem a consultas. Um bot que responde a consultas de usuários internos é um exemplo claro de IA conversacional. Já aplicativos que exibem imagens baseadas em termos de pesquisa e formulários para redefinição de senhas não se enquadram nessa categoria, pois não envolvem interações conversacionais contínuas.",
             "statements": [
@@ -2931,7 +2931,7 @@
         },          
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você tem o processo mostrado no seguinte diagrama. Qual tipo de solução de IA é mostrada no diagrama?",
             "attachment": "database/ia900/006.png",
             "explanation": "O diagrama descreve uma interação em que um usuário faz uma pergunta e recebe uma resposta automatizada contendo um link para mais informações. Esse tipo de interação é característica de um chatbot, que é projetado para responder automaticamente a consultas dos usuários.",
@@ -2955,7 +2955,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O QnA Maker é projetado para criar uma base de conhecimento a partir de documentos e páginas da web, mas ele não pode consultar diretamente um banco de dados Azure SQL. Ele é ideal para fornecer respostas consistentes para perguntas frequentes. No entanto, o QnA Maker não determina a intenção de uma expressão do usuário; essa função é do serviço LUIS (Language Understanding).",
             "statements": [
@@ -2975,7 +2975,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você precisa disponibilizar os comunicados de imprensa escritos da sua empresa em vários idiomas. Qual serviço você deve usar?",
             "explanation": "O serviço Tradutor do Azure permite a tradução de textos entre vários idiomas, facilitando a comunicação global e a acessibilidade.",
             "statements": [
@@ -2998,7 +2998,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Sim, você pode se comunicar com bots usando Cortana, Microsoft Teams e interfaces de chat na web. Essas plataformas suportam a integração com bots para diversas funcionalidades.",
             "statements": [
@@ -3379,7 +3379,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Os modelos de transformador são treinados com grandes volumes de texto para aprender relações semânticas entre palavras, o que permite gerar sequências de texto coerentes. O bloco codificador não gera novas sequências de linguagem; essa tarefa é do bloco decodificador. O modelo BERT utiliza apenas o bloco codificador, enquanto o GPT utiliza apenas o bloco decodificador. Portanto, as implementações podem variar.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3448,7 +3448,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O bloco decodificador utiliza as inserções do bloco codificador para gerar novas sequências de linguagem. Os vetores gerados pelo bloco codificador são chamados de inserções, não atenções. Os tokens são os menores elementos de texto que podem ser processados pelo modelo. A técnica de atenção é usada tanto pelo bloco codificador quanto pelo decodificador.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3563,7 +3563,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Modelos de transformador podem gerar respostas de linguagem difíceis de distinguir das humanas. Eles são treinados com grandes volumes de texto, mas não exclusivamente de fontes públicas na Internet. O modelo GPT usa apenas o bloco decodificador. Os modelos de transformador utilizam técnicas de atenção para processar sequências de tokens.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3632,7 +3632,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "As inserções são coleções de vetores que representam atributos semânticos dos tokens. O modelo BERT foi desenvolvido pelo Google, não pela OpenAI. A técnica de atenção ajuda a determinar relações entre tokens. Modelos de transformador são capazes de dar suporte à IA generativa.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3701,7 +3701,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3770,7 +3770,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3839,7 +3839,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3908,7 +3908,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre o treinamento e funcionamento de modelos de transformador.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -3977,7 +3977,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre os diferentes casos de uso do Microsoft Copilot.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -4046,7 +4046,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Estas afirmações baseiam-se no texto sobre os diferentes casos de uso do Microsoft Copilot.\n\n*Pergunta criada pelo Microsoft Copilot sobre IA Generativa.",
             "statements": [
@@ -4373,7 +4373,7 @@
         },
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question" : "Qual tecnologia de IA é usada no Visual Studio com o GitHub Copilot?",
             "explanation": "O GitHub Copilot, integrado ao Visual Studio, usa a tecnologia de IA Codex, desenvolvida pela OpenAI, para ajudar programadores a escrever código de forma mais eficiente.\n\n*Pergunta similar caiu no exame, reconstruída com o Microsoft Copilot.",
             "statements" : [
@@ -4397,7 +4397,7 @@
         },           
         {
             "type": "choose",
-            "golden" : true,
+            "isGolden" : true,
             "question": "Você usa processamento de linguagem natural para processar texto de uma notícia da Microsoft. Você recebe a saída mostrada no seguinte quadro.\nQual tipo de processamento de linguagem natural foi realizado?",
             "attachment" :"database/ia900/010.png",
             "explanation": "A técnica de processamento de linguagem natural realizada nesse caso é A. Reconhecimento de entidade. O reconhecimento de entidade envolve a identificação e classificação de entidades mencionadas no texto em categorias predefinidas, como nomes de pessoas, organizações, locais, datas, quantidades, etc. No quadro apresentado, podemos ver que diferentes partes do texto foram classificadas em categorias como PersonType, Skill, DateTime-Date, Location, Organization, Quantity-Number, e assim por diante.",

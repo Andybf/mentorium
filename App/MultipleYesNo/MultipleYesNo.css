@@ -1,0 +1,38 @@
+section.multiple-YesNo > fieldset {
+    padding: 1rem;
+}
+
+section.multiple-YesNo > fieldset > div {
+    display: flex;
+    font-weight: bold;
+}
+
+section.multiple-YesNo > fieldset > ul > li {
+    display: flex;
+}
+
+section.multiple-YesNo > fieldset > ul > li > label, section.multiple-YesNo > fieldset > div > span:first-child{
+    width: 80%;
+    display: block;
+}
+
+section.multiple-YesNo > fieldset > ul > li > div, section.multiple-YesNo > fieldset > div > span{
+    width: 64px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    row-gap: 1.0rem;
+}
+
+fieldset {
+    border-radius: 6px;
+    margin-top: 1rem;
+}

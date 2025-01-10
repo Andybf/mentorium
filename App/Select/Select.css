@@ -1,0 +1,17 @@
+
+section.select > fieldset > select {
+    min-width: 256px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    row-gap: 1.0rem;
+}
+
+fieldset {
+    border-radius: 6px;
+    margin-top: 1rem;
+}

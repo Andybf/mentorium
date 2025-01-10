@@ -8,7 +8,8 @@ export default class App extends AVElement {
     currentExam;
     intervalTime;
     dashboardData;
-    
+    currentQuestionComp;
+
     renderedCallback() {
         this.body.querySelector("button#next").addEventListener("click", (event) => {
             if (this.currentExam.isCurrentQuestionRevealed) {
@@ -47,6 +48,10 @@ export default class App extends AVElement {
             isCurrentQuestionRevealed : false,
             startTime : 0
         };
+        this.loadNewChildrenComponent('comp-choose');
+        this.loadNewChildrenComponent('comp-multiple-select');
+        this.loadNewChildrenComponent('comp-multiple-yes-no');
+        this.loadNewChildrenComponent('comp-select');
     }
 
     async getDatabase(documentName) {
@@ -73,7 +78,7 @@ export default class App extends AVElement {
             button.style.background = this.dashboardData[index];
         }        
         button.value = index;
-        button.style.borderColor = this.database[index]['golden'] ? 'goldenrod' : '';
+        button.style.borderColor = (this.database[index]['isGolden']) ? 'goldenrod' : '';
         button.addEventListener("click", (event) => {
             this.goToQuestion(Number(event.target.value));
         });
@@ -128,101 +133,28 @@ export default class App extends AVElement {
         this.intervalTime = setInterval( () => {
             this.tickClock();
         }, 1000);
-        if (id >= this.database.length) {
-            this.currentExam.currentQuestion = 0;
-        } else {
-            this.currentExam.currentQuestion = id;  
-        }              
+
+        this.currentExam.currentQuestion = (id >= this.database.length) ? 0 : id;
+
         const currentQuestion = this.currentExam.currentQuestion;        
         const questionType = this.database[currentQuestion]['type'];
         this.body.querySelector("#current-question").innerText = currentQuestion+1;
-        if (questionType === 'select') {  
-            this.fillQuestionSelect(currentQuestion);
-        } else
-        if (questionType === 'choose') {
-            this.fillQuestionChoose(currentQuestion);
-        } else
-        if (questionType === 'multiple-YesNo') {
-            this.fillQuestionMultipleYesNo(currentQuestion);
-        } else
-        if (questionType === 'multiple-select') {
-            this.fillQuestionMultipleSelect(currentQuestion);
-        }
-        if (this.database[currentQuestion]['golden']) {
-            this.body.querySelector("fieldset").style.borderColor = 'goldenrod';
-        } else {
-            this.body.querySelector("fieldset").style.borderColor = '';
-        }
+
+        let questionBorderColor = (this.database[currentQuestion]['isGolden']) ? 'goldenrod' : '';
+        
+        let compName = `comp-${questionType}`;
+        this.currentQuestionComp = document.createElement(compName);
+        this.currentQuestionComp.questionData = this.database[currentQuestion];
+        this.currentQuestionComp.borderColor = questionBorderColor;
+        this.body.querySelector("main").appendChild(this.currentQuestionComp);
+
         this.body.querySelector("#exam-progress").value = this.currentExam.currentQuestion;
         this.currentExam.isCurrentQuestionRevealed = false;
     }
 
     evaluateQuestion() {
         const questionId = this.currentExam.currentQuestion;
-        const questionType = this.database[questionId]['type'];
-
-        if (questionType === 'select') {
-            if (this.body.querySelector("select").value == 'true') {
-                this.updateDashboard(questionId, 'pass');
-            } else {
-                this.updateDashboard(questionId, 'failed');
-            }
-        } else
-        if (questionType === 'choose') {
-            let trueStatementsCount = 0;
-            for (let statement of this.database[questionId].statements) {
-                if (statement.isCorrect) {
-                    trueStatementsCount++;
-                }
-            }
-            let points = 0;
-            for (let input of Array.from(this.body.querySelectorAll('input'))) {
-                if (input.value == 'true' && input.checked == true) {
-                    points++;
-                }
-            }
-            if (points >= trueStatementsCount) {
-                this.updateDashboard(questionId, 'pass');
-            } else
-            if (points > 0) {
-                this.updateDashboard(questionId, 'warning');
-            } else {
-                this.updateDashboard(questionId, 'failed');
-            }
-        } else
-        if (questionType === 'multiple-YesNo') {
-            let points = 0;
-            for (let input of Array.from(this.body.querySelectorAll('input'))) {
-                if (input.value == 'true' && input.checked == true) {
-                    points++;
-                }
-            }
-            if (points >= 3) {
-                this.updateDashboard(questionId, 'pass');
-            } else
-            if (points > 0) {
-                this.updateDashboard(questionId, 'warning');
-            } else {
-                this.updateDashboard(questionId, 'failed');
-            }
-        } else
-        if (questionType === 'multiple-select') {
-            const selectList = Array.from(this.body.querySelectorAll("select"));
-            let points = 0;
-            for (let select of selectList) {
-                if (select.value == select.answer) {
-                    points++;
-                }
-            }
-            if (points >= selectList.length) {
-                this.updateDashboard(questionId, 'pass');
-            } else
-            if (points > 0) {
-                this.updateDashboard(questionId, 'warning');
-            } else {
-                this.updateDashboard(questionId, 'failed');
-            }
-        } 
+        this.updateDashboard(questionId, this.currentQuestionComp.evaluateQuestion());
     }
 
     toogleQuestionMap() {
@@ -273,50 +205,7 @@ export default class App extends AVElement {
     revealQuestion() {
         clearInterval(this.intervalTime);
         const questionId = this.currentExam.currentQuestion;
-        const questionType = this.database[questionId]['type'];
-        if (questionType === 'select') {
-            let select = this.body.querySelector("select");
-            if (select.value == 'true') {
-                select.style.background = 'green';
-            } else {
-                select.style.background = 'red';
-            }
-            select.value = 'true';
-            select.style.color = 'white';
-        } else
-        if (questionType === 'choose') {
-            for (let input of Array.from(this.body.querySelectorAll('input'))) {
-                if (input.value == 'true' && input.checked == true) {
-                    input.parentElement.style.background = 'green';
-                    input.parentElement.style.color = 'white';
-                } else
-                if (input.value == 'true' && input.checked == false) {
-                    input.parentElement.style.background = 'red';
-                    input.parentElement.style.color = 'white';
-                }
-            }
-        } else
-        if (questionType === 'multiple-YesNo') {
-            for (let input of Array.from(this.body.querySelectorAll('input'))) {
-                if (input.value == 'true' && input.checked == false) {
-                    input.parentElement.style.background = 'red';
-                } else
-                if (input.value == 'true' && input.checked == true) {
-                    input.parentElement.style.background = 'green';
-                }
-            }
-        } else
-        if (questionType === 'multiple-select') {
-            for (let select of Array.from(this.body.querySelectorAll("select"))) {
-                if (select.value == select.answer) {
-                    select.style.background = 'green';
-                } else {
-                    select.style.background = 'red';
-                }
-                select.value = select.answer;
-                select.style.color = 'white';
-            }            
-        }
+        this.currentQuestionComp.revealQuestion();
         this.body.querySelector("section#explanation").innerText = this.database[questionId].explanation;
         this.currentExam.isCurrentQuestionRevealed = true;
     }
@@ -335,120 +224,6 @@ export default class App extends AVElement {
             img.src =  questionObj.attachment;
             newCard.querySelector("section").insertBefore(img, newCard.querySelector("fieldset"));
         }
-    }
-
-    fillQuestionMultipleYesNo(index) {
-        let main = this.body.querySelector("main");
-        let newCard = document.importNode(this.body.querySelector("template#multiple-YesNo").content,true);
-        newCard.querySelector("h3").innerText = this.database[index].question;
-        this.fillQuestionImageIfExists(newCard, this.database[index]);
-        let statementIndex = 0;
-        for (let statement of this.database[index].statements) {
-            let li = document.createElement("li");
-            let label = document.createElement("label");
-            label.innerText = statement.title;
-            li.appendChild(label);
-            for (let j=0; j<2; j++) {
-                let div = document.createElement('div');
-                let input = document.createElement('input');
-                input.type = 'radio';
-                input.name = statementIndex.toString();            
-                if (statement.isCorrect == true && j == 0) {
-                    input.value = true;
-                } else
-                if (statement.isCorrect == false && j == 1) {
-                    input.value = true;
-                } else {
-                    input.value = false;
-                }
-                div.appendChild(input);
-                li.appendChild(div);
-            }
-            newCard.querySelector('ul').appendChild(li);
-            statementIndex++;
-        }   
-        main.appendChild(newCard);
-    }
-
-    fillQuestionChoose(index) {
-        let questionObj = this.database[index];
-        let main = this.body.querySelector("main");
-        let newCard = document.importNode(this.body.querySelector("template#choose").content,true);
-        newCard.querySelector("h3").innerText = questionObj.question;        
-        this.fillQuestionImageIfExists(newCard, questionObj);
-
-        let list = newCard.querySelector("ul");
-        for (let statement of questionObj.statements) {
-            const listItem = document.createElement("li");
-            let input = document.createElement("input");
-            input.type = "checkbox";
-            input.value = statement.isCorrect;
-            input.id = statement.title;
-            let label = document.createElement("label");
-            label.innerText = statement.title;
-            label.htmlFor = statement.title;
-            listItem.appendChild(input);
-            listItem.appendChild(label);
-            list.appendChild(listItem);
-        }        
-        main.appendChild(newCard);
-    }
-
-    fillQuestionSelect(index) {
-        let main = this.body.querySelector("main");
-        let newCard = document.importNode(this.body.querySelector("template#select").content,true);
-        newCard.querySelector("h3").innerText = this.database[index].question;
-        this.fillQuestionImageIfExists(newCard, this.database[index]);
-        let select = newCard.querySelector("select");
-        let option = document.createElement("option");
-        option.value = ' ';
-        option.innerText = ' ';
-        select.appendChild(option);
-        for (let stt of this.database[index].statements) {
-            let option = document.createElement("option");
-            option.value = stt.isCorrect;
-            option.innerText = stt.title;
-            select.appendChild(option);
-        }        
-        main.appendChild(newCard);
-    }
-
-    fillQuestionMultipleSelect(index) {
-        let main = this.body.querySelector("main");
-        let newCard = document.importNode(this.body.querySelector("template#multiple-select").content,true);
-        let string = this.database[index].question;
-
-        let title;
-        if (this.database[index]['pre-question']) {
-            title = this.database[index]['pre-question'];
-        } else {
-            title = "Selecione os valores apropriados:"
-        }
-        newCard.querySelector("h3").innerText = title;
-
-        this.fillQuestionImageIfExists(newCard, this.database[index]);
-        const statementLength = this.database[index].answers.length;
-        for (let i=0; i<statementLength; i++ ) {
-            let div = document.createElement("div");
-            let select = document.createElement("select");
-            select.answer = this.database[index].answers[i];
-            let option = document.createElement("option");
-            option.value = ' ';
-            option.innerText = ' ';
-            select.appendChild(option);
-            for (let stt of this.database[index].statements) {
-                let option = document.createElement("option");                
-                option.value = stt.title;
-                option.innerText = stt.title;
-                select.appendChild(option);
-            }
-            div.appendChild(select);
-            let label = document.createElement("label");
-            label.innerText = string[i];
-            div.appendChild(label);
-            newCard.querySelector("fieldset").appendChild(div);
-        }        
-        main.appendChild(newCard);
     }
     
 }

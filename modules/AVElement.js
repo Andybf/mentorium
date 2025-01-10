@@ -1,6 +1,6 @@
 /* 
  * AndView Framework
- * Copyright © 2023 Anderson Bucchianico. All rights reserved.
+ * © 2023-2025 Anderson Bucchianico. All rights reserved.
  * 
 */
 
@@ -170,7 +170,9 @@ export default class AVElement extends HTMLElement {
             let className = this.#constructComponentClassName(newComp);
             let classDefinition = await import(`${this.#componentpath.root}/${className}/${className}.js`);
             let parentMap = new Map([[this.localName, this ]]);
-            AVutils.concatMaps(parentMap, this._parentComponentsMap);
+            if (this._parentComponentsMap.size > 0) {
+                AVutils.concatMaps(parentMap, this._parentComponentsMap);
+            }            
             classDefinition.default.prototype._parentComponentsMap = parentMap;
             this.#defineCustomComponent(newComp,classDefinition);
         }
@@ -181,6 +183,10 @@ export default class AVElement extends HTMLElement {
             localName = `comp-${localName}`;
         }
         return this._parentComponentsMap.get(localName);
+    }
+
+    getParentComponent() {
+        return this._parentComponentsMap.entries().next().value[1];
     }
 
     getChildComponent(localName) {

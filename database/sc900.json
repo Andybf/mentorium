@@ -1,7 +1,7 @@
 {
     "questions" : [
         {
-            "type" : "multiple-YesNo",
+            "type" : "multiple-yes-no",
             "question" : "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation" : "As edições de licença do Azure Active Directory (Azure AD) variam em termos de recursos oferecidos; portanto, nem todas incluem os mesmos recursos. Você pode gerenciar um locatário do Azure AD usando o portal do Azure, que fornece uma interface baseada na web para administração. Além disso, não é necessário implantar máquinas virtuais Azure para hospedar um locatário do Azure AD, pois o Azure AD é um serviço de identidade baseado em nuvem.",
             "statements" : [
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Aplicar atualizações do sistema, avaliar recursos em várias assinaturas do Azure e habilitar a autenticação multifator (MFA) são ações que aumentam a pontuação de segurança de uma organização no Microsoft Defender for Cloud. Isso porque essas ações ajudam a melhorar a postura de segurança e a proteger os recursos da organização.",
             "statements": [
@@ -223,7 +223,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Os princípios do modelo de segurança Zero Trust incluem 'Verificar explicitamente' e 'Assumir violação', o que implica que nenhuma rede é inerentemente segura e que todas as identidades, dispositivos e serviços devem ser autenticados e autorizados de forma contínua. O modelo não assume que um firewall assegura a rede interna contra ameaças externas.",
             "statements": [
@@ -242,7 +242,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Os princípios de privacidade da Microsoft incluem controle e transparência. Controle se refere à capacidade dos usuários de gerenciar seus dados pessoais. Transparência envolve a clareza sobre como os dados são coletados e usados. A responsabilidade compartilhada, embora importante, não é considerada um princípio de privacidade principal da Microsoft.",
             "statements": [
@@ -284,7 +284,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Box 1: Sim - É necessário um certificado que forneça uma chave privada e uma chave pública. Box 2: Sim - A chave pública é usada para validar a chave privada associada a uma assinatura digital. Box 3: Não - Como a chave privada é usada (e possuída) apenas pelo signatário para assinar o documento, e a chave pública associada é usada para verificar a autenticidade.",
             "statements": [
@@ -561,7 +561,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -626,7 +626,7 @@
             "explanation": "Servidor de sincronização do Azure AD Connect. Referência: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect"
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -645,7 +645,7 @@
             "explanation": "Box 1: Sim - O Azure AD suporta funções personalizadas.\nBox 2: Sim - O Administrador Global tem acesso a todos os recursos administrativos no Azure Active Directory.\nBox 3: Não - Um usuário do Azure AD pode ser atribuído a várias funções."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -733,7 +733,7 @@
             "explanation": "As revisões de acesso do Azure Active Directory (Azure AD) permitem que as organizações gerenciem de forma eficiente as associações a grupos, o acesso a aplicativos empresariais e atribuições de funções. Não há capacidade de remover automaticamente os direitos de acesso do usuário. O ponto principal das revisões de acesso manuais dirigidas pelo usuário é que, em alguns casos, a automação não é possível."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -913,7 +913,7 @@
             "explanation": "As barreiras de informação são um recurso do Microsoft 365 que você pode usar para restringir a comunicação e o compartilhamento de informações entre membros de dois departamentos da sua organização. Referência: https://docs.microsoft.com/pt-br/microsoft-365/compliance/information-barriers"
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -932,7 +932,7 @@
             "explanation": "As políticas de acesso condicional são ferramentas poderosas para gerenciar o acesso dos usuários no Azure AD. Elas não aplicam sempre a MFA, mas podem ser configuradas para exigi-la com base em certas condições, como localização. Essas políticas se aplicam a todos os usuários, não apenas àqueles com dispositivos associados ao Azure AD."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1043,7 +1043,7 @@
             "explanation": "O Gerenciamento de Identidade com Privilégios (PIM) do Azure Active Directory (Azure AD) é projetado especificamente para implementar a ativação de função com base em aprovação e tempo em uma assinatura do Azure. O PIM permite gerenciar e controlar o acesso a funções privilegiadas no Azure AD, recursos do Azure e aplicativos SaaS integrados ao Azure AD. Ele permite elevar o acesso de forma just-in-time e fornece um fluxo de trabalho de aprovação para ativação de função, que pode ser restrito a períodos específicos. Isso faz dele a escolha ideal para implementar os requisitos especificados na pergunta."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1162,7 +1162,7 @@
             "explanation": "Box 1: sabe - A autenticação multifator combina duas ou mais credenciais independentes: o que o usuário sabe, como uma senha; o que o usuário tem, como um token de segurança; e o que o usuário é, usando métodos de verificação biométrica."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1301,7 +1301,7 @@
             "explanation": "O Microsoft Azure Sentinel é uma solução escalável, nativa da nuvem, de gerenciamento de eventos e informações de segurança (SIEM) e resposta automatizada de orquestração de segurança (SOAR)."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1343,7 +1343,7 @@
             "explanation": "Uma visão dos incidentes relacionados a ameaças que agregam alertas em histórias de ataques de ponta a ponta em todo o Microsoft Defender para Endpoint e Microsoft Defender para Office 365 para reduzir a fila de trabalho, além de simplificar e acelerar sua investigação."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1362,7 +1362,7 @@
             "explanation": "Você pode usar um grupo de segurança de rede do Azure para filtrar o tráfego de rede de e para recursos do Azure em uma rede virtual do Azure. Um grupo de segurança de rede contém regras de segurança que permitem ou negam o tráfego de rede de entrada para, ou o tráfego de rede de saída de, vários tipos de recursos do Azure. Para cada regra, você pode especificar origem e destino, porta e protocolo."
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1381,7 +1381,7 @@
             "explanation": "Box 1: Sim - O Microsoft Intune é um serviço baseado em nuvem que se concentra no gerenciamento de dispositivos móveis (MDM) e no gerenciamento de aplicativos móveis (MAM). Você pode controlar como os dispositivos da sua organização são usados, incluindo celulares, tablets e laptops.\n\nBox 2: Não - O Microsoft Intune não é usado para provisionar assinaturas do Azure. O provisionamento de assinaturas do Azure é um serviço separado.\n\nBox 3: Sim - Com o Intune, você pode gerenciar dispositivos corporativos e dispositivos pessoais dos usuários, garantindo que eles estejam em conformidade com suas políticas de segurança e conformidade."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1496,7 +1496,7 @@
             "explanation": "A defesa em profundidade abrange várias camadas, como Dados, Aplicação, Computação, Rede, Perímetro, Identidade e Acesso e Físico. Destas, a camada física é principalmente responsabilidade do provedor de nuvem."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1584,7 +1584,7 @@
             "explanation": "O Microsoft Defender para SQL é um plano de Defender no Microsoft Defender para Nuvem. O Microsoft Defender para SQL inclui funcionalidades para revelar e mitigar possíveis vulnerabilidades de banco de dados e detectar atividades anômalas que podem indicar uma ameaça ao seu banco de dados. Ele fornece um único local para habilitar e gerenciar essas capacidades."
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1860,7 +1860,7 @@
             "explanation": "A fila de alertas mostra o conjunto atual de alertas. Você acessa a fila de alertas a partir de Incidentes e alertas > Alertas no acesso rápido do portal do Microsoft 365 Defender. Alertas de diferentes soluções de segurança da Microsoft, como Microsoft Defender para Endpoint, Microsoft Defender para Office 365 e Microsoft 365 Defender aparecem aqui."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1952,7 +1952,7 @@
             "explanation": "O Azure Blueprints permite definir um conjunto repetível de recursos do Azure que implementa e adere aos padrões, padrões e requisitos de uma organização. O Azure Blueprints permite que as equipes de desenvolvimento criem e implantem rapidamente novos ambientes, sabendo que estão usando um conjunto de componentes integrados que podem acelerar o desenvolvimento e a entrega."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -1971,7 +1971,7 @@
             "explanation": "Box 1: Sim - O evento MailltemsAccessed é uma ação de auditoria de caixa de correio e é acionado quando os dados de email são acessados por protocolos de email e clientes de email.\n\nBox 2: Não - A Auditoria Básica retém registros de auditoria por 90 dias. A Auditoria Avançada retém todos os registros de auditoria do Exchange, SharePoint e Azure Active Directory por um ano. Isso é realizado por uma política padrão de retenção de logs de auditoria que retém qualquer registro de auditoria que contenha o valor Exchange, SharePoint ou AzureActive Directory para a propriedade Workload (que indica o serviço no qual a atividade ocorreu) por um ano.\n\nBox 3: Sim - A Auditoria Avançada no Microsoft 365 fornece acesso de alta largura de banda à API de Atividade de Gerenciamento do Office 365."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2174,7 +2174,7 @@
             "explanation": "Criando classificação para informações/dados sensíveis"
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2193,7 +2193,7 @@
             "explanation": "Box 1: Não - A Auditoria Avançada ajuda as organizações a conduzirem investigações forenses e de conformidade aumentando a retenção de logs de auditoria.\n\nBox 2: Não - \n\nBox 3: Sim - O evento de Envio (Send) também é uma ação de auditoria de caixa de correio e é acionado quando um usuário realiza uma das seguintes ações: envia uma mensagem de email, responde a uma mensagem de email, encaminha uma mensagem de email. Investigadores podem usar o evento de Envio para identificar emails enviados de uma conta comprometida. O registro de auditoria para um evento de Envio contém informações sobre a mensagem, como quando a mensagem foi enviada, o ID da mensagem da Internet, a linha de assunto e se a mensagem continha anexos. Essas informações de auditoria podem ajudar investigadores a identificar informações sobre mensagens de email enviadas de uma conta comprometida ou enviadas por um invasor. Além disso, investigadores podem usar uma ferramenta de Descoberta do Microsoft 365 para buscar a mensagem (usando a linha de assunto ou o ID da mensagem) para identificar os destinatários para os quais a mensagem foi enviada e o conteúdo real da mensagem enviada."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2212,7 +2212,7 @@
             "explanation": "Se você tiver um bloqueio de exclusão em um recurso e tentar excluir seu grupo de recursos, toda a operação de exclusão será bloqueada. Mesmo que o grupo de recursos ou outros recursos no grupo de recursos não estejam bloqueados, a exclusão não acontece. Você nunca tem uma exclusão parcial. Fonte: https://docs.microsoft.com/pt-br/azure/azure-resource-manager/management/lock-resources?tabs=json"
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2277,7 +2277,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2319,7 +2319,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2338,7 +2338,7 @@
             "explanation": "Box 1: Não - O Compliance Manager rastreia controles gerenciados pela Microsoft, controles gerenciados pelo cliente e controles compartilhados.\n\nBox 2: Sim - \n\nBox 3: Sim - O Compliance Manager pode ajudar você a avaliar se os dados aderem a padrões específicos de proteção de dados."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2357,7 +2357,7 @@
             "explanation": "Box 1: Não - Golpes de phishing são ameaças externas.\n\nBox 2: Sim - O gerenciamento de riscos internos é uma solução de conformidade no Microsoft 365.\n\nBox 3: Sim - O gerenciamento de riscos internos ajuda a minimizar os riscos internos dos usuários. Isso inclui:\n - Vazamentos de dados sensíveis e derramamento de dados\n - Violações de confidencialidade\n - Roubo de propriedade intelectual (PI)\n - Fraude\n - Negociação com informações privilegiadas\n - Violações de conformidade regulatória."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2426,7 +2426,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2537,7 +2537,7 @@
             "explanation": "Sua pontuação para dispositivos é visível no painel de Gerenciamento de Vulnerabilidade do Defender no portal do Microsoft 365 Defender. Encaminhe sinais do Microsoft Defender para Endpoint, dando visibilidade à Pontuação de Segurança da Microsoft sobre a postura de segurança do dispositivo. Portanto, MS Defender para Endpoint, e MS 365 defender (se encaminhado). Mas NÃO Defender para 0365."
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2832,7 +2832,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2874,7 +2874,7 @@
             "explanation": ""
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2916,7 +2916,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2962,7 +2962,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -2981,7 +2981,7 @@
             "explanation": ""
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3046,7 +3046,7 @@
             "explanation": "O Endpoint DLP pode ser usado em Windows 10 e versões mais recentes, Android e iOS."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3324,7 +3324,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3408,7 +3408,7 @@
             "explanation": "Os rótulos de sensibilidade são persistentes, o que significa que as proteções aplicadas acompanham os dados, garantindo que permaneçam seguros independentemente de onde estão armazenados ou com quem são compartilhados."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3450,7 +3450,7 @@
             "explanation": "A pontuação de conformidade mede o progresso de uma empresa na conclusão de ações que ajudam a reduzir riscos em torno da proteção de dados e padrões regulatórios."
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3469,7 +3469,7 @@
             "explanation": "A hashificação é diferente da criptografia no sentido de que ela não usa chaves e o valor do hash não é subsequentemente descriptografado de volta ao original. Fonte: https://learn.microsoft.com/pt-br/training/modules/describe-security-concepts-methodologies/5-describe-encryption-hashing"
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "statements": [
                 {
@@ -3534,7 +3534,7 @@
             "explanation": "Avaliações rastreiam a conformidade com agrupamentos de controles de uma regulamentação ou requisito específico."
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Entender as responsabilidades nos diferentes modelos de serviço em nuvem é crucial para uma gestão eficaz de segurança. Em SaaS, o provedor de nuvem gerencia as atualizações, enquanto em IaaS, o provedor lida com a rede física. As organizações são sempre responsáveis pela segurança de seus dados.",
             "statements": [
@@ -3576,7 +3576,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "Os padrões de segurança no Azure AD são projetados para garantir que medidas de segurança aprimoradas, como MFA, sejam aplicadas amplamente e de forma consistente.",
             "statements": [
@@ -3622,7 +3622,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "A redefinição de senha de autoatendimento (SSPR) permite que os usuários redefinam suas senhas usando vários métodos de verificação. Estes incluem notificações para o aplicativo Microsoft Authenticator, mas não endereços de email externos para autenticação.",
             "statements": [
@@ -3687,7 +3687,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O Azure DDoS Protection Standard fornece recursos aprimorados de mitigação de DDoS para proteger contra vários tipos de ataques, incluindo ataques de protocolo. Ele não é habilitado por padrão em uma assinatura do Azure. Fonte: https://learn.microsoft.com/pt-br/azure/ddos-protection/ddos-protection-overview",
             "statements": [
@@ -3729,7 +3729,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O Microsoft Purview Information Barriers permite a separação de usuários e grupos para evitar comunicação ou colaboração inadequadas. Já o Microsoft Purview Communication Compliance permite escanear arquivos e emails internos e externos para detectar violações de conformidade. Fonte: https://learn.microsoft.com/pt-br/microsoft-365/compliance/communication-compliance-policies?view=o365-worldwide",
             "statements": [
@@ -3813,7 +3813,7 @@
             ]
         },        
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "A identidade de dispositivo pode ser armazenada no Azure AD. Uma única identidade gerenciada atribuída pelo sistema não pode ser usada por vários recursos do Azure. Se você excluir um recurso do Azure que tem uma identidade gerenciada atribuída pelo usuário, a identidade gerenciada não é excluída automaticamente. Fonte: https://learn.microsoft.com/pt-br/azure/active-directory/managed-identities-azure-resources/overview",
             "statements": [
@@ -3855,7 +3855,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
             "explanation": "O GitHub pode ser usado como um provedor de identidade baseado na nuvem. A federação fornece Single Sign-On (SSO) com múltiplos provedores de serviço. Um provedor de identidade central não gerencia todos os serviços de autenticação modernos, como autenticação, autorização e auditoria.",
             "statements": [
@@ -3948,7 +3948,7 @@
             ]
         },
         {
-            "type": "multiple-YesNo",
+            "type": "multiple-yes-no",
             "question": "Para cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não. NOTA: Cada seleção correta vale um ponto.",
             "explanation": "As barreiras de informação (IB) podem ser usadas para restringir a comunicação e a colaboração nos serviços do Microsoft 365 para cumprir as regulamentações do setor e as políticas organizacionais. Elas são usadas no Exchange Online, SharePoint Online e Microsoft Teams para vários fins de conformidade.",
             "statements": [
