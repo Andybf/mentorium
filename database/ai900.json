@@ -49,7 +49,7 @@
                 "Há [escolha da resposta] previsões positivas corretas.",
                 "Há [escolha da resposta] falsos negativos."
             ],
-            "attachment": "database/ia900/005.png",
+            "attachment": "database/ai900/005.png",
             "explanation": "Na matriz de confusão, as previsões positivas corretas (verdadeiros positivos) são os casos em que o modelo previu corretamente a classe positiva. Os falsos negativos são os casos em que o modelo previu incorretamente a classe negativa para exemplos que na verdade eram positivos. As respostas são baseadas nos números fornecidos na matriz de confusão.",
             "statements": [
                 {
@@ -1203,7 +1203,7 @@
                 "abaixo de Limpar Dados Faltantes",
                 "acima de Treinar Modelo"
             ],
-            "attachment": "database/ia900/007.png",
+            "attachment": "database/ai900/007.png",
             "explanation": "Selecione a Coluna no conjunto de dados - 1º à direita\nDivida os Dados - 2º à direita\nRegressão Linear - Esquerda",
             "statements": [
                 {
@@ -1442,7 +1442,7 @@
             "type": "choose",
             "isGolden" : true,
             "question": "Você precisa prever a faixa de renda de um determinado cliente usando o seguinte conjunto de dados. Quais são os dois campos que você deve usar como características? Cada resposta correta apresenta uma solução completa. NOTA: Cada seleção correta vale um ponto.",
-            "attachment": "database/ia900/001.png",
+            "attachment": "database/ai900/001.png",
             "explanation": "Para prever a faixa de renda, é importante usar variáveis que influenciam essa variável. O 'Nível de Educação' e a 'Idade' são bons preditores para determinar a renda de uma pessoa.",
             "statements": [
                 {
@@ -1470,7 +1470,7 @@
         {
             "type": "choose",
             "question": "Qual modelo o gráfico mostrado no anexo é usado para avaliar?",
-            "attachment": "database/ia900/002.png",
+            "attachment": "database/ai900/002.png",
             "explanation": "O gráfico 'Predicted vs. True' é usado para avaliar modelos de regressão, pois mostra a comparação entre os valores previstos e os valores reais.",
             "statements": [
                 {
@@ -1810,7 +1810,7 @@
         {
             "type": "choose",
             "question": "Você envia uma imagem para uma API de Visão Computacional e recebe de volta a imagem anotada mostrada no exemplo. banana: 97,90% laranja: 96,77% maçã: 98,21% Qual tipo de visão computacional foi usado?",
-            "attachment": "database/ia900/003.png",
+            "attachment": "database/ai900/003.png",
             "explanation": "A classificação de imagem é a técnica usada para identificar e categorizar objetos em uma imagem, atribuindo uma probabilidade a cada categoria.",
             "statements": [
                 {
@@ -2212,7 +2212,7 @@
             "type": "multiple-yes-no",
             "isGolden" : true,
             "question": "Você tem um modelo de Machine Learning do Azure que prevê a qualidade do produto. O modelo possui um conjunto de dados de treinamento que contém 50.000 registros. Uma amostra dos dados é mostrada na tabela a seguir.\nPara cada uma das afirmações a seguir, selecione Sim se a afirmação for verdadeira. Caso contrário, selecione Não.",
-            "attachment": "database/ia900/004.png",
+            "attachment": "database/ai900/004.png",
             "explanation": "Mass (kg) é uma característica (feature) porque é uma variável que pode ser usada como entrada para o modelo. Quality Test é um rótulo (label) porque é a variável que o modelo está tentando prever. Temperature (C) geralmente é uma característica (feature) a menos que esteja sendo usada diretamente como a variável alvo a ser prevista pelo modelo, mas em muitos casos, ela é uma entrada.",
             "statements": [
                 {
@@ -2343,7 +2343,7 @@
         {
             "type": "multiple-select",
             "pre-question": "Você precisa escanear as notícias em busca de artigos sobre seus clientes e alertar os funcionários quando houver um artigo negativo. Artigos positivos devem ser adicionados a um press book.\nQuais tarefas de processamento de linguagem natural você deve usar para completar o processo? Para responder, arraste as tarefas apropriadas para os locais corretos. Cada tarefa pode ser usada uma vez, mais de uma vez ou não ser usada.\nPode ser necessário arrastar a barra dividida entre os painéis ou rolar para visualizar o conteúdo.",
-            "attachment": "database/ia900/008.png",
+            "attachment": "database/ai900/008.png",
             "question": [
                 "Depois de News articles",
                 "antes de Send alert"
@@ -2933,7 +2933,7 @@
             "type": "choose",
             "isGolden" : true,
             "question": "Você tem o processo mostrado no seguinte diagrama. Qual tipo de solução de IA é mostrada no diagrama?",
-            "attachment": "database/ia900/006.png",
+            "attachment": "database/ai900/006.png",
             "explanation": "O diagrama descreve uma interação em que um usuário faz uma pergunta e recebe uma resposta automatizada contendo um link para mais informações. Esse tipo de interação é característica de um chatbot, que é projetado para responder automaticamente a consultas dos usuários.",
             "statements": [
                 {
@@ -3267,7 +3267,7 @@
         {
             "type": "multiple-select",
             "pre-question": "Você tem o seguinte conjunto de dados.\nVocê planeja usar o conjunto de dados para treinar um modelo que preverá as categorias de preço das casas.\nO que são Renda Familiar e Categoria de Preço da Casa? Para responder, selecione a opção apropriada na área de resposta.",
-            "attachment" :"database/ia900/009.png",
+            "attachment" :"database/ai900/009.png",
             "question": [
                 "Renda Familiar:",
                 "Categoria de Preço da Casa:"
@@ -4399,7 +4399,7 @@
             "type": "choose",
             "isGolden" : true,
             "question": "Você usa processamento de linguagem natural para processar texto de uma notícia da Microsoft. Você recebe a saída mostrada no seguinte quadro.\nQual tipo de processamento de linguagem natural foi realizado?",
-            "attachment" :"database/ia900/010.png",
+            "attachment" :"database/ai900/010.png",
             "explanation": "A técnica de processamento de linguagem natural realizada nesse caso é A. Reconhecimento de entidade. O reconhecimento de entidade envolve a identificação e classificação de entidades mencionadas no texto em categorias predefinidas, como nomes de pessoas, organizações, locais, datas, quantidades, etc. No quadro apresentado, podemos ver que diferentes partes do texto foram classificadas em categorias como PersonType, Skill, DateTime-Date, Location, Organization, Quantity-Number, e assim por diante.",
             "statements": [
                 {

@@ -60,9 +60,15 @@
 
 <template id="start-exam-template">
     <section class="start-exam">
-        <button class="start-exam" value="sc900">Iniciar SC-900</button>
-        <button class="start-exam" value="ia900">Iniciar IA-900</button>
-        <button id="clear-data">Limpar Dados</button>
+        <h3>Escolha o simulado:</h3>
+        <select id="start-exam">
+            <option value="null">--Selecione--</option>
+            <option value="sc900">Microsoft SC-900</option>
+            <option value="ai900">Microsoft AI-900</option>
+            <option value="aiass">Salesforce AI Associate</option>
+        </select>
+        <br>
+        <button id="clear-data">Resetar dados</button>
     </section>
     
 </template>

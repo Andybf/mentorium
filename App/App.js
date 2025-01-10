@@ -33,11 +33,9 @@ export default class App extends AVElement {
         
         let main = this.body.querySelector("main");
         let newCard = document.importNode(this.body.querySelector("template#start-exam-template").content,true);
-        for (let button of Array.from(newCard.querySelectorAll("button.start-exam"))) {
-            button.onclick = (event) => {
-                this.configureExam(event.target.value);
-            };
-        }
+        newCard.querySelector("select#start-exam").onchange = (event) => {
+            this.configureExam(event.target.value);
+        };
         newCard.querySelector("button#clear-data").onclick = () => {
             BrowserSave.clearData();
         };
