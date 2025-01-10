@@ -65,12 +65,12 @@ export default class MultipleSelect extends AVElement {
             }
         }
         if (points >= selectList.length) {
-            this.updateDashboard(questionId, 'pass');
+            return'pass';
         } else
         if (points > 0) {
-            this.updateDashboard(questionId, 'warning');
+            return 'warning';
         } else {
-            this.updateDashboard(questionId, 'failed');
+            return 'failed';
         }
     }
 
