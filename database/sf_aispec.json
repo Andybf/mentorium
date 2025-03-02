@@ -1,0 +1,1260 @@
+{
+    "questions" : [
+        {
+            "type": "choose",
+            "question": "An AI Specialist needs to create a Sales Email with a custom prompt template. They need to ground on the following data:\n\n- Opportunity Products\n- Events near the customer\n- Tone and voice examples\n\nHow should the AI Specialist obtain related items?",
+            "explanation": "Option A is the correct answer. By calling a prompt-initiated flow to fetch and ground the required data, the AI Specialist can automate the process of integrating up-to-date information directly into the email. This ensures personalization, efficiency, and accuracy in communication, unlike options B and C, which rely on manual insertion or less dynamic methods.",
+            "statements": [
+                {
+                    "title": "A. Call a prompt initiated flow to fetch and ground the required data.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. Utilize a standard email template and manually insert the required data fields.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Create a flex template that takes the records in question as inputs.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers (UC) recently rolled out Einstein Generative AI capabilities and has created a custom prompt to summarize case records. Users have reported that the case summaries generated are not returning the appropriate information.\n\nWhat is a possible explanation for the poor prompt performance?",
+            "explanation": "Option B is the correct answer. If the data being used for grounding is incorrect or incomplete, the AI model lacks the necessary information to generate accurate and relevant summaries of the case records. Grounding data provides context and factual content that the AI relies on to produce meaningful outputs. Without proper grounding, even well-designed prompts and configurations can't compensate for the lack of quality data.",
+            "statements": [
+                {
+                    "title": "A. The Einstein Trust Layer is incorrectly configured.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. The data being used for grounding is incorrect or incomplete.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. The prompt template version is incompatible with the chosen LLM.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An administrator wants to check the response of the Flex prompt template they’ve built, but the preview button is greyed out.\nWhat is the reason for this?",
+            "explanation": "Option B is the correct answer. When the preview button is greyed out, it often indicates that the records related to the prompt have not been selected. Without selecting the appropriate records, the system cannot generate a preview, hence the button remains inactive.",
+            "statements": [
+                {
+                    "title": "A. A merge field has not been inserted in the prompt.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. The records related to the prompt have not been selected.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. The prompt has not been saved and activated.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers (UC) wants to offer personalized service experiences and reduce agent handling time with AI-generated email responses, grounded in the Knowledge base.\nWhich AI capability should UC use?",
+            "explanation": "Option B is the correct answer. Einstein Generative Service Replies for Email uses advanced AI capabilities to generate personalized email responses based on information from the Knowledge base. This helps in providing tailored service experiences and reduces the time agents spend on drafting responses.",
+            "statements": [
+                {
+                    "title": "A. Einstein Email Replies",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Einstein Generative Service Replies for Email",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Einstein Service Replies for Email",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist needs to create a prompt template to fill a custom field named Latest Opportunities Summary on the Account object with information from the three most recently opened opportunities.\nHow should the AI Specialist gather the necessary data for the prompt template?",
+            "explanation": "Option B is the correct answer. Creating a flow to retrieve the opportunity information ensures that the data is dynamically gathered and updated. This allows the prompt template to access the most recent opportunities information effectively, keeping the Latest Opportunities Summary field accurate and up-to-date.",
+            "statements": [
+                {
+                    "title": "A. Select the Account Opportunity object as a resource when creating the prompt template.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Create a flow to retrieve the opportunity information.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Select the latest Opportunities related list as a merge field.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist is considering using a Field Generation prompt template type.\nWhat should the AI Specialist check before creating the Field Generation prompt to ensure it is possible for the field to be enabled for generative AI?",
+            "explanation": "Option C is the correct answer. Ensuring that the org is set to API version 59 or higher is crucial as it determines the compatibility of the features and functionalities required for generative AI capabilities. This version setting ensures that the system supports the necessary operations for enabling generative AI within the field.",
+            "statements": [
+                {
+                    "title": "A. That the Lightning page layout where the field will reside has been upgraded to Dynamic Forms",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. That the field chosen must be a rich text field with 255 characters or more",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. That the org is set to API version 59 or higher",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers (UC) plans to send one of three different emails to its customers based on the customer’s lifetime value score and their market segment.\nConsidering that UC are required to explain why an e-mail was selected, which AI model should UC use to achieve this?",
+            "explanation": "Option A is the correct answer. Using both a Predictive model and a Generative model allows UC to not only determine which email to send based on the customer's lifetime value score and market segment (Predictive model) but also to generate an explanation for why that particular email was selected (Generative model). This combination ensures that the decision-making process is transparent and understandable for both the customers and the company.",
+            "statements": [
+                {
+                    "title": "A. Predictive model and generative model",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. Predictive model",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Generative model",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "The sales team at a hotel resort would like to generate a guest summary about the guests’ interests and provide recommendations based on their activity preferences captured in each guest profile. They want the summary to be available only on the contact record page.\nWhich AI capability should the team use?",
+            "explanation": "Option B is the correct answer. Einstein Copilot can utilize the guest profiles to generate summaries and provide tailored recommendations based on their interests and activity preferences. This capability ensures that the information is contextually relevant and available directly on the contact record page, enhancing the sales team's ability to personalize interactions and improve guest experiences.",
+            "statements": [
+                {
+                    "title": "A. Model Builder",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Einstein Copilot",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Prompt Builder",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist implements Einstein Sales Emails for a sales team. The team wants to send personalized follow-up emails to leads based on their interactions and data stored in Salesforce. The AI Specialist needs to configure the system to use the most accurate and up-to-date information for email generation.\nWhich grounding technique should the AI Specialist use?",
+            "explanation": "Option A is the correct answer. Automatic grounding using the Draft with Einstein feature ensures that the system uses the most accurate and up-to-date information for generating personalized follow-up emails. This feature dynamically pulls the relevant data from Salesforce, allowing for real-time personalization based on lead interactions and stored data.",
+            "statements": [
+                {
+                    "title": "A. Automatic grounding using Draft with Einstein feature",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. Ground with Apex Merge Fields",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Ground with Record Merge Fields",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "The marketing team at Universal Containers is looking for a way to personalize emails based on customer behavior, preferences, and purchase history.\nWhy should the team use Einstein Copilot as the solution?",
+            "explanation": "Option A is the correct answer. Einstein Copilot can generate relevant content tailored to each customer based on their behavior, preferences, and purchase history. This level of personalization enhances customer engagement and ensures that the communication is meaningful and resonant.",
+            "statements": [
+                {
+                    "title": "A. To generate relevant content when engaging with each customer",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. To analyze past campaign performance",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. To send automated emails to all customers",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "What is the role of the large language model (LLM) in executing an Einstein Copilot Action?",
+            "explanation": "Option C is the correct answer. The large language model (LLM) plays a crucial role in identifying the best matching actions and determining the correct order of execution. This capability allows for efficient and accurate processing of requests, ensuring that the most relevant and appropriate actions are carried out based on the user's input.",
+            "statements": [
+                {
+                    "title": "A. Determine a user’s access and sort actions by priority to be executed",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Find similar requests and provide the actions that need to be executed",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Identify the best matching actions and correct order of execution",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Amid their busy schedules, sales reps at Universal Containers dedicate time to follow up with prospects and existing clients via email regarding renewals or new deals. They spend many hours throughout the week reviewing past communications and details about their customers before performing their outreach.\nWhich standard Copilot action helps sales reps draft personalized emails to prospects by generating text based on previous successful communications?",
+            "explanation": "Option C is the correct answer. The Einstein Copilot Action: Draft or Revise Sales Email is designed to help sales reps draft personalized emails by generating text based on previous successful communications. This standard action leverages past interactions and data to create relevant and tailored follow-up emails, saving time and enhancing the quality of the communication.",
+            "statements": [
+                {
+                    "title": "A. Einstein Copilot Action: Summarize Record",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Einstein Copilot Action: Find Similar Opportunities",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Einstein Copilot Action: Draft or Revise Sales Email",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "What is best practice when refining Einstein Copilot custom action Instructions?",
+            "explanation": "Option A is the correct answer. Providing examples of user messages that are expected to trigger the action helps to clearly define the context and usage of the custom action. This ensures that the action is accurately triggered by relevant user inputs, enhancing the overall effectiveness and user experience.",
+            "statements": [
+                {
+                    "title": "A. Provide examples of user messages that are expected to trigger the action.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. Use consistent introductory phrases and verbs across multiple action instructions.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Specify the persona who will request the action.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist is tasked with configuring a generative model to create personalized sales emails using customer data stored in Salesforce. The AI Specialist has already fine-tuned a large language model (LLM) on the OpenAI platform. Security and data privacy are critical concerns for the client.\nHow should the AI Specialist integrate the custom LLM into Salesforce?",
+            "explanation": "Option C is the correct answer. Adding the fine-tuned LLM in Einstein Studio Model Builder allows for seamless integration within the Salesforce environment while ensuring that security and data privacy requirements are met. This approach leverages Salesforce's native capabilities and security frameworks to maintain data integrity and protection.",
+            "statements": [
+                {
+                    "title": "A. Create an application of the custom LLM and embed It in Sales Cloud via iFrame.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Enable model endpoint on OpenAI and make callouts to the model to generate emails.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Add the fine-tuned LLM in Einstein Studio Model Builder.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist built a Field Generation prompt template that worked for many records, but users are reporting random failures with token limit errors.\nWhat is the cause of the random nature of this error?",
+            "explanation": "Option A is the correct answer. The number of tokens generated by the dynamic nature of the prompt template will vary by record. This variability in the token count can lead to random token limit errors when some records exceed the token limit for processing by the LLM.",
+            "statements": [
+                {
+                    "title": "A. The number of tokens generated by the dynamic nature of the prompt template will vary by record.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. The template type needs to be switched to Flex to accommodate the variable amount of tokens generated by the prompt grounding.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. The number of tokens that can be processed by the LLM varies with total user demand.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers wants to reduce overall agent handling time by minimizing the time spent typing routine answers for common questions in-chat, and reducing the post-chat analysis by suggesting values for case fields.",
+            "explanation": "Option C is the correct answer. Einstein Reply Recommendations can help reduce the time agents spend typing routine answers by suggesting pre-written replies for common questions. Einstein Case Summaries can help minimize post-chat analysis by summarizing case details and suggesting values for case fields. Together, they streamline agent workflows and enhance efficiency.",
+            "statements": [
+                {
+                    "title": "A. Einstein Service Replies and Work Summaries",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Einstein Reply Recommendations and Case Classification",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Einstein Reply Recommendations and Case Summaries",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "A Salesforce Administrator is exploring the capabilities of Einstein Copilot to enhance user interaction within their organization. They are particularly interested in how Einstein Copilot processes user requests and the mechanism it employs to deliver responses. The administrator is evaluating whether Einstein Copilot directly interfaces with a large language model (LLM) to fetch and display responses to user inquiries, facilitating a broad range of requests from users.\nHow does Einstein Copilot handle user requests in Salesforce?",
+            "explanation": "Option B is the correct answer. Einstein Copilot analyzes the user’s request and uses large language model (LLM) technology to generate and display the appropriate response. This approach leverages the advanced capabilities of LLMs to handle a wide range of user inquiries and provide relevant and accurate responses.",
+            "statements": [
+                {
+                    "title": "A. Einstein Copilot will trigger a flow that utilizes a prompt template to generate the message.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Einstein Copilot analyzes the user’s request and LLM technology is used to generate and display the appropriate response.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Einstein Copilot will perform an HTTP callout to an LLM provider.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers needs its sales reps to be able to only execute prompt templates.\nWhat should an AI Specialist recommend to achieve this requirement?",
+            "explanation": "Option B is the correct answer. The Prompt Execute Template permission set allows sales reps to execute prompt templates. This permission set provides the necessary access to use the templates without granting additional permissions that are not required for their role.",
+            "statements": [
+                {
+                    "title": "A. Prompt Template Manager permission set",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Prompt Execute Template permission set",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Prompt Template User permission set",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers needs its sales reps to be able to only execute prompt templates.\nWhat should an AI Specialist recommend to achieve this requirement?",
+            "explanation": "Option B is the correct answer. The Prompt Execute Template permission set allows sales reps to execute prompt templates. This permission set provides the necessary access to use the templates without granting additional permissions that are not required for their role.",
+            "statements": [
+                {
+                    "title": "A. Prompt Template Manager permission set",
+                    "isCorrect": false
+                },
+                {
+                    "title": "B. Prompt Execute Template permission set",
+                    "isCorrect": true
+                },
+                {
+                    "title": "C. Prompt Template User permission set",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "When a customer chat is initiated, which functionality in Salesforce provides generative AI replies or draft emails based on recommended Knowledge articles?",
+            "explanation": "Option A is the correct answer. Einstein Service Replies provides generative AI replies or draft emails based on recommended Knowledge articles. This functionality enables agents to quickly respond to customer inquiries with relevant and accurate information, enhancing the customer support experience.",
+            "statements": [
+                {
+                    "title": "A. Einstein Service Replies",
+                    "isCorrect": true
+                },
+                {
+                    "title": "B. Einstein Grounding",
+                    "isCorrect": false
+                },
+                {
+                    "title": "C. Einstein Reply Recommendations",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An HR team needs to create personalized onboarding materials for new employees across different departments. These materials should include department-specific training plans, company policies, and customized welcome messages. The team wants to ensure consistency across all documents while saving time in the creation process.\nShould they use Prompt Builder, and why?",
+            "explanation": "Option A is the correct answer. Prompt Builder can generate consistent and customized onboarding materials based on predefined templates, ensuring that all documents maintain a uniform standard while also being tailored to specific departmental needs. This approach saves time and enhances the efficiency of the creation process.",
+            "statements": [
+                {
+                    "title": "Option A: Yes, because Prompt Builder can generate consistent and customized onboarding materials based on predefined templates",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: No, because onboarding materials require a personal touch that AI cannot provide",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Yes, but only for generating generic content like company policies, not for personalized sections",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: No, because Prompt Builder is more suitable for customer-facing content, not internal documents",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A sales team wants to ensure that their AI-generated emails are always based on the most recent customer interaction data stored in the CRM, such as recent purchases or support cases.\nWhich grounding technique should they use to achieve this?",
+            "explanation": "Option C is the correct answer. Integrating real-time CRM data into the prompts ensures that the AI-generated emails are always based on the most up-to-date customer interaction data. This approach allows for dynamic and accurate personalization based on the latest information available in the CRM.",
+            "statements": [
+                {
+                    "title": "Option A: Using static text templates",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Referencing historical sales reports",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Integrating real-time CRM data into the prompts",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Leveraging external data sources like social media profiles",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "In a scenario where customer service agents need AI-generated summaries of case details after resolving an issue, which Einstein for Service feature should be used?",
+            "explanation": "Option B is the correct answer. Einstein Case Wrap-Up provides AI-generated summaries of case details after resolving an issue. This feature helps customer service agents quickly document and review the resolution process, ensuring accurate and efficient case management.",
+            "statements": [
+                {
+                    "title": "Option A: Einstein Reply Recommendations",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Einstein Case Wrap-Up",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Einstein Case Classification",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Einstein Next Best Action",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A tech startup is building a chatbot to assist users with complex troubleshooting tasks. The team is debating between using a standard Salesforce LLM, customizing their own model, or bringing in an external LLM that was trained on a vast amount of technical documentation.\nUnder which condition would it be most appropriate to configure a custom generative model?",
+            "explanation": "Option A is the correct answer. When the startup requires the chatbot to understand and generate responses based on very specific, in-house technical terminology that standard models might not cover, it is most appropriate to configure a custom generative model. This ensures that the chatbot can accurately address the unique and complex troubleshooting tasks by leveraging specialized knowledge that is not available in general-purpose models.",
+            "statements": [
+                {
+                    "title": "Option A: When the startup requires the chatbot to understand and generate responses based on very specific, in-house technical terminology that standard models might not cover",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: When the startup needs the chatbot to handle basic customer inquiries that do not require technical depth",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: When the startup wants to use a model trained exclusively on general, public domain technical documents",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: When the startup has a very limited dataset and no specific customization needs",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A customer service center wants to provide customers with immediate answers to common questions, such as business hours or return policies, even outside of normal working hours. The team needs a feature that can automate these interactions without requiring agent involvement.\nWhich Einstein for Service feature should they implement?",
+            "explanation": "Option B is the correct answer. Einstein Bot is designed to automate customer interactions by providing immediate answers to common questions. This feature ensures that customers receive timely responses even outside of normal working hours, enhancing customer satisfaction and reducing the need for agent involvement in routine inquiries.",
+            "statements": [
+                {
+                    "title": "Option A: Einstein Case Classification",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Einstein Bot",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Einstein Article Recommendations",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Einstein Next Best Action",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "A marketing team wants to leverage a pre-trained Large Language Model (LLM) provided by Salesforce to generate personalized email content.\nWhat is the most appropriate first step in configuring this model?",
+            "explanation": "Option B is the correct answer. Selecting the standard generative model in Salesforce is the most appropriate first step. This pre-trained model is designed to handle various tasks, including generating personalized email content, without requiring immediate re-training or complex modifications. It provides a solid foundation to start generating relevant and tailored content efficiently.",
+            "statements": [
+                {
+                    "title": "Option A: Re-training the model with new data",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Selecting the standard generative model in Salesforce",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Integrating an external API to modify the model's behavior",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Disabling all default configurations to start from scratch",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A sales manager wants to ensure that all client interactions, such as emails and meetings, are automatically logged into the CRM without the need for manual input. This will help maintain accurate records and improve team efficiency.\nWhich Einstein feature should the sales manager implement?",
+            "explanation": "Option B is the correct answer. Einstein Activity Capture automatically logs emails and meetings into the CRM, ensuring accurate record-keeping and improving team efficiency without requiring manual input. This feature helps sales managers maintain up-to-date and comprehensive interaction records effortlessly.",
+            "statements": [
+                {
+                    "title": "Option A: Einstein Opportunity Scoring",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Einstein Activity Capture",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Einstein Next Best Action",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Einstein Email Insights",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "When configuring a custom generative model in Salesforce Model Builder, which step is crucial to ensure the model’s effectiveness in generating relevant outputs?",
+            "explanation": "Option A is the correct answer. Selecting the right pre-training data is crucial because the quality and relevance of the data used to train the model directly impact its ability to generate meaningful and accurate outputs. Properly curated and representative pre-training data ensures that the model understands the specific context and nuances required for effective performance.",
+            "statements": [
+                {
+                    "title": "Option A: Selecting the right pre-training data",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: Choosing a model with the highest possible number of layers",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Integrating the model with Salesforce’s CRM data",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Setting the model to prioritize performance over accuracy",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "After implementing Einstein Copilot, your company notices that some departments are not fully utilizing the tool. To improve adoption, you want to identify the specific barriers to its usage.\nWhat is the best method to gain insights into these challenges?",
+            "explanation": "Option A is the correct answer. Implementing a survey to collect feedback from users on their experience with Copilot is the most effective way to identify specific barriers to its usage. Surveys provide direct insights from the users themselves, allowing the company to understand their concerns, difficulties, and suggestions for improvement.",
+            "statements": [
+                {
+                    "title": "Option A: Implement a survey to collect feedback from users on their experience with Copilot",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: Schedule daily meetings to discuss Copilot usage",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Mandate the use of Copilot in all processes without exceptions",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Review only the successful cases where Copilot was used",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A sales team is ready to start using a new prompt template that has been created and assigned to them.\nWhat must they do to execute the prompt template in their daily workflow?",
+            "explanation": "Option B is the correct answer. The sales team needs to select and run the template from the available options in Salesforce. This allows them to efficiently use the prompt template without the need for manual entry or waiting for an administrator.",
+            "statements": [
+                {
+                    "title": "Option A: Manually enter the prompt template each time",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Select and run the template from the available options in Salesforce",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Wait for the administrator to trigger the template for them",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Create a duplicate of the template each time they need to use it",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "How does the Large Language Model (LLM) in Einstein Copilot determine the appropriate action to take when a user asks for help with generating a sales report?",
+            "explanation": "Option B is the correct answer. The LLM in Einstein Copilot determines the appropriate action by recognizing specific keywords and phrases related to sales reports. This allows the LLM to understand the user's request and generate the relevant response or action needed to complete the task.",
+            "statements": [
+                {
+                    "title": "Option A: By analyzing the user's tone and mood",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: By recognizing specific keywords and phrases related to sales reports",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: By executing the most frequently used command by other users",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: By sending the query to a human supervisor for manual execution",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An organization wants to delegate the execution of predefined prompt templates to specific users who will generate content using these templates without altering them.\nWhich user role should be assigned this task?",
+            "explanation": "Option C is the correct answer. The role of 'Prompt Executor' is designed specifically for users who need to generate content using predefined prompt templates without making any alterations. This role ensures that the templates are executed as intended, maintaining consistency and accuracy.",
+            "statements": [
+                {
+                    "title": "Option A: Content Creator",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Salesforce Developer",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Prompt Executor",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: System Administrator",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A financial services company needs to assess the credit risk of loan applicants based on their financial history and other relevant factors. When should they use Model Builder?",
+            "explanation": "Option C is the correct answer. Model Builder should be used when developing a model to predict the likelihood of loan default based on applicant data. This approach allows the company to leverage advanced machine learning techniques to analyze various factors and generate accurate risk assessments for loan applicants.",
+            "statements": [
+                {
+                    "title": "Option A: When manually reviewing each applicant's credit history",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: When calculating loan interest rates using a standard formula",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: When developing a model to predict the likelihood of loan default based on applicant data",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: When sending automated approval emails to low-risk applicants",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Your team has successfully created and activated a prompt template in Salesforce.\nWhat is the final step to ensure that the template is utilized in the intended business process?",
+            "explanation": "Option B is the correct answer. Executing the template within the relevant Salesforce processes ensures that the prompt template is integrated into the team's daily workflow, making it a seamless part of their operations. This final step is crucial for the practical application and adoption of the new prompt template.",
+            "statements": [
+                {
+                    "title": "Option A: Run a training session for all users",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Execute the template within the relevant Salesforce processes",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Send a notification to management",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Archive the template for future reference",
+                    "isCorrect": false
+                }
+            ]
+        },   
+        {
+            "type": "choose",
+            "question": "A company wants to generate personalized customer emails using a pre-trained model that Salesforce provides out of the box.\nWhat is the first step they should take to configure this model?",
+            "explanation": "Option B is the correct answer. The first step they should take is to select the standard generative model available in Salesforce. This pre-trained model is designed to handle various tasks, including generating personalized email content, without requiring immediate re-training or complex modifications.",
+            "statements": [
+                {
+                    "title": "Option A: Import the company's entire customer database into the model",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Select the standard generative model available in Salesforce",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Develop custom machine learning algorithms from scratch",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Connect the model to an external AI service for configuration",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A sales director needs to project the upcoming quarter’s sales performance based on the current pipeline, historical trends, and real-time data. The director wants to use AI to predict future revenue and identify potential risks in achieving sales targets.\nWhich Einstein feature should the director use?",
+            "explanation": "Option D is the correct answer. Einstein Forecasting is designed to provide AI-driven predictions for future sales performance based on the current pipeline, historical trends, and real-time data. This feature helps the sales director project future revenue, identify potential risks, and make data-driven decisions to achieve sales targets.",
+            "statements": [
+                {
+                    "title": "Option A: Einstein Lead Scoring",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Einstein GPT for Sales Predictions",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Einstein Opportunity Insights",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Einstein Forecasting",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Which user role is best suited to manage and maintain prompt templates within Salesforce, ensuring they align with business needs?",
+            "explanation": "Option C is the correct answer. The System Administrator role is best suited to manage and maintain prompt templates within Salesforce. This role typically has the necessary permissions and understanding of the system to ensure that templates are properly configured and aligned with business needs.",
+            "statements": [
+                {
+                    "title": "Option A: Sales Representative",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Marketing Manager",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: System Administrator",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Customer Service Agent",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A company has rolled out Einstein Copilot and needs to ensure that its adoption leads to measurable business outcomes. The management team wants to link Copilot usage to key business metrics such as sales growth and customer satisfaction.\nWhat is the best method to achieve this?",
+            "explanation": "Option C is the correct answer. Integrating Copilot usage data with business performance dashboards allows the company to correlate the use of Copilot with key metrics like sales growth and customer satisfaction. This approach provides real-time insights into how Copilot is impacting business outcomes and enables continuous monitoring and adjustments to maximize its effectiveness.",
+            "statements": [
+                {
+                    "title": "Option A: Regularly compare the performance of departments using Copilot with those that aren't",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Focus only on qualitative feedback from users about their Copilot experience",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Integrate Copilot usage data with business performance dashboards to correlate usage with key metrics",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Evaluate the impact of Copilot after a year of usage without intermediate checks",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A retail company wants to use a large language model (LLM) to generate personalized product descriptions based on customer preferences and past purchase behavior. They are evaluating whether to configure a standard generative model provided by Salesforce, create a custom model, or implement their own Bring Your Own Large Language Model (BYOLLM).\nWhich option should they choose if they need highly tailored outputs and want full control over the model’s behavior?",
+            "explanation": "Option C is the correct answer. Implementing a Bring Your Own Large Language Model (BYOLLM) provides the retail company with full control over the model's behavior and allows for highly tailored outputs based on specific customer preferences and past purchase behavior. This approach ensures that the company can customize the model to meet their unique requirements and maintain the highest level of personalization in their product descriptions.",
+            "statements": [
+                {
+                    "title": "Option A: Use a standard generative model provided by Salesforce",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Configure a custom generative model within Salesforce",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Implement a Bring Your Own Large Language Model (BYOLLM)",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Use a third-party service to generate product descriptions",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "What should be the primary focus when managing the adoption of Einstein Copilot across different departments?",
+            "explanation": "Option B is the correct answer. Providing targeted training and support based on department-specific use cases is crucial for successful adoption of Einstein Copilot. By focusing on the unique needs and workflows of each department, the company can ensure that the tool is effectively integrated into their daily operations and is utilized to its full potential.",
+            "statements": [
+                {
+                    "title": "Option A: Ensuring that all departments have equal usage of Einstein Copilot",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Providing targeted training and support based on department-specific use cases",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Monitoring the overall system performance to prevent any slowdowns",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Forcing all employees to use Einstein Copilot regardless of their role",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A company is using Salesforce Einstein to analyze customer data and generate predictive insights. They need to ensure that sensitive employee salary information is not included in any Einstein analytics due to strict internal data governance policies.\nHow can the company implement this using the Einstein Trust Layer?",
+            "explanation": "Option B is the correct answer. Applying Einstein Data Exclusion is the appropriate method to ensure that salary information is not processed by Einstein analytics. This feature allows the company to exclude specific fields from being used in analytics, thereby adhering to internal data governance policies and protecting sensitive information.",
+            "statements": [
+                {
+                    "title": "Option A: Use Field-Level Security to hide the salary information from all users",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Apply Einstein Data Exclusion to exclude salary information from being processed by Einstein",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Encrypt the salary fields using Salesforce Shield Encryption",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Remove the salary fields from the Salesforce schema",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "When would it be most appropriate to create a custom copilot action in Salesforce Einstein?",
+            "explanation": "Option B is the correct answer. It is most appropriate to create a custom copilot action when a specific business process requires unique data inputs and custom logic. This allows the action to be tailored to the specific needs and workflows of the organization, ensuring that it accurately addresses the unique requirements of the business process.",
+            "statements": [
+                {
+                    "title": "Option A: When you need to automate a repetitive task that is common across all industries",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: When a specific business process requires unique data inputs and custom logic",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: When you want to use Salesforce’s default functionalities without modification",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: When you need to generate a standard sales report",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A marketing team in a large enterprise is tasked with creating and managing AI-driven campaigns using Salesforce’s Prompt Builder. The team consists of content creators, data analysts, and a marketing manager.\nWhich user role should be assigned to the marketing manager to ensure they can both manage and execute prompt templates effectively?",
+            "explanation": "Option C is the correct answer. Assigning the 'Prompt Template Administrator' role to the marketing manager will ensure they have the necessary permissions to both manage and execute prompt templates effectively. This role provides the highest level of access and control over prompt templates, allowing the marketing manager to oversee the entire process.",
+            "statements": [
+                {
+                    "title": "Option A: Content Creator",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Data Analyst",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Prompt Template Administrator",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Campaign Viewer",
+                    "isCorrect": false
+                }
+            ]
+        }, 
+        {
+            "type": "choose",
+            "question": "Which of the following is the primary consideration when configuring a Bring Your Own Large Language Model (BYOLLM) in Salesforce?",
+            "explanation": "Option B is the correct answer. Verifying the model complies with Salesforce’s API standards is crucial when configuring a Bring Your Own Large Language Model (BYOLLM) in Salesforce. This ensures that the model can seamlessly integrate and interact with Salesforce’s platform, leveraging its capabilities effectively.",
+            "statements": [
+                {
+                    "title": "Option A: Ensuring the model is pre-trained on Salesforce-specific data",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Verifying the model complies with Salesforce’s API standards",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Making sure the model is deployed on a Salesforce-compatible infrastructure",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Ensuring the model has a high number of parameters for better accuracy",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A team is tasked with creating a prompt template to be used across multiple departments, each with different objectives.\nWhat key consideration should guide the creation of this template to ensure it meets the needs of all departments?",
+            "explanation": "Option A is the correct answer. Incorporating department-specific terminology is crucial to ensure that the prompt template is relevant and useful for each department's unique objectives. This approach allows the template to address the specific needs and contexts of different departments while maintaining consistency across the organization.",
+            "statements": [
+                {
+                    "title": "Option A: Incorporating department-specific terminology",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: Keeping the prompt template as general as possible",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Limiting the template to predefined outputs",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Ensuring that the template is easy to modify by all users",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A Salesforce implementation team is setting up a series of prompt templates that will be used across multiple departments, including marketing and customer service. They need to ensure that only qualified users can modify these templates while allowing broader access for execution.\nWhich user role should be assigned the responsibility of modifying and managing these prompt templates?",
+            "explanation": "Option B is the correct answer. Assigning the 'Salesforce Consultant' role to manage and modify prompt templates ensures that someone with specialized knowledge and expertise in Salesforce is responsible for maintaining the templates. This role typically has a comprehensive understanding of Salesforce’s capabilities and best practices, which is essential for ensuring the templates meet the needs of multiple departments effectively.",
+            "statements": [
+                {
+                    "title": "Option A: Marketing Specialist",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Salesforce Consultant",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Content Editor",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: IT Manager",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An organization wants to monitor the adoption of Einstein Copilot among its customer service agents and identify areas for improvement.\nWhat is the most appropriate approach for tracking and evaluating Copilot usage?",
+            "explanation": "Option A is the correct answer. Analyzing the frequency of Copilot actions across all agents using Salesforce dashboards provides a comprehensive and efficient way to track usage patterns, identify trends, and pinpoint areas for improvement. This approach leverages existing Salesforce capabilities to gather data and generate insights without requiring manual tracking or penalization.",
+            "statements": [
+                {
+                    "title": "Option A: Analyze the frequency of Copilot actions across all agents using Salesforce dashboards",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: Conduct weekly surveys asking agents if they are using Copilot",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Set monthly targets for Copilot usage and penalize agents who do not meet them",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: Assign a team member to manually track Copilot usage by observing agent workflows",
+                    "isCorrect": false
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "When a user asks Einstein Copilot to schedule a follow-up meeting with a client, how does the large language model (LLM) execute this action?",
+            "explanation": "Option B is the correct answer. The LLM interprets the user's request, identifies the appropriate action, and uses Salesforce's scheduling API to create a calendar event. This process ensures that the meeting is scheduled accurately and efficiently based on the user's intent.",
+            "statements": [
+                {
+                    "title": "Option A: The LLM directly modifies the user’s calendar in Salesforce without further verification",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: The LLM interprets the user’s request, identifies the appropriate action, and uses Salesforce’s scheduling API to create a calendar event",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: The LLM sends a generic email to the client requesting a meeting time",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option D: The LLM requires manual input from the user to execute the scheduling",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A customer support team is integrating Salesforce Einstein Copilot into their operations. They plan to use standard copilot actions to automate ticket creation and follow-ups but also need to create custom actions for handling escalations based on specific criteria, such as issue severity and customer status.\nWhat is the best approach for implementing these actions?",
+            "explanation": "Option C is the correct answer. Leveraging standard copilot actions for routine tasks and creating custom actions for escalations that require specific handling is the best approach. This ensures that routine tasks are automated efficiently while allowing for the necessary customization to handle more complex scenarios, like escalations, effectively.",
+            "statements": [
+                {
+                    "title": "Option A: Apply standard copilot actions for both routine and complex tasks to simplify the process",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Focus on developing custom copilot actions for all tasks to ensure full customization",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Leverage standard copilot actions for routine tasks and create custom actions for escalations that require specific handling",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option D: Use a manual process for all tasks to ensure accuracy and control over the support process",
+                    "isCorrect": false
+                }
+            ]
+        },       
+        {
+            "type": "choose",
+            "question": "Leadership needs to populate a dynamic form field with a summary or description created by a large language model (LLM) to facilitate more productive conversations with customers. Leadership also wants to keep a human in the loop to be considered in their AI strategy.\nWhich prompt template type should the AI Specialist recommend?",
+            "explanation": "Option C is the correct answer. By using the Record Summary prompt template type, the LLM can generate a detailed summary or description based on the relevant data, which can then be reviewed and edited by a human before being used in the dynamic form field. This approach ensures that the content is accurate and tailored to the specific needs of the customer while keeping a human in the loop to align with the organization's AI strategy.",
+            "statements": [
+                {
+                    "title": "Option A: Sales Email",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Field Generation",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Record Summary",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers is considering leveraging the Einstein Trust Layer in conjunction with Einstein Generative AI Audit Data.\nWhich audit data is available using the Einstein Trust Layer?",
+            "explanation": "Option C is the correct answer. The Einstein Trust Layer provides audit data that includes masked data and toxicity scores. This ensures that sensitive information is protected and that the content generated by the AI is evaluated for potential harmful or toxic elements.",
+            "statements": [
+                {
+                    "title": "Option A: Response accuracy and offensiveness score",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Hallucination score and bias score",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Masked data and toxicity score",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers wants to make a sales proposal and directly use data from multiple unrelated objects (standard and custom) in a prompt template.\nWhat should the AI Specialist recommend?",
+            "explanation": "Option C is the correct answer. Creating a prompt template-triggered flow to access the data from standard and custom objects ensures that the necessary information is seamlessly retrieved and used in the sales proposal. This approach leverages Salesforce's powerful automation capabilities to integrate data from multiple sources without the need for complex manual processes.",
+            "statements": [
+                {
+                    "title": "Option A: Create a Flex template to add resources with standard and custom objects as inputs.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Create a prompt template passing in a special custom object that connects the records temporarily.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Create a prompt template-triggered flow to access the data from standard and custom objects.",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "What is an AI Specialist able to do when the \"Enrich event logs with conversation data\" setting in Einstein Copilot is enabled?",
+            "explanation": "Option B is the correct answer. When the \"Enrich event logs with conversation data\" setting in Einstein Copilot is enabled, AI Specialists can view session data including user input and copilot responses for sessions over the past 7 days. This allows for detailed analysis and understanding of how the copilot is being used and how it interacts with users.",
+            "statements": [
+                {
+                    "title": "Option A: View the user click path that led to each copilot action.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: View session data including user Input and copilot responses for sessions over the past 7 days.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Generate detailed reports on all Copilot conversations over any time period.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers' current AI data masking rules do not align with organizational privacy and security policies and requirements.\nWhat should an AI Specialist recommend to resolve the issue?",
+            "explanation": "Option B is the correct answer. Configuring data masking in the Einstein Trust Layer setup allows the organization to align their AI data masking rules with their privacy and security policies. This approach ensures that sensitive data is appropriately protected and compliant with organizational requirements.",
+            "statements": [
+                {
+                    "title": "Option A: Enable data masking for sandbox refreshes.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Configure data masking in the Einstein Trust Layer setup.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option C: Add new data masking rules in LLM setup.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An administrator wants to check the response of the Flex prompt template they've built, but the preview button is greyed out.\nWhat is the reason for this?",
+            "explanation": "Option A is the correct answer. The preview button being greyed out is often due to the related records not being selected. In order to preview the response accurately, the prompt needs context from the related records.",
+            "statements": [
+                {
+                    "title": "Option A: The records related to the prompt have not been selected.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: The prompt has not been saved and activated.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: A merge field has not been inserted in the prompt.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "Universal Containers' data science team is hosting a generative large language model (LLM) on Amazon Web Services (AWS).\nWhat should the team use to access externally-hosted models in the Salesforce Platform?",
+            "explanation": "Option C is the correct answer. The team should use Copilot Builder to access externally-hosted models in the Salesforce Platform. Copilot Builder is designed to integrate and utilize external models, making it the most appropriate choice for this scenario.",
+            "statements": [
+                {
+                    "title": "Option A: Model Builder",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: App Builder",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Copilot Builder",
+                    "isCorrect": true
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "An AI Specialist built a Field Generation prompt template that worked for many records, but users are reporting random failures with token limit errors.\nWhat is the cause of the random nature of this error?",
+            "explanation": "Option A is the correct answer. The number of tokens generated by the dynamic nature of the prompt template will vary by record. This variability can lead to random token limit errors as different records may generate different token lengths.",
+            "statements": [
+                {
+                    "title": "Option A: The number of tokens generated by the dynamic nature of the prompt template will vary by record.",
+                    "isCorrect": true
+                },
+                {
+                    "title": "Option B: The template type needs to be switched to Flex to accommodate the variable amount of tokens generated by the prompt grounding.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: The number of tokens that can be processed by the LLM varies with total user demand.",
+                    "isCorrect": false
+                }
+            ]
+        },
+        {
+            "type": "choose",
+            "question": "A Salesforce Administrator is exploring the capabilities of Einstein Copilot to enhance user interaction within their organization. They are particularly interested in how Einstein Copilot processes user requests and the mechanism it employs to deliver responses. The administrator is evaluating whether Einstein Copilot directly interfaces with a large language model (LLM) to fetch and display responses to user inquiries, facilitating a broad range of requests from users. How does Einstein Copilot handle user requests In Salesforce?",
+            "explanation": "Option C is the correct answer. Einstein Copilot analyzes the user's request and LLM technology is used to generate and display the appropriate response. This approach ensures that the Copilot leverages AI to provide accurate and relevant responses to user inquiries.",
+            "statements": [
+                {
+                    "title": "Option A: Einstein Copilot will trigger a flow that utilizes a prompt template to generate the message.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Einstein Copilot will perform an HTTP callout to an LLM provider.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Einstein Copilot analyzes the user's request and LLM technology is used to generate and display the appropriate response.",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "Universal Containers wants to utilize Einstein for Sales to help sales reps reach their sales quotas by providing AI-generated plans containing guidance and steps for closing deals.\nWhich feature should the AI Specialist recommend to the sales team?",
+            "explanation": "Option C is the correct answer. The 'Create Close Plan' feature provides AI-generated plans containing guidance and steps for closing deals. This feature is designed to help sales reps reach their sales quotas by offering tailored strategies and actionable steps.",
+            "statements": [
+                {
+                    "title": "Option A: Find Similar Deals",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Create Account Plan",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Create Close Plan",
+                    "isCorrect": true
+                }
+            ]
+        },        
+        {
+            "type": "choose",
+            "question": "How does the Einstein Trust Layer ensure that sensitive data is protected while generating useful and meaningful responses?",
+            "explanation": "Option C is the correct answer. The Einstein Trust Layer ensures that responses that do not meet the relevance threshold will be automatically rejected. This mechanism helps maintain the quality and accuracy of the responses while protecting sensitive data from being improperly used.",
+            "statements": [
+                {
+                    "title": "Option A: Masked data will be de-masked during response journey.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option B: Masked data will be de-masked during request journey.",
+                    "isCorrect": false
+                },
+                {
+                    "title": "Option C: Responses that do not meet the relevance threshold will be automatically rejected.",
+                    "isCorrect": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+para as próximas mensagens:
+1 - Leia a pargunta, você precisa escolher uma resposta entre A, B, ou C
+2 - Aproveite o campo "explanation" para adicionar o motivo da resposta escolhida ser verdadeira.
+3 - transforme o resultado final em um texto no formato .json, mantenha tudo em inglês
+{
+	"type": "choose",
+	"question" : "",
+	"explanation": "",
+	"statements" : [
+		{
+			"title" : "Statement1",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement2",
+			"isCorrect" : false
+		},
+		(
+			"title" : "Statement3",
+			"isCorrect" : false
+		},
+		{
+			"title" : "Statement4",
+			"isCorrect" : false
+		}
+	]
+}
