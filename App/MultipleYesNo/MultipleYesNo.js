@@ -1,5 +1,5 @@
-import AVElement from '/simulado/modules/AVElement.js';
-import BrowserSave from "/simulado/modules/BrowserSave.js";
+import AVElement from '/mentorium/modules/AVElement.js';
+import BrowserSave from "/mentorium/modules/BrowserSave.js";
 
 export default class MultipleYesNo extends AVElement {
 
